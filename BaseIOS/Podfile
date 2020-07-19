@@ -1,0 +1,5 @@
+target 'BaseIOS' do
+	pod 'Alamofire'
+	pod 'ObjectMapper'
+
+end
