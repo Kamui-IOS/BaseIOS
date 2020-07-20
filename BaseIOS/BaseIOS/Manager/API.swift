@@ -135,5 +135,24 @@ class APIManager: NSObject {
 }
 
 extension APIManager {
-    
+    func weather(completionHander: @escaping (Bool, ModelWeather) -> ()) {
+        let url = APIDefine.weather.rawValue
+        let paramJSON: String = ""
+        
+        request(urlString: url, paramJSON: paramJSON, method: .get, showLoading: false, completionHander: {(success, data) in
+            if data == nil {
+                completionHander(false, ModelWeather())
+            }
+            else {
+                if data as? String == nil {
+                    completionHander(false, ModelWeather())
+                    return
+                } else {
+                    completionHander(success, ModelWeather(JSONString: data as! String)!)
+                }
+            }
+        })
+        
+        
+    }
 }

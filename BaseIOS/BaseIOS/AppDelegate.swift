@@ -11,6 +11,25 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    
+    var window: UIWindow?
+    static var shared: AppDelegate {
+        get {
+            return UIApplication.shared.delegate as! AppDelegate
+        }
+    }
+    
+    var topMost: UIViewController {
+        get {
+            var topController = UIApplication.shared.topMostViewController()
+            
+            while let presentedController = topController?.presentedViewController {
+                topController = presentedController
+            }
+            
+            return topController!
+        }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

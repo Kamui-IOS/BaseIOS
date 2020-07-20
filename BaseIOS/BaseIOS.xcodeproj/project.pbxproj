@@ -15,6 +15,13 @@
 		5AF8A38024C4C53E000D2843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF8A37E24C4C53E000D2843 /* LaunchScreen.storyboard */; };
 		5AF8A38924C4C5EC000D2843 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8A38824C4C5EC000D2843 /* API.swift */; };
 		A5AF3D6E6979B3185DBDA9D1 /* libPods-BaseIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F30B95F02C82A27D7DDE33AA /* libPods-BaseIOS.a */; };
+		EF707F4424C542F500B7770F /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F4324C542F500B7770F /* Current.swift */; };
+		EF707F4624C545D300B7770F /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F4524C545D300B7770F /* DataUser.swift */; };
+		EF707F4824C5468000B7770F /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F4724C5468000B7770F /* Forecast.swift */; };
+		EF707F4A24C5470E00B7770F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F4924C5470E00B7770F /* Location.swift */; };
+		EF707F4D24C5854A00B7770F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F4C24C5854900B7770F /* BaseViewController.swift */; };
+		EF707F5124C58D7D00B7770F /* ExtensionApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F5024C58D7D00B7770F /* ExtensionApplication.swift */; };
+		EF707F5324C58DAC00B7770F /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F5224C58DAC00B7770F /* ExtensionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,13 @@
 		5AF8A38124C4C53E000D2843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AF8A38824C4C5EC000D2843 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8A967B027AEEB597DC46318C /* Pods-BaseIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS.release.xcconfig"; path = "Target Support Files/Pods-BaseIOS/Pods-BaseIOS.release.xcconfig"; sourceTree = "<group>"; };
+		EF707F4324C542F500B7770F /* Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
+		EF707F4524C545D300B7770F /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
+		EF707F4724C5468000B7770F /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		EF707F4924C5470E00B7770F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EF707F4C24C5854900B7770F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EF707F5024C58D7D00B7770F /* ExtensionApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionApplication.swift; sourceTree = "<group>"; };
+		EF707F5224C58DAC00B7770F /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		F30B95F02C82A27D7DDE33AA /* libPods-BaseIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -65,9 +79,12 @@
 		5AF8A37224C4C53D000D2843 /* BaseIOS */ = {
 			isa = PBXGroup;
 			children = (
-				5AF8A38724C4C5DD000D2843 /* Manager */,
 				5AF8A37324C4C53D000D2843 /* AppDelegate.swift */,
 				5AF8A37524C4C53D000D2843 /* SceneDelegate.swift */,
+				EF707F4224C542DC00B7770F /* Model */,
+				5AF8A38724C4C5DD000D2843 /* Manager */,
+				EF707F4B24C5850500B7770F /* ViewController */,
+				EF707F4F24C58D0200B7770F /* Extension */,
 				5AF8A37724C4C53D000D2843 /* ContentView.swift */,
 				5AF8A37924C4C53E000D2843 /* Assets.xcassets */,
 				5AF8A37E24C4C53E000D2843 /* LaunchScreen.storyboard */,
@@ -99,7 +116,6 @@
 				12E1443085D660D4B737CD53 /* Pods-BaseIOS.debug.xcconfig */,
 				8A967B027AEEB597DC46318C /* Pods-BaseIOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -109,6 +125,42 @@
 				F30B95F02C82A27D7DDE33AA /* libPods-BaseIOS.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF707F4224C542DC00B7770F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF707F4324C542F500B7770F /* Current.swift */,
+				EF707F4524C545D300B7770F /* DataUser.swift */,
+				EF707F4724C5468000B7770F /* Forecast.swift */,
+				EF707F4924C5470E00B7770F /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF707F4B24C5850500B7770F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF707F4E24C5886400B7770F /* Base */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EF707F4E24C5886400B7770F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EF707F4C24C5854900B7770F /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EF707F4F24C58D0200B7770F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF707F5024C58D7D00B7770F /* ExtensionApplication.swift */,
+				EF707F5224C58DAC00B7770F /* ExtensionViewController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +260,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF707F5124C58D7D00B7770F /* ExtensionApplication.swift in Sources */,
 				5AF8A37424C4C53D000D2843 /* AppDelegate.swift in Sources */,
+				EF707F4424C542F500B7770F /* Current.swift in Sources */,
+				EF707F4A24C5470E00B7770F /* Location.swift in Sources */,
+				EF707F5324C58DAC00B7770F /* ExtensionViewController.swift in Sources */,
+				EF707F4824C5468000B7770F /* Forecast.swift in Sources */,
+				EF707F4624C545D300B7770F /* DataUser.swift in Sources */,
+				EF707F4D24C5854A00B7770F /* BaseViewController.swift in Sources */,
 				5AF8A37624C4C53D000D2843 /* SceneDelegate.swift in Sources */,
 				5AF8A38924C4C5EC000D2843 /* API.swift in Sources */,
 				5AF8A37824C4C53D000D2843 /* ContentView.swift in Sources */,
@@ -350,8 +409,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BaseIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 79W9Z2GAU8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BaseIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,8 +431,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BaseIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 79W9Z2GAU8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BaseIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
