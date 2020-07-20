@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A7DDF2D24C5FF660072A918 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7DDF2B24C5FF660072A918 /* MainViewController.swift */; };
+		5A7DDF2E24C5FF660072A918 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A7DDF2C24C5FF660072A918 /* MainViewController.xib */; };
 		5AF8A37424C4C53D000D2843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8A37324C4C53D000D2843 /* AppDelegate.swift */; };
 		5AF8A37624C4C53D000D2843 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8A37524C4C53D000D2843 /* SceneDelegate.swift */; };
 		5AF8A37824C4C53D000D2843 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8A37724C4C53D000D2843 /* ContentView.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		12E1443085D660D4B737CD53 /* Pods-BaseIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS.debug.xcconfig"; path = "Target Support Files/Pods-BaseIOS/Pods-BaseIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5A7DDF2B24C5FF660072A918 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5A7DDF2C24C5FF660072A918 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		5AF8A37024C4C53D000D2843 /* BaseIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF8A37324C4C53D000D2843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AF8A37524C4C53D000D2843 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A7DDF2A24C5FF1A0072A918 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A7DDF2B24C5FF660072A918 /* MainViewController.swift */,
+				5A7DDF2C24C5FF660072A918 /* MainViewController.xib */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
 		5AF8A36724C4C53D000D2843 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				EF707F4E24C5886400B7770F /* Base */,
+				5A7DDF2A24C5FF1A0072A918 /* MainViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -225,6 +239,7 @@
 				5AF8A38024C4C53E000D2843 /* LaunchScreen.storyboard in Resources */,
 				5AF8A37D24C4C53E000D2843 /* Preview Assets.xcassets in Resources */,
 				5AF8A37A24C4C53E000D2843 /* Assets.xcassets in Resources */,
+				5A7DDF2E24C5FF660072A918 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +278,7 @@
 				EF707F5124C58D7D00B7770F /* ExtensionApplication.swift in Sources */,
 				5AF8A37424C4C53D000D2843 /* AppDelegate.swift in Sources */,
 				EF707F4424C542F500B7770F /* Current.swift in Sources */,
+				5A7DDF2D24C5FF660072A918 /* MainViewController.swift in Sources */,
 				EF707F4A24C5470E00B7770F /* Location.swift in Sources */,
 				EF707F5324C58DAC00B7770F /* ExtensionViewController.swift in Sources */,
 				EF707F4824C5468000B7770F /* Forecast.swift in Sources */,

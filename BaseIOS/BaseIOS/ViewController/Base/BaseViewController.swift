@@ -11,17 +11,12 @@ import UIKit
 class BaseViewController: UIViewController {
 
     
-//    if let tabBarController = window?.rootViewController as? UITabBarController {
-//        let first = FirstViewController()
-//        let second = SecondViewController()
-//
-//        tabBarController.viewControllers = [first, second]
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .red
     }
     
 
