@@ -26,10 +26,11 @@ fileprivate enum HTTPMethod: String {
 }
 
 fileprivate enum APIDefine: String {
+    case message = "/messages"
     case login = "/login.json"
     case weather = "http://api.weatherstack.com/forecast?access_key=7f93c7b4911420ab1d7d1ea92dfcb0a6&query=Hanoi&hourly=1"
     func url() -> String {
-        let HOST = ""
+        let HOST = "cloud9.dinhvicameratot.com:3030"
         return HOST + self.rawValue
     }
 }
@@ -42,7 +43,7 @@ class Connectivity {
 
 class GetHeader {
     class func header() -> Dictionary<String, String> {
-        let headers: Dictionary = ["":""]
+        let headers: Dictionary = ["Content-Type": "application/json", "X-Requested-With": "XMLHttpRequest"]
         return headers
     }
 }

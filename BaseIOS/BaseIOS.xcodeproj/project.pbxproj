@@ -24,6 +24,13 @@
 		EF707F4D24C5854A00B7770F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F4C24C5854900B7770F /* BaseViewController.swift */; };
 		EF707F5124C58D7D00B7770F /* ExtensionApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F5024C58D7D00B7770F /* ExtensionApplication.swift */; };
 		EF707F5324C58DAC00B7770F /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F5224C58DAC00B7770F /* ExtensionViewController.swift */; };
+		EFD6DBFB24D7AF8A00677864 /* NhanVien.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6DBFA24D7AF8A00677864 /* NhanVien.swift */; };
+		EFD6DC0424D7C72C00677864 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6DC0324D7C72C00677864 /* BaseModel.swift */; };
+		EFD6DC0B24D7D3D100677864 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6DC0924D7D3D100677864 /* MainTableViewCell.swift */; };
+		EFD6DC0C24D7D3D100677864 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD6DC0A24D7D3D100677864 /* MainTableViewCell.xib */; };
+		EFD6DC0F24D7F17900677864 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6DC0D24D7F17900677864 /* DashboardViewController.swift */; };
+		EFD6DC1224D7F27300677864 /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFD6DC1124D7F27300677864 /* DashboardViewController.storyboard */; };
+		EFD6DC1424D8054B00677864 /* NavigationBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6DC1324D8054B00677864 /* NavigationBaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +54,13 @@
 		EF707F4C24C5854900B7770F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EF707F5024C58D7D00B7770F /* ExtensionApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionApplication.swift; sourceTree = "<group>"; };
 		EF707F5224C58DAC00B7770F /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		EFD6DBFA24D7AF8A00677864 /* NhanVien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhanVien.swift; sourceTree = "<group>"; };
+		EFD6DC0324D7C72C00677864 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		EFD6DC0924D7D3D100677864 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		EFD6DC0A24D7D3D100677864 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		EFD6DC0D24D7F17900677864 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		EFD6DC1124D7F27300677864 /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
+		EFD6DC1324D8054B00677864 /* NavigationBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBaseView.swift; sourceTree = "<group>"; };
 		F30B95F02C82A27D7DDE33AA /* libPods-BaseIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +81,8 @@
 			children = (
 				5A7DDF2B24C5FF660072A918 /* MainViewController.swift */,
 				5A7DDF2C24C5FF660072A918 /* MainViewController.xib */,
+				EFD6DC0924D7D3D100677864 /* MainTableViewCell.swift */,
+				EFD6DC0A24D7D3D100677864 /* MainTableViewCell.xib */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -143,6 +159,8 @@
 		EF707F4224C542DC00B7770F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EFD6DC0224D7C71400677864 /* BaseModel */,
+				EFD6DBF924D7AF4E00677864 /* ModelQLNV */,
 				EF707F4324C542F500B7770F /* Current.swift */,
 				EF707F4524C545D300B7770F /* DataUser.swift */,
 				EF707F4724C5468000B7770F /* Forecast.swift */,
@@ -164,6 +182,9 @@
 			isa = PBXGroup;
 			children = (
 				EF707F4C24C5854900B7770F /* BaseViewController.swift */,
+				EFD6DC0D24D7F17900677864 /* DashboardViewController.swift */,
+				EFD6DC1124D7F27300677864 /* DashboardViewController.storyboard */,
+				EFD6DC1324D8054B00677864 /* NavigationBaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -175,6 +196,22 @@
 				EF707F5224C58DAC00B7770F /* ExtensionViewController.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EFD6DBF924D7AF4E00677864 /* ModelQLNV */ = {
+			isa = PBXGroup;
+			children = (
+				EFD6DBFA24D7AF8A00677864 /* NhanVien.swift */,
+			);
+			path = ModelQLNV;
+			sourceTree = "<group>";
+		};
+		EFD6DC0224D7C71400677864 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFD6DC0324D7C72C00677864 /* BaseModel.swift */,
+			);
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,10 +273,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD6DC1224D7F27300677864 /* DashboardViewController.storyboard in Resources */,
 				5AF8A38024C4C53E000D2843 /* LaunchScreen.storyboard in Resources */,
 				5AF8A37D24C4C53E000D2843 /* Preview Assets.xcassets in Resources */,
 				5AF8A37A24C4C53E000D2843 /* Assets.xcassets in Resources */,
 				5A7DDF2E24C5FF660072A918 /* MainViewController.xib in Resources */,
+				EFD6DC0C24D7D3D100677864 /* MainTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,16 +316,21 @@
 			files = (
 				EF707F5124C58D7D00B7770F /* ExtensionApplication.swift in Sources */,
 				5AF8A37424C4C53D000D2843 /* AppDelegate.swift in Sources */,
+				EFD6DC0424D7C72C00677864 /* BaseModel.swift in Sources */,
 				EF707F4424C542F500B7770F /* Current.swift in Sources */,
+				EFD6DC0B24D7D3D100677864 /* MainTableViewCell.swift in Sources */,
 				5A7DDF2D24C5FF660072A918 /* MainViewController.swift in Sources */,
 				EF707F4A24C5470E00B7770F /* Location.swift in Sources */,
+				EFD6DC1424D8054B00677864 /* NavigationBaseView.swift in Sources */,
 				EF707F5324C58DAC00B7770F /* ExtensionViewController.swift in Sources */,
 				EF707F4824C5468000B7770F /* Forecast.swift in Sources */,
+				EFD6DBFB24D7AF8A00677864 /* NhanVien.swift in Sources */,
 				EF707F4624C545D300B7770F /* DataUser.swift in Sources */,
 				EF707F4D24C5854A00B7770F /* BaseViewController.swift in Sources */,
 				5AF8A37624C4C53D000D2843 /* SceneDelegate.swift in Sources */,
 				5AF8A38924C4C5EC000D2843 /* API.swift in Sources */,
 				5AF8A37824C4C53D000D2843 /* ContentView.swift in Sources */,
+				EFD6DC0F24D7F17900677864 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

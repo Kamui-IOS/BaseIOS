@@ -11,6 +11,10 @@ import UIKit
 class BaseViewController: UIViewController {
 
     
+    @IBOutlet weak var viewHeader: UIView!
+    @IBOutlet weak var viewBody: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
