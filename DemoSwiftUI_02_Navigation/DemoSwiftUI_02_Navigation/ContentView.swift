@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  DemoSwiftUI
+//  DemoSwiftUI_02_Navigation
 //
-//  Created by Nam Hoang Van on 8/1/20.
+//  Created by Nam Hoang Van on 8/5/20.
 //  Copyright © 2020 Nam Hoang Van. All rights reserved.
 //
 
