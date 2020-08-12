@@ -19,5 +19,5 @@ class NavigationBaseView {
 }
 
 protocol NavigationBaseDelegate {
-    optional func viewNavigation(viewNavigation: NavigationBaseView, didClickButton:sender)
+//    optional func viewNavigation(viewNavigation: NavigationBaseView, didClickButton:sender)
 }

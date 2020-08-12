@@ -66,4 +66,4 @@ final class ImageStore {
         images[name] = ImageStore.loadImage(name: name)
         return images.index(forKey: name)!
     }
-}
+} 
