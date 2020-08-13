@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import SystemConfiguration
 
 class DeviceManager {
@@ -96,14 +97,14 @@ class DeviceManager {
     
     
     class func  isLandscape() -> Bool {
-        if UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation) {
+        if UIApplication.shared.statusBarOrientation.isLandscape {
             return true
         }
         return false
     }
     
     class func isPortrait() -> Bool {
-        if UIInterfaceOrientationIsPortrait(UIApplication.shared.statusBarOrientation) {
+        if UIApplication.shared.statusBarOrientation.isPortrait {
             return true
         }
         return false

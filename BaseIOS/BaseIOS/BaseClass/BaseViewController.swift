@@ -84,7 +84,7 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
             myNavigationBar?.delegate = owner as? NavigationHandle
         }
         myNavigationBar?.updateTitle(title)
-        myNavigationBar?.navigationBarType = .standard
+        myNavigationBar?.navigationBarType = .main
         
     }
     
