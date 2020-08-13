@@ -11,6 +11,8 @@ import UIKit
 class HomeViewController: BaseViewController {
 
     @IBOutlet private weak var tbView: UITableView!
+    var data: [NhanVien] = []
+    var user: BaseModel?
 //    @IBOutlet private weak var padingTop: NSLayoutConstraint!
     
 //    var controller: HomeController!
@@ -21,6 +23,12 @@ class HomeViewController: BaseViewController {
         // Do any additional setup after loading the view.
 //        initNaviBarSearchButton(onView: self, withTitle: self.nibName)
 //        controller = HomeController(initWithTargetTable: tableView)
+        self.initNaviBar(onView: self, withTitle: "User")
+        APIManager.share.getUser(completionHander: {(status, BaseModel) in
+            self.user = BaseModel
+//            self.data = BaseModel.data
+            print(self.data)
+        })
     }
     
     override func didReceiveMemoryWarning() {

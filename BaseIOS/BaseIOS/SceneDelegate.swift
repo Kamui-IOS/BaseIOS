@@ -65,7 +65,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func openMainView(_ winScene: UIWindowScene) {
         self.window = UIWindow(windowScene: winScene)
-        let topVC = MainViewController()
+        let topVC = HomeViewController()
         let naviVC : UINavigationController = UINavigationController(rootViewController: topVC)
         naviVC.setNavigationBarHidden(true, animated: true)
         self.window?.rootViewController = naviVC

@@ -3,4 +3,102 @@
    uuid = "E65DFDB6-E932-450A-9EDA-65130667393A"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3BA58C7-2EB7-43A1-9946-A45856DC4889"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseIOS/Manager/API.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "getUser(completionHander:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82A679CB-D66A-4935-AD5F-F8E889E5B362"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseIOS/Manager/API.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "getUser(completionHander:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D0CCDD4B-C430-427D-95A6-060E5C976893"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseIOS/Manager/API.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "getUser(completionHander:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EB130A7-E7E9-4002-9748-F053BAB87016"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BaseIOS/Manager/API.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "getUser(completionHander:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3EB130A7-E7E9-4002-9748-F053BAB87016 - f7cfaeac8dae20fb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BaseIOS.APIManager.getUser(completionHander: (Swift.Bool, BaseIOS.BaseModel) -&gt; ()) -&gt; ()"
+                  moduleName = "BaseIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/NamHV/Documents/BaseIOS/BaseIOS/BaseIOS/BaseIOS/Manager/API.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "147">
+               </Location>
+               <Location
+                  uuid = "3EB130A7-E7E9-4002-9748-F053BAB87016 - d315ec0532673882"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;) -&gt; () in BaseIOS.APIManager.getUser(completionHander: (Swift.Bool, BaseIOS.BaseModel) -&gt; ()) -&gt; ()"
+                  moduleName = "BaseIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/NamHV/Documents/BaseIOS/BaseIOS/BaseIOS/BaseIOS/Manager/API.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "163"
+                  endingLineNumber = "163"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -11,12 +11,6 @@ import UIKit
 @objc protocol NavigationHandle {
     @objc optional func navigationBarView(_ navigationView: NavigationBarView, clickLeftMenu sender: AnyObject)
     @objc optional func navigationBarView(_ navigationView: NavigationBarView, clickRightMenu sender: AnyObject)
-    @objc optional func navigationBarView(_ navigationView: NavigationBarView, clickOtherMenu sender: AnyObject)
-    @objc optional func navigationBarView(_ navigationView: NavigationBarView, clickDropdown sender: AnyObject)
-    @objc optional func navigationBarView(_ navigationView: NavigationBarView, clickSearch sender: AnyObject)
-    @objc optional func navigationBarView(_ navigationView: NavigationBarView, searchWithText keyword: String?)
-    @objc optional func navigationBarView(_ navigationView: NavigationBarView, clickDelete sender: AnyObject)
-    @objc optional func navigationBarView(_ navigationView: NavigationBarView, clickDeleteAll sender: AnyObject)
 }
 
 public enum NavigationType:Int {

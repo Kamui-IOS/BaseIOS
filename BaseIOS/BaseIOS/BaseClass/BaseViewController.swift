@@ -40,6 +40,7 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.initNaviBar(onView: self, withTitle: "Home")
         self.automaticallyAdjustsScrollViewInsets = false
     }
     

@@ -14,13 +14,19 @@ class BaseModel: Mappable {
     var total: Int = 0
     var limit: Int = 0
     var skip: Int = 0
-    var data: NhanVien?
+    var data: [NhanVien]?
+    
+    init() {
+        
+    }
     
     required init?(map: Map) {
     }
     
     func mapping(map: Map) {
         total <- (map["total"])
+        limit <- (map["limit"])
+        skip <- (map["skip"])
         data <- (map["data"])
     }
 }

@@ -27,7 +27,6 @@ fileprivate enum HTTPMethod: String {
 
 fileprivate enum APIDefine: String {
     case message = "/messages"
-    case login = "/login.json"
     case weather = "http://api.weatherstack.com/forecast?access_key=7f93c7b4911420ab1d7d1ea92dfcb0a6&query=Hanoi&hourly=1"
     func url() -> String {
         let HOST = "cloud9.dinhvicameratot.com:3030"
@@ -109,10 +108,10 @@ class APIManager: NSObject {
                 
                 if let block = completionHander {
                     DispatchQueue.main.async {
-                        if let json = self.dataToJSON(data) {
+                        if self.dataToJSON(data) != nil {
                             block(true, String(data: data, encoding: .utf8))
                         }
-                        else if let responseString = String(data: data, encoding: .utf8) {
+                        else if String(data: data, encoding: .utf8) != nil {
                             block(true, error)
                         }
                     }
@@ -153,7 +152,26 @@ extension APIManager {
                 }
             }
         })
+    }
+    
+    func getUser(completionHander: @escaping (Bool, BaseModel) -> ()) {
         
+        let url = APIDefine.url(.message)
+        let paramJSON: String = ""
+        
+        request(urlString: url(), paramJSON: paramJSON, method: .get, showLoading: false, completionHander: {(success, data) in
+            if data == nil {
+                completionHander(false, BaseModel())
+            }
+            else {
+                if data as? String == nil {
+                    completionHander(false, BaseModel())
+                    return
+                } else {
+                    completionHander(success, BaseModel(JSONString: data as! String)!)
+                }
+            }
+        })
         
     }
 }
