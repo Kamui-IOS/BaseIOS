@@ -8,42 +8,63 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+class HomeViewController: UIViewController {
 
+    @IBOutlet private weak var viewHeader: UIView!
     @IBOutlet private weak var tbView: UITableView!
-    var data: [NhanVien] = []
-    var user: BaseModel?
-//    @IBOutlet private weak var padingTop: NSLayoutConstraint!
     
-//    var controller: HomeController!
+    
+    var data: [NhanVien] = []
+    var nhanvien: NhanVien?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-//        initNaviBarSearchButton(onView: self, withTitle: self.nibName)
-//        controller = HomeController(initWithTargetTable: tableView)
-        self.initNaviBar(onView: self, withTitle: "User")
+        self.tbView.dataSource = self
+        self.tbView.delegate = self
+        self.tbView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "cells")
+        let view = UIView()
+        tbView.tableFooterView = view
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.getUser()
+    }
+    
+    func getUser() {
         APIManager.share.getUser(completionHander: {(status, BaseModel) in
-            self.user = BaseModel
-//            self.data = BaseModel.data
-            print(self.data)
+            if let data = BaseModel.data {
+                self.data = data
+                self.tbView.reloadData()
+                print(self.data.count)
+            }
         })
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-//        paddingTop.constant = MyAppLication.navigationBarHeight
-    }
 
+    @IBAction func btnClickRight(_ sender: Any) {
+    }
+    @IBAction func btnClickLeft(_ sender: Any) {
+        let detailVC = DetailViewController()
+        self.present(detailVC, animated: true, completion: nil)
+    }
 }
 
-extension HomeViewController: NavigationHandle {
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.data.count
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let data = self.data[indexPath.row]
+        let cell = tbView.dequeueReusableCell(withIdentifier: "cells", for: indexPath) as! HomeTableViewCell
+        cell.loadDataCells(data: data)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailViewController()
+        detailVC.data = self.data[indexPath.row]
+        self.present(detailVC, animated: true, completion: nil)    }
 }
 

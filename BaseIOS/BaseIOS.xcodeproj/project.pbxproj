@@ -19,12 +19,16 @@
 		EF707F4624C545D300B7770F /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F4524C545D300B7770F /* DataUser.swift */; };
 		EF707F4824C5468000B7770F /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F4724C5468000B7770F /* Forecast.swift */; };
 		EF707F4A24C5470E00B7770F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F4924C5470E00B7770F /* Location.swift */; };
-		EF707F4D24C5854A00B7770F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F4C24C5854900B7770F /* HomeController.swift */; };
 		EF707F5124C58D7D00B7770F /* ExtensionApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F5024C58D7D00B7770F /* ExtensionApplication.swift */; };
 		EF707F5324C58DAC00B7770F /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF707F5224C58DAC00B7770F /* ExtensionViewController.swift */; };
+		EF7301D924E994ED00DE3A9A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7301D724E994EC00DE3A9A /* DetailViewController.swift */; };
+		EF7301DA24E994ED00DE3A9A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7301D824E994EC00DE3A9A /* DetailViewController.xib */; };
+		EF7309C224E9B945007DBDD8 /* NhanVienParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7309C124E9B945007DBDD8 /* NhanVienParam.swift */; };
 		EFC0A93724E46937006A093D /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC0A93624E46937006A093D /* NavigationBarView.xib */; };
 		EFC0A93A24E47259006A093D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0A93924E47259006A093D /* Constant.swift */; };
 		EFC0A93C24E47282006A093D /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0A93B24E47282006A093D /* DeviceManager.swift */; };
+		EFC635C624E97DA700F81F57 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC635C424E97DA700F81F57 /* HomeTableViewCell.swift */; };
+		EFC635C724E97DA700F81F57 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC635C524E97DA700F81F57 /* HomeTableViewCell.xib */; };
 		EFD45E9E24E4616C0003DECF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD45E9D24E4616C0003DECF /* BaseViewController.swift */; };
 		EFD45EA024E461C90003DECF /* BaseHeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD45E9F24E461C90003DECF /* BaseHeaderTableView.swift */; };
 		EFD45EA224E461DC0003DECF /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD45EA124E461DC0003DECF /* BaseTableController.swift */; };
@@ -53,12 +57,16 @@
 		EF707F4524C545D300B7770F /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		EF707F4724C5468000B7770F /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		EF707F4924C5470E00B7770F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		EF707F4C24C5854900B7770F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		EF707F5024C58D7D00B7770F /* ExtensionApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionApplication.swift; sourceTree = "<group>"; };
 		EF707F5224C58DAC00B7770F /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		EF7301D724E994EC00DE3A9A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EF7301D824E994EC00DE3A9A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		EF7309C124E9B945007DBDD8 /* NhanVienParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhanVienParam.swift; sourceTree = "<group>"; };
 		EFC0A93624E46937006A093D /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
 		EFC0A93924E47259006A093D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		EFC0A93B24E47282006A093D /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		EFC635C424E97DA700F81F57 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		EFC635C524E97DA700F81F57 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		EFD45E9D24E4616C0003DECF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EFD45E9F24E461C90003DECF /* BaseHeaderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHeaderTableView.swift; sourceTree = "<group>"; };
 		EFD45EA124E461DC0003DECF /* BaseTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableController.swift; sourceTree = "<group>"; };
@@ -174,6 +182,8 @@
 				EF707F4E24C5886400B7770F /* Controller */,
 				EFD45EAB24E464010003DECF /* HomeViewController.swift */,
 				EFD45EAC24E464010003DECF /* HomeViewController.xib */,
+				EF7301D724E994EC00DE3A9A /* DetailViewController.swift */,
+				EF7301D824E994EC00DE3A9A /* DetailViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -181,7 +191,8 @@
 		EF707F4E24C5886400B7770F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EF707F4C24C5854900B7770F /* HomeController.swift */,
+				EFC635C424E97DA700F81F57 /* HomeTableViewCell.swift */,
+				EFC635C524E97DA700F81F57 /* HomeTableViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,7 +240,9 @@
 		EFD6DBF924D7AF4E00677864 /* ModelQLNV */ = {
 			isa = PBXGroup;
 			children = (
+				EFD6DC0324D7C72C00677864 /* BaseModel.swift */,
 				EFD6DBFA24D7AF8A00677864 /* NhanVien.swift */,
+				EF7309C124E9B945007DBDD8 /* NhanVienParam.swift */,
 			);
 			path = ModelQLNV;
 			sourceTree = "<group>";
@@ -237,7 +250,6 @@
 		EFD6DC0224D7C71400677864 /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
-				EFD6DC0324D7C72C00677864 /* BaseModel.swift */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -303,8 +315,10 @@
 			files = (
 				5AF8A38024C4C53E000D2843 /* LaunchScreen.storyboard in Resources */,
 				5AF8A37D24C4C53E000D2843 /* Preview Assets.xcassets in Resources */,
+				EF7301DA24E994ED00DE3A9A /* DetailViewController.xib in Resources */,
 				5AF8A37A24C4C53E000D2843 /* Assets.xcassets in Resources */,
 				EFD45EAE24E464010003DECF /* HomeViewController.xib in Resources */,
+				EFC635C724E97DA700F81F57 /* HomeTableViewCell.xib in Resources */,
 				EFC0A93724E46937006A093D /* NavigationBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +357,7 @@
 			files = (
 				EF707F5124C58D7D00B7770F /* ExtensionApplication.swift in Sources */,
 				5AF8A37424C4C53D000D2843 /* AppDelegate.swift in Sources */,
+				EF7301D924E994ED00DE3A9A /* DetailViewController.swift in Sources */,
 				EFD6DC0424D7C72C00677864 /* BaseModel.swift in Sources */,
 				EFD45EA424E462030003DECF /* BaseTableViewCell.swift in Sources */,
 				EF707F4424C542F500B7770F /* Current.swift in Sources */,
@@ -354,14 +369,15 @@
 				EF707F4824C5468000B7770F /* Forecast.swift in Sources */,
 				EFD6DBFB24D7AF8A00677864 /* NhanVien.swift in Sources */,
 				EF707F4624C545D300B7770F /* DataUser.swift in Sources */,
-				EF707F4D24C5854A00B7770F /* HomeController.swift in Sources */,
 				5AF8A37624C4C53D000D2843 /* SceneDelegate.swift in Sources */,
 				EFC0A93A24E47259006A093D /* Constant.swift in Sources */,
 				EFD45EB124E4686C0003DECF /* NavigationBarView.swift in Sources */,
+				EFC635C624E97DA700F81F57 /* HomeTableViewCell.swift in Sources */,
 				EFD45E9E24E4616C0003DECF /* BaseViewController.swift in Sources */,
 				5AF8A38924C4C5EC000D2843 /* API.swift in Sources */,
 				EFD45EA024E461C90003DECF /* BaseHeaderTableView.swift in Sources */,
 				5AF8A37824C4C53D000D2843 /* ContentView.swift in Sources */,
+				EF7309C224E9B945007DBDD8 /* NhanVienParam.swift in Sources */,
 				EFD45EA624E4623F0003DECF /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

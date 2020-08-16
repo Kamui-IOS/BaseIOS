@@ -15,6 +15,10 @@ class NhanVien: Mappable {
     var name: String = ""
     var age: Int = 0
     
+    init() {
+        
+    }
+    
     required init?(map: Map) {
     }
     

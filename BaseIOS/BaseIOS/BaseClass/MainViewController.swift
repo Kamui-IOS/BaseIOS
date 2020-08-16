@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class MainViewController: UINavigationController {
-    static let shared = MainViewController()
+//    static let shared = MainViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,11 +36,11 @@ class MainViewController: UINavigationController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    init() {
-        let home = HomeViewController(usingNib: HomeViewController.nibName())
-        super.init(rootViewController: home)
-        self.isNavigationBarHidden = true
-    }
+//    init() {
+//        let home = HomeViewController(usingNib: HomeViewController.nibName())
+//        super.init(rootViewController: home)
+//        self.isNavigationBarHidden = true
+//    }
     
     /*
     // MARK: - Navigation

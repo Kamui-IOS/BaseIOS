@@ -29,7 +29,7 @@ fileprivate enum APIDefine: String {
     case message = "/messages"
     case weather = "http://api.weatherstack.com/forecast?access_key=7f93c7b4911420ab1d7d1ea92dfcb0a6&query=Hanoi&hourly=1"
     func url() -> String {
-        let HOST = "cloud9.dinhvicameratot.com:3030"
+        let HOST = "http://cloud9.dinhvicameratot.com:3030"
         return HOST + self.rawValue
     }
 }
@@ -52,7 +52,7 @@ class APIManager: NSObject {
     static let share: APIManager = APIManager()
     private let TIMEOUT_REQUEST = 60
     
-    fileprivate func request(urlString: String, paramJSON: String, method: HTTPMethod, showLoading: Bool, completionHander: CompletionHander?) {
+    fileprivate func request(urlString: String, paramJSON: String, headerString: Dictionary<String, String>, method: HTTPMethod, showLoading: Bool, completionHander: CompletionHander?) {
         
         if Connectivity.isConnectToInternet() {
             var request: URLRequest!
@@ -139,7 +139,7 @@ extension APIManager {
         let url = APIDefine.weather.rawValue
         let paramJSON: String = ""
         
-        request(urlString: url, paramJSON: paramJSON, method: .get, showLoading: false, completionHander: {(success, data) in
+        request(urlString: url, paramJSON: paramJSON, headerString: GetHeader.header(), method: .get, showLoading: false, completionHander: {(success, data) in
             if data == nil {
                 completionHander(false, ModelWeather())
             }
@@ -156,10 +156,10 @@ extension APIManager {
     
     func getUser(completionHander: @escaping (Bool, BaseModel) -> ()) {
         
-        let url = APIDefine.url(.message)
+        let url = APIDefine.message.url()
         let paramJSON: String = ""
         
-        request(urlString: url(), paramJSON: paramJSON, method: .get, showLoading: false, completionHander: {(success, data) in
+        request(urlString: url, paramJSON: paramJSON, headerString: GetHeader.header(), method: .get, showLoading: false, completionHander: {(success, data) in
             if data == nil {
                 completionHander(false, BaseModel())
             }
@@ -172,6 +172,24 @@ extension APIManager {
                 }
             }
         })
+    }
+    
+    func pushUser(paramJSON: NhanVienParam ,completionHander: @escaping (Bool, NhanVien) -> ()) {
+        let url = APIDefine.message.url()
+        let paramJSON = paramJSON.toString()
         
+        request(urlString: url, paramJSON: paramJSON, headerString: GetHeader.header(), method: .post, showLoading: false, completionHander: {(success, data) in
+            if data == nil {
+                completionHander(false, NhanVien())
+            }
+            else {
+                if data as? String == nil {
+                    completionHander(false, NhanVien())
+                    return
+                } else {
+                    completionHander(success, NhanVien(JSONString: data as! String)!)
+                }
+            }
+        })
     }
 }
