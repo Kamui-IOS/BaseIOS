@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3AB22F24ED933500F626C7 /* zData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AB22E24ED933500F626C7 /* zData.swift */; };
 		5AF8A37424C4C53D000D2843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8A37324C4C53D000D2843 /* AppDelegate.swift */; };
 		5AF8A37624C4C53D000D2843 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8A37524C4C53D000D2843 /* SceneDelegate.swift */; };
 		5AF8A37824C4C53D000D2843 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8A37724C4C53D000D2843 /* ContentView.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		12E1443085D660D4B737CD53 /* Pods-BaseIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS.debug.xcconfig"; path = "Target Support Files/Pods-BaseIOS/Pods-BaseIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5A3AB22E24ED933500F626C7 /* zData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zData.swift; sourceTree = "<group>"; };
 		5AF8A37024C4C53D000D2843 /* BaseIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF8A37324C4C53D000D2843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AF8A37524C4C53D000D2843 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				EFD45EAC24E464010003DECF /* HomeViewController.xib */,
 				EF7301D724E994EC00DE3A9A /* DetailViewController.swift */,
 				EF7301D824E994EC00DE3A9A /* DetailViewController.xib */,
+				5A3AB22E24ED933500F626C7 /* zData.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				5AF8A37424C4C53D000D2843 /* AppDelegate.swift in Sources */,
 				EF7301D924E994ED00DE3A9A /* DetailViewController.swift in Sources */,
 				EFD6DC0424D7C72C00677864 /* BaseModel.swift in Sources */,
+				5A3AB22F24ED933500F626C7 /* zData.swift in Sources */,
 				EFD45EA424E462030003DECF /* BaseTableViewCell.swift in Sources */,
 				EF707F4424C542F500B7770F /* Current.swift in Sources */,
 				EFD45EAD24E464010003DECF /* HomeViewController.swift in Sources */,

@@ -60,6 +60,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let data = self.data[indexPath.row]
         let cell = tbView.dequeueReusableCell(withIdentifier: "cells", for: indexPath) as! HomeTableViewCell
         cell.loadDataCells(data: data)
+        cell.delegate = self
         return cell
     }
     
@@ -69,5 +70,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         detailVC.data = self.data[indexPath.row]
         detailVC.indexData = self.data[indexPath.row].id
         self.present(detailVC, animated: true, completion: nil)    }
+}
+
+extension HomeViewController : HomeTableViewCellDelegate {
+    func removeData(id: Int) {
+        print("\(id)")
+    }
 }
 
