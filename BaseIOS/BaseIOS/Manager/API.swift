@@ -50,7 +50,7 @@ class GetHeader {
 class APIManager: NSObject {
     
     static let share: APIManager = APIManager()
-    private let TIMEOUT_REQUEST = 60
+    private let TIMEOUT_REQUEST = 60.0
     
     fileprivate func request(urlString: String, paramJSON: String, headerString: Dictionary<String, String>, method: HTTPMethod, showLoading: Bool, completionHander: CompletionHander?) {
         
@@ -78,6 +78,13 @@ class APIManager: NSObject {
                 
                 // content-type
 
+                request.allHTTPHeaderFields = GetHeader.header()
+                if paramJSON != "" {
+                    request.httpBody = paramJSON.data(using: .utf8)
+                }
+            }
+            else if method == .put {
+                request = URLRequest(url: URL(string: urlString)!)
                 request.allHTTPHeaderFields = GetHeader.header()
                 if paramJSON != "" {
                     request.httpBody = paramJSON.data(using: .utf8)
@@ -159,37 +166,66 @@ extension APIManager {
         let url = APIDefine.message.url()
         let paramJSON: String = ""
         
-        request(urlString: url, paramJSON: paramJSON, headerString: GetHeader.header(), method: .get, showLoading: false, completionHander: {(success, data) in
+        request(urlString: url, paramJSON: paramJSON, headerString: GetHeader.header(), method: .get, showLoading: false, completionHander: {(status, data) in
             if data == nil {
                 completionHander(false, BaseModel())
+                return
             }
-            else {
-                if data as? String == nil {
-                    completionHander(false, BaseModel())
-                    return
-                } else {
-                    completionHander(success, BaseModel(JSONString: data as! String)!)
-                }
+            if data as? String == nil {
+                completionHander(false, BaseModel())
+                return
             }
+            completionHander(status, BaseModel(JSONString: data as! String)!)
         })
     }
     
-    func pushUser(paramJSON: NhanVienParam ,completionHander: @escaping (Bool, NhanVien) -> ()) {
+    func addUser(paramJSON: NhanVienParam ,completionHander: @escaping (Bool, NhanVien) -> ()) {
         let url = APIDefine.message.url()
         let paramJSON = paramJSON.toString()
         
-        request(urlString: url, paramJSON: paramJSON, headerString: GetHeader.header(), method: .post, showLoading: false, completionHander: {(success, data) in
+        request(urlString: url, paramJSON: paramJSON, headerString: GetHeader.header(), method: .post, showLoading: false, completionHander: {(status, data) in
             if data == nil {
                 completionHander(false, NhanVien())
+                return
             }
-            else {
-                if data as? String == nil {
-                    completionHander(false, NhanVien())
-                    return
-                } else {
-                    completionHander(success, NhanVien(JSONString: data as! String)!)
-                }
+            if data as? String == nil {
+                completionHander(false, NhanVien())
+                return
             }
+            completionHander(status, NhanVien(JSONString: data as! String)!)
         })
+    }
+    
+    func updateUser(id: Int, paramJSON: NhanVienParam, completionHander: @escaping (Bool, NhanVien) -> ()) {
+        let url = APIDefine.message.url() + "/" + "\(id)"
+        let paramJSON = paramJSON.toString()
+        
+        request(urlString: url, paramJSON: paramJSON, headerString: GetHeader.header(), method: .put, showLoading: false, completionHander: {(status, data) in
+            if data == nil {
+                completionHander(false, NhanVien())
+                return
+            }
+            if data as? String == nil {
+                completionHander(false, NhanVien())
+                return
+            }
+            completionHander(status, NhanVien(JSONString: data as! String)!)
+        })
+    }
+    
+    func removeUser(id: Int, completionHander: @escaping (Bool, NhanVien) -> ()) {
+        let url = APIDefine.message.url() + "/" + "\(id)"
+        
+        request(urlString: url, paramJSON: "", headerString: GetHeader.header(), method: .delete, showLoading: false) { (status, data) in
+            if data == nil {
+                completionHander(false, NhanVien())
+                return
+            }
+            if data as? String == nil {
+                completionHander(false, NhanVien())
+                return
+            }
+            completionHander(status, NhanVien(JSONString: data as! String)!)
+        }
     }
 }

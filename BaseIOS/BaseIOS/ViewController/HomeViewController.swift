@@ -46,6 +46,7 @@ class HomeViewController: UIViewController {
     }
     @IBAction func btnClickLeft(_ sender: Any) {
         let detailVC = DetailViewController()
+        detailVC.modalPresentationStyle = .fullScreen
         self.present(detailVC, animated: true, completion: nil)
     }
 }
@@ -64,7 +65,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = DetailViewController()
+        detailVC.modalPresentationStyle = .fullScreen
         detailVC.data = self.data[indexPath.row]
+        detailVC.indexData = self.data[indexPath.row].id
         self.present(detailVC, animated: true, completion: nil)    }
 }
 
