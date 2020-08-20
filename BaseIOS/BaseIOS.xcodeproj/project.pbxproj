@@ -20,6 +20,9 @@
 		EF7301D924E994ED00DE3A9A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7301D724E994EC00DE3A9A /* DetailViewController.swift */; };
 		EF7301DA24E994ED00DE3A9A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7301D824E994EC00DE3A9A /* DetailViewController.xib */; };
 		EF7309C224E9B945007DBDD8 /* NhanVienParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7309C124E9B945007DBDD8 /* NhanVienParam.swift */; };
+		EF79DFFA24EE81C90077B097 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF79DFF924EE81C90077B097 /* TabbarViewController.swift */; };
+		EF79DFFD24EE826C0077B097 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF79DFFB24EE826C0077B097 /* SettingViewController.swift */; };
+		EF79DFFE24EE826C0077B097 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF79DFFC24EE826C0077B097 /* SettingViewController.xib */; };
 		EFC635C624E97DA700F81F57 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC635C424E97DA700F81F57 /* HomeTableViewCell.swift */; };
 		EFC635C724E97DA700F81F57 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC635C524E97DA700F81F57 /* HomeTableViewCell.xib */; };
 		EFD45EAD24E464010003DECF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD45EAB24E464010003DECF /* HomeViewController.swift */; };
@@ -45,6 +48,9 @@
 		EF7301D724E994EC00DE3A9A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EF7301D824E994EC00DE3A9A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		EF7309C124E9B945007DBDD8 /* NhanVienParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhanVienParam.swift; sourceTree = "<group>"; };
+		EF79DFF924EE81C90077B097 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		EF79DFFB24EE826C0077B097 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		EF79DFFC24EE826C0077B097 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		EFC635C424E97DA700F81F57 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		EFC635C524E97DA700F81F57 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		EFD45EAB24E464010003DECF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +159,7 @@
 				EFD45EAC24E464010003DECF /* HomeViewController.xib */,
 				EF7301D724E994EC00DE3A9A /* DetailViewController.swift */,
 				EF7301D824E994EC00DE3A9A /* DetailViewController.xib */,
+				EF79DFF924EE81C90077B097 /* TabbarViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -162,6 +169,8 @@
 			children = (
 				EFC635C424E97DA700F81F57 /* HomeTableViewCell.swift */,
 				EFC635C524E97DA700F81F57 /* HomeTableViewCell.xib */,
+				EF79DFFB24EE826C0077B097 /* SettingViewController.swift */,
+				EF79DFFC24EE826C0077B097 /* SettingViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -258,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF79DFFE24EE826C0077B097 /* SettingViewController.xib in Resources */,
 				5AF8A38024C4C53E000D2843 /* LaunchScreen.storyboard in Resources */,
 				5AF8A37D24C4C53E000D2843 /* Preview Assets.xcassets in Resources */,
 				EF7301DA24E994ED00DE3A9A /* DetailViewController.xib in Resources */,
@@ -302,7 +312,9 @@
 				EF707F5124C58D7D00B7770F /* ExtensionApplication.swift in Sources */,
 				5AF8A37424C4C53D000D2843 /* AppDelegate.swift in Sources */,
 				EF7301D924E994ED00DE3A9A /* DetailViewController.swift in Sources */,
+				EF79DFFA24EE81C90077B097 /* TabbarViewController.swift in Sources */,
 				EFD6DC0424D7C72C00677864 /* BaseModel.swift in Sources */,
+				EF79DFFD24EE826C0077B097 /* SettingViewController.swift in Sources */,
 				EFD45EAD24E464010003DECF /* HomeViewController.swift in Sources */,
 				EF707F5324C58DAC00B7770F /* ExtensionViewController.swift in Sources */,
 				EFD6DBFB24D7AF8A00677864 /* NhanVien.swift in Sources */,

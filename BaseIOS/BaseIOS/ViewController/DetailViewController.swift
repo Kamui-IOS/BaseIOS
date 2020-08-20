@@ -33,9 +33,9 @@ class DetailViewController: UIViewController {
     @IBAction func btnClickLeft(_ sender: Any) {
         
         guard let name = textFieldName.text else {return}
-        guard let age = textFieldAge.text else {return}
+        guard let age = Int(textFieldAge.text!) else {return}
         
-        let param = NhanVienParam(name: name, age: Int(age))
+        let param = NhanVienParam(name: name, age: age)
         
         if let index = self.indexData {
             APIManager.share.updateUser(id: index, paramJSON: param) { (status, NhanVien) in
