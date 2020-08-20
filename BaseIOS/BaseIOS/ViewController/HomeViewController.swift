@@ -74,7 +74,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension HomeViewController : HomeTableViewCellDelegate {
     func removeData(id: Int) {
-        print("\(id)")
+        APIManager.share.removeUser(id: id) { (status, NhanVien) in
+            if status {
+                self.getUser()
+                print("\(id)")
+                print(status)
+            }
+        }
     }
 }
 

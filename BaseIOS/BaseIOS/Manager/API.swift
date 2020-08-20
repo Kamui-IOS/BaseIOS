@@ -27,7 +27,7 @@ fileprivate enum HTTPMethod: String {
 
 fileprivate enum APIDefine: String {
     case message = "/messages"
-    case weather = "http://api.weatherstack.com/forecast?access_key=7f93c7b4911420ab1d7d1ea92dfcb0a6&query=Hanoi&hourly=1"
+    
     func url() -> String {
         let HOST = "http://cloud9.dinhvicameratot.com:3030"
         return HOST + self.rawValue
@@ -142,24 +142,6 @@ class APIManager: NSObject {
 }
 
 extension APIManager {
-    func weather(completionHander: @escaping (Bool, ModelWeather) -> ()) {
-        let url = APIDefine.weather.rawValue
-        let paramJSON: String = ""
-        
-        request(urlString: url, paramJSON: paramJSON, headerString: GetHeader.header(), method: .get, showLoading: false, completionHander: {(success, data) in
-            if data == nil {
-                completionHander(false, ModelWeather())
-            }
-            else {
-                if data as? String == nil {
-                    completionHander(false, ModelWeather())
-                    return
-                } else {
-                    completionHander(success, ModelWeather(JSONString: data as! String)!)
-                }
-            }
-        })
-    }
     
     func getUser(completionHander: @escaping (Bool, BaseModel) -> ()) {
         
