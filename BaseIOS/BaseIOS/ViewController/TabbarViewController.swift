@@ -17,6 +17,7 @@ class TabbarViewController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        self.setTabbar()
         
     }
     
@@ -27,8 +28,8 @@ class TabbarViewController: UITabBarController, UITabBarControllerDelegate {
         let tabbarController = UITabBarController()
         tabbarController.viewControllers = [mainNavi, settingNavi]
         
-        mainVC.tabBarItem = UITabBarItem(title: "Home", image: nil, selectedImage: nil)
-        settingVC.tabBarItem = UITabBarItem(title: "Setting", image: nil, selectedImage: nil)
+        mainVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "ic_home_active"), selectedImage: UIImage(named: "ic_home_not_active"))
+        settingVC.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(named: "ic_setting_active"), selectedImage: UIImage(named: "ic_setting_not_active"))
         viewControllers = [mainVC, settingVC]
     }
 }
