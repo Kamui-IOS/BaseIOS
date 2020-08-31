@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF72EA6424FBEF23001615E4 /* MienTrungViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF72EA6224FBEF23001615E4 /* MienTrungViewController.swift */; };
-		EF72EA6524FBEF23001615E4 /* MienTrungViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF72EA6324FBEF23001615E4 /* MienTrungViewController.xib */; };
-		EF737A9824FC146700B31D48 /* MienNamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737A9624FC146700B31D48 /* MienNamViewController.swift */; };
-		EF737A9924FC146700B31D48 /* MienNamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF737A9724FC146700B31D48 /* MienNamViewController.xib */; };
-		EF737A9C24FC272100B31D48 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737A9A24FC272100B31D48 /* CollectionViewCell.swift */; };
-		EF737A9D24FC272100B31D48 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF737A9B24FC272100B31D48 /* CollectionViewCell.xib */; };
+		EF72EA6424FBEF23001615E4 /* MienTrungNamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF72EA6224FBEF23001615E4 /* MienTrungNamViewController.swift */; };
+		EF72EA6524FBEF23001615E4 /* MienTrungNamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */; };
+		EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */; };
+		EF737A9D24FC272100B31D48 /* MienBacCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF737A9B24FC272100B31D48 /* MienBacCollectionViewCell.xib */; };
+		EF7D17AA24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17A824FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift */; };
+		EF7D17AB24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17A924FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib */; };
+		EF7D17AF24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17AD24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift */; };
+		EF7D17B024FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17AE24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.xib */; };
+		EF7D17B324FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17B124FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.swift */; };
+		EF7D17B424FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17B224FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.xib */; };
+		EF7D17B824FCDEEF00BD11C0 /* SoiCauLOTOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17B624FCDEEF00BD11C0 /* SoiCauLOTOViewController.swift */; };
+		EF7D17B924FCDEEF00BD11C0 /* SoiCauLOTOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17B724FCDEEF00BD11C0 /* SoiCauLOTOViewController.xib */; };
+		EF7D17BC24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17BA24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.swift */; };
+		EF7D17BD24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17BB24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.xib */; };
+		EF7D17C724FCF06D00BD11C0 /* SoMoDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17C524FCF06D00BD11C0 /* SoMoDeViewController.swift */; };
+		EF7D17C824FCF06E00BD11C0 /* SoMoDeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17C624FCF06D00BD11C0 /* SoMoDeViewController.xib */; };
+		EF7D17CD24FCF5DB00BD11C0 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17CC24FCF5DB00BD11C0 /* NavigationBarView.swift */; };
+		EF7D17CF24FCF5FB00BD11C0 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17CE24FCF5FB00BD11C0 /* NavigationBarView.xib */; };
+		EF7D17D424FCFC7000BD11C0 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17D224FCFC7000BD11C0 /* TotalViewController.swift */; };
+		EF7D17D524FCFC7000BD11C0 /* TotalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17D324FCFC7000BD11C0 /* TotalViewController.xib */; };
+		EF7D17D924FCFF5200BD11C0 /* TotalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17D724FCFF5200BD11C0 /* TotalCollectionViewCell.swift */; };
+		EF7D17DA24FCFF5200BD11C0 /* TotalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17D824FCFF5200BD11C0 /* TotalCollectionViewCell.xib */; };
 		EFF6FE2D24FBC8820062F307 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */; };
 		EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */; };
 		EFFCB8D524FBA619000A880D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCB8D424FBA619000A880D /* AppDelegate.swift */; };
@@ -26,12 +42,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EF72EA6224FBEF23001615E4 /* MienTrungViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungViewController.swift; sourceTree = "<group>"; };
-		EF72EA6324FBEF23001615E4 /* MienTrungViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungViewController.xib; sourceTree = "<group>"; };
-		EF737A9624FC146700B31D48 /* MienNamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienNamViewController.swift; sourceTree = "<group>"; };
-		EF737A9724FC146700B31D48 /* MienNamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienNamViewController.xib; sourceTree = "<group>"; };
-		EF737A9A24FC272100B31D48 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		EF737A9B24FC272100B31D48 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		EF72EA6224FBEF23001615E4 /* MienTrungNamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNamViewController.swift; sourceTree = "<group>"; };
+		EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNamViewController.xib; sourceTree = "<group>"; };
+		EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienBacCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF737A9B24FC272100B31D48 /* MienBacCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienBacCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF7D17A824FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNam2ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF7D17A924FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNam2ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF7D17AD24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNam3ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF7D17AE24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNam3ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF7D17B124FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNam4ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF7D17B224FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNam4ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF7D17B624FCDEEF00BD11C0 /* SoiCauLOTOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoiCauLOTOViewController.swift; sourceTree = "<group>"; };
+		EF7D17B724FCDEEF00BD11C0 /* SoiCauLOTOViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoiCauLOTOViewController.xib; sourceTree = "<group>"; };
+		EF7D17BA24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSoiCauLotoViewController.swift; sourceTree = "<group>"; };
+		EF7D17BB24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSoiCauLotoViewController.xib; sourceTree = "<group>"; };
+		EF7D17C524FCF06D00BD11C0 /* SoMoDeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoMoDeViewController.swift; sourceTree = "<group>"; };
+		EF7D17C624FCF06D00BD11C0 /* SoMoDeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoMoDeViewController.xib; sourceTree = "<group>"; };
+		EF7D17CC24FCF5DB00BD11C0 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		EF7D17CE24FCF5FB00BD11C0 /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
+		EF7D17D224FCFC7000BD11C0 /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
+		EF7D17D324FCFC7000BD11C0 /* TotalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalViewController.xib; sourceTree = "<group>"; };
+		EF7D17D724FCFF5200BD11C0 /* TotalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF7D17D824FCFF5200BD11C0 /* TotalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalCollectionViewCell.xib; sourceTree = "<group>"; };
 		EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionApplication.swift; sourceTree = "<group>"; };
 		EFFCB8D124FBA619000A880D /* Loto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +89,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF7D17AC24FCBF6000BD11C0 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */,
+				EF737A9B24FC272100B31D48 /* MienBacCollectionViewCell.xib */,
+				EF7D17A824FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift */,
+				EF7D17A924FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib */,
+				EF7D17AD24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift */,
+				EF7D17AE24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.xib */,
+				EF7D17B124FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.swift */,
+				EF7D17B224FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		EF7D17B524FCDE5700BD11C0 /* SoiCauLoto */ = {
+			isa = PBXGroup;
+			children = (
+				EF7D17B624FCDEEF00BD11C0 /* SoiCauLOTOViewController.swift */,
+				EF7D17B724FCDEEF00BD11C0 /* SoiCauLOTOViewController.xib */,
+				EF7D17BA24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.swift */,
+				EF7D17BB24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.xib */,
+			);
+			path = SoiCauLoto;
+			sourceTree = "<group>";
+		};
+		EF7D17C424FCF01500BD11C0 /* SoMoDe */ = {
+			isa = PBXGroup;
+			children = (
+				EF7D17C924FCF3E500BD11C0 /* Navigation */,
+				EF7D17C524FCF06D00BD11C0 /* SoMoDeViewController.swift */,
+				EF7D17C624FCF06D00BD11C0 /* SoMoDeViewController.xib */,
+			);
+			path = SoMoDe;
+			sourceTree = "<group>";
+		};
+		EF7D17C924FCF3E500BD11C0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				EF7D17CC24FCF5DB00BD11C0 /* NavigationBarView.swift */,
+				EF7D17CE24FCF5FB00BD11C0 /* NavigationBarView.xib */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		EF7D17D024FCF94200BD11C0 /* KQDai */ = {
+			isa = PBXGroup;
+			children = (
+				EF7D17D624FCFF3600BD11C0 /* CollectionViewCells */,
+				EF7D17D124FCF95800BD11C0 /* Total */,
+			);
+			path = KQDai;
+			sourceTree = "<group>";
+		};
+		EF7D17D124FCF95800BD11C0 /* Total */ = {
+			isa = PBXGroup;
+			children = (
+				EF7D17D224FCFC7000BD11C0 /* TotalViewController.swift */,
+				EF7D17D324FCFC7000BD11C0 /* TotalViewController.xib */,
+			);
+			path = Total;
+			sourceTree = "<group>";
+		};
+		EF7D17D624FCFF3600BD11C0 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EF7D17D724FCFF5200BD11C0 /* TotalCollectionViewCell.swift */,
+				EF7D17D824FCFF5200BD11C0 /* TotalCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		EFF6FE2B24FBC8490062F307 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +203,9 @@
 		EFFCB8EC24FBA6CE000A880D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EF7D17D024FCF94200BD11C0 /* KQDai */,
+				EF7D17C424FCF01500BD11C0 /* SoMoDe */,
+				EF7D17B524FCDE5700BD11C0 /* SoiCauLoto */,
 				EFFCB8EE24FBA85B000A880D /* XoSo */,
 				EFFCB8ED24FBA6DC000A880D /* Register */,
 			);
@@ -117,11 +224,9 @@
 		EFFCB8EE24FBA85B000A880D /* XoSo */ = {
 			isa = PBXGroup;
 			children = (
-				EFFCB8F124FBA8A9000A880D /* MienNam */,
-				EFFCB8F024FBA8A1000A880D /* MienTrung */,
+				EF7D17AC24FCBF6000BD11C0 /* CollectionViewCells */,
+				EFFCB8F024FBA8A1000A880D /* MienTrung+Nam */,
 				EFFCB8EF24FBA889000A880D /* MienBac */,
-				EF737A9A24FC272100B31D48 /* CollectionViewCell.swift */,
-				EF737A9B24FC272100B31D48 /* CollectionViewCell.xib */,
 			);
 			path = XoSo;
 			sourceTree = "<group>";
@@ -135,22 +240,13 @@
 			path = MienBac;
 			sourceTree = "<group>";
 		};
-		EFFCB8F024FBA8A1000A880D /* MienTrung */ = {
+		EFFCB8F024FBA8A1000A880D /* MienTrung+Nam */ = {
 			isa = PBXGroup;
 			children = (
-				EF72EA6224FBEF23001615E4 /* MienTrungViewController.swift */,
-				EF72EA6324FBEF23001615E4 /* MienTrungViewController.xib */,
+				EF72EA6224FBEF23001615E4 /* MienTrungNamViewController.swift */,
+				EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */,
 			);
-			path = MienTrung;
-			sourceTree = "<group>";
-		};
-		EFFCB8F124FBA8A9000A880D /* MienNam */ = {
-			isa = PBXGroup;
-			children = (
-				EF737A9624FC146700B31D48 /* MienNamViewController.swift */,
-				EF737A9724FC146700B31D48 /* MienNamViewController.xib */,
-			);
-			path = MienNam;
+			path = "MienTrung+Nam";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,13 +307,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF737A9924FC146700B31D48 /* MienNamViewController.xib in Resources */,
-				EF737A9D24FC272100B31D48 /* CollectionViewCell.xib in Resources */,
+				EF737A9D24FC272100B31D48 /* MienBacCollectionViewCell.xib in Resources */,
+				EF7D17BD24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.xib in Resources */,
+				EF7D17B424FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.xib in Resources */,
+				EF7D17D524FCFC7000BD11C0 /* TotalViewController.xib in Resources */,
+				EF7D17CF24FCF5FB00BD11C0 /* NavigationBarView.xib in Resources */,
 				EFFCB8F524FBA93F000A880D /* MienBacViewController.xib in Resources */,
-				EF72EA6524FBEF23001615E4 /* MienTrungViewController.xib in Resources */,
+				EF7D17DA24FCFF5200BD11C0 /* TotalCollectionViewCell.xib in Resources */,
+				EF72EA6524FBEF23001615E4 /* MienTrungNamViewController.xib in Resources */,
 				EFFCB8E124FBA61B000A880D /* LaunchScreen.storyboard in Resources */,
 				EFFCB8DE24FBA61B000A880D /* Assets.xcassets in Resources */,
+				EF7D17C824FCF06E00BD11C0 /* SoMoDeViewController.xib in Resources */,
+				EF7D17B924FCDEEF00BD11C0 /* SoiCauLOTOViewController.xib in Resources */,
 				EFFCB8EB24FBA6C6000A880D /* RegisterViewController.xib in Resources */,
+				EF7D17B024FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.xib in Resources */,
+				EF7D17AB24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,14 +333,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */,
+				EF7D17C724FCF06D00BD11C0 /* SoMoDeViewController.swift in Sources */,
 				EFFCB8F424FBA93F000A880D /* MienBacViewController.swift in Sources */,
-				EF737A9C24FC272100B31D48 /* CollectionViewCell.swift in Sources */,
-				EF737A9824FC146700B31D48 /* MienNamViewController.swift in Sources */,
+				EF7D17B824FCDEEF00BD11C0 /* SoiCauLOTOViewController.swift in Sources */,
+				EF7D17AF24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift in Sources */,
+				EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */,
 				EFF6FE2D24FBC8820062F307 /* ExtensionViewController.swift in Sources */,
+				EF7D17D424FCFC7000BD11C0 /* TotalViewController.swift in Sources */,
+				EF7D17B324FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.swift in Sources */,
+				EF7D17BC24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.swift in Sources */,
+				EF7D17AA24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift in Sources */,
 				EFFCB8EA24FBA6C6000A880D /* RegisterViewController.swift in Sources */,
 				EFFCB8D524FBA619000A880D /* AppDelegate.swift in Sources */,
-				EF72EA6424FBEF23001615E4 /* MienTrungViewController.swift in Sources */,
+				EF7D17D924FCFF5200BD11C0 /* TotalCollectionViewCell.swift in Sources */,
+				EF72EA6424FBEF23001615E4 /* MienTrungNamViewController.swift in Sources */,
 				EFFCB8D724FBA619000A880D /* SceneDelegate.swift in Sources */,
+				EF7D17CD24FCF5DB00BD11C0 /* NavigationBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
