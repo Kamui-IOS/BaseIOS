@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFC8CB0A792D4EDB38BE683C /* libPods-Loto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABE0C9CEFFA958CEA71D97E /* libPods-Loto.a */; };
+		EF42CED824FD5C8B0056D8D1 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42CED724FD5C8B0056D8D1 /* TabbarViewController.swift */; };
+		EF42CEDB24FD68D90056D8D1 /* SideBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42CEDA24FD68D90056D8D1 /* SideBarMenu.swift */; };
+		EF42CEDD24FD68F40056D8D1 /* SideBarMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF42CEDC24FD68F40056D8D1 /* SideBarMenu.xib */; };
 		EF72EA6424FBEF23001615E4 /* MienTrungNamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF72EA6224FBEF23001615E4 /* MienTrungNamViewController.swift */; };
 		EF72EA6524FBEF23001615E4 /* MienTrungNamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */; };
 		EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */; };
@@ -29,6 +33,7 @@
 		EF7D17D524FCFC7000BD11C0 /* TotalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17D324FCFC7000BD11C0 /* TotalViewController.xib */; };
 		EF7D17D924FCFF5200BD11C0 /* TotalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17D724FCFF5200BD11C0 /* TotalCollectionViewCell.swift */; };
 		EF7D17DA24FCFF5200BD11C0 /* TotalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17D824FCFF5200BD11C0 /* TotalCollectionViewCell.xib */; };
+		EF83906E24FD7A5B002672DF /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83906D24FD7A5B002672DF /* ControllerDelegate.swift */; };
 		EFF6FE2D24FBC8820062F307 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */; };
 		EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */; };
 		EFFCB8D524FBA619000A880D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCB8D424FBA619000A880D /* AppDelegate.swift */; };
@@ -42,6 +47,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2ABE0C9CEFFA958CEA71D97E /* libPods-Loto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Loto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		714936510DBAD84E8B1D7ACF /* Pods-Loto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loto.debug.xcconfig"; path = "Target Support Files/Pods-Loto/Pods-Loto.debug.xcconfig"; sourceTree = "<group>"; };
+		EF42CED724FD5C8B0056D8D1 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		EF42CEDA24FD68D90056D8D1 /* SideBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenu.swift; sourceTree = "<group>"; };
+		EF42CEDC24FD68F40056D8D1 /* SideBarMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideBarMenu.xib; sourceTree = "<group>"; };
 		EF72EA6224FBEF23001615E4 /* MienTrungNamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNamViewController.swift; sourceTree = "<group>"; };
 		EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNamViewController.xib; sourceTree = "<group>"; };
 		EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienBacCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -64,6 +74,7 @@
 		EF7D17D324FCFC7000BD11C0 /* TotalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalViewController.xib; sourceTree = "<group>"; };
 		EF7D17D724FCFF5200BD11C0 /* TotalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF7D17D824FCFF5200BD11C0 /* TotalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF83906D24FD7A5B002672DF /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
 		EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionApplication.swift; sourceTree = "<group>"; };
 		EFFCB8D124FBA619000A880D /* Loto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +87,7 @@
 		EFFCB8E924FBA6C6000A880D /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		EFFCB8F224FBA93F000A880D /* MienBacViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienBacViewController.swift; sourceTree = "<group>"; };
 		EFFCB8F324FBA93F000A880D /* MienBacViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienBacViewController.xib; sourceTree = "<group>"; };
+		FA585DE15B1797A05CB0C903 /* Pods-Loto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loto.release.xcconfig"; path = "Target Support Files/Pods-Loto/Pods-Loto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +95,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC8CB0A792D4EDB38BE683C /* libPods-Loto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCA87C210B314990E1709ADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ABE0C9CEFFA958CEA71D97E /* libPods-Loto.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF42CED624FD5C510056D8D1 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				EF42CED724FD5C8B0056D8D1 /* TabbarViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		EF42CED924FD65C30056D8D1 /* SilderMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EF42CEDA24FD68D90056D8D1 /* SideBarMenu.swift */,
+				EF42CEDC24FD68F40056D8D1 /* SideBarMenu.xib */,
+			);
+			path = SilderMenu;
+			sourceTree = "<group>";
+		};
 		EF7D17AC24FCBF6000BD11C0 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +199,14 @@
 			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
+		EF83906C24FD7A35002672DF /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EF83906D24FD7A5B002672DF /* ControllerDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		EFF6FE2B24FBC8490062F307 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +221,8 @@
 			children = (
 				EFFCB8D324FBA619000A880D /* Loto */,
 				EFFCB8D224FBA619000A880D /* Products */,
+				FB42D18EE555046B6CC53603 /* Pods */,
+				DCA87C210B314990E1709ADF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,11 +251,13 @@
 		EFFCB8EC24FBA6CE000A880D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EF42CED924FD65C30056D8D1 /* SilderMenu */,
 				EF7D17D024FCF94200BD11C0 /* KQDai */,
 				EF7D17C424FCF01500BD11C0 /* SoMoDe */,
 				EF7D17B524FCDE5700BD11C0 /* SoiCauLoto */,
 				EFFCB8EE24FBA85B000A880D /* XoSo */,
 				EFFCB8ED24FBA6DC000A880D /* Register */,
+				EF83906C24FD7A35002672DF /* Delegate */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,6 +274,7 @@
 		EFFCB8EE24FBA85B000A880D /* XoSo */ = {
 			isa = PBXGroup;
 			children = (
+				EF42CED624FD5C510056D8D1 /* Tabbar */,
 				EF7D17AC24FCBF6000BD11C0 /* CollectionViewCells */,
 				EFFCB8F024FBA8A1000A880D /* MienTrung+Nam */,
 				EFFCB8EF24FBA889000A880D /* MienBac */,
@@ -249,6 +300,15 @@
 			path = "MienTrung+Nam";
 			sourceTree = "<group>";
 		};
+		FB42D18EE555046B6CC53603 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				714936510DBAD84E8B1D7ACF /* Pods-Loto.debug.xcconfig */,
+				FA585DE15B1797A05CB0C903 /* Pods-Loto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +316,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFFCB8E524FBA61B000A880D /* Build configuration list for PBXNativeTarget "Loto" */;
 			buildPhases = (
+				5A90B220FCA1A110DF282650 /* [CP] Check Pods Manifest.lock */,
 				EFFCB8CD24FBA619000A880D /* Sources */,
 				EFFCB8CE24FBA619000A880D /* Frameworks */,
 				EFFCB8CF24FBA619000A880D /* Resources */,
@@ -322,10 +383,36 @@
 				EFFCB8EB24FBA6C6000A880D /* RegisterViewController.xib in Resources */,
 				EF7D17B024FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.xib in Resources */,
 				EF7D17AB24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib in Resources */,
+				EF42CEDD24FD68F40056D8D1 /* SideBarMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A90B220FCA1A110DF282650 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Loto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EFFCB8CD24FBA619000A880D /* Sources */ = {
@@ -337,9 +424,12 @@
 				EFFCB8F424FBA93F000A880D /* MienBacViewController.swift in Sources */,
 				EF7D17B824FCDEEF00BD11C0 /* SoiCauLOTOViewController.swift in Sources */,
 				EF7D17AF24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift in Sources */,
+				EF42CEDB24FD68D90056D8D1 /* SideBarMenu.swift in Sources */,
 				EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */,
+				EF83906E24FD7A5B002672DF /* ControllerDelegate.swift in Sources */,
 				EFF6FE2D24FBC8820062F307 /* ExtensionViewController.swift in Sources */,
 				EF7D17D424FCFC7000BD11C0 /* TotalViewController.swift in Sources */,
+				EF42CED824FD5C8B0056D8D1 /* TabbarViewController.swift in Sources */,
 				EF7D17B324FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.swift in Sources */,
 				EF7D17BC24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.swift in Sources */,
 				EF7D17AA24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift in Sources */,
@@ -482,6 +572,7 @@
 		};
 		EFFCB8E624FBA61B000A880D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714936510DBAD84E8B1D7ACF /* Pods-Loto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +590,7 @@
 		};
 		EFFCB8E724FBA61B000A880D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA585DE15B1797A05CB0C903 /* Pods-Loto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

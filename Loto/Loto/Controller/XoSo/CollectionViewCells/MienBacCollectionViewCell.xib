@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -2123,6 +2123,57 @@
                     <constraint firstItem="5fe-6a-lUI" firstAttribute="top" secondItem="ByV-J6-Q5s" secondAttribute="top" id="r1c-Bo-Q1Y"/>
                 </constraints>
             </collectionViewCellContentView>
+            <connections>
+                <outlet property="dacBietLb" destination="A4t-ka-oB1" id="UzN-S2-20Y"/>
+                <outlet property="dau_00Lb" destination="Nwv-S8-mma" id="zmc-73-1nB"/>
+                <outlet property="dau_01Lb" destination="Z1c-r8-4g4" id="ZEk-GC-w4Q"/>
+                <outlet property="dau_02Lb" destination="pg9-DZ-jGH" id="w2X-Ln-2Rg"/>
+                <outlet property="dau_03Lb" destination="OF3-kB-Kah" id="BOw-Xl-H6O"/>
+                <outlet property="dau_04Lb" destination="uIe-n9-AIs" id="RQF-Fk-Nug"/>
+                <outlet property="dau_05Lb" destination="LUz-rR-Mkw" id="pct-Ax-90y"/>
+                <outlet property="dau_06Lb" destination="FwU-sV-ACP" id="NcZ-ck-GZc"/>
+                <outlet property="dau_07Lb" destination="xss-12-LKJ" id="Bor-pd-Dkd"/>
+                <outlet property="dau_08Lb" destination="Nt5-wT-Pxh" id="RqK-jc-Fxm"/>
+                <outlet property="dau_09Lb" destination="FQa-F4-MCB" id="fjL-SS-EMV"/>
+                <outlet property="days" destination="Glr-c9-1bu" id="Fxn-FX-9Cz"/>
+                <outlet property="duoi_00Lb" destination="5Xk-VA-f1g" id="95v-Ds-tO8"/>
+                <outlet property="duoi_01Lb" destination="0ik-S6-pld" id="lIl-nm-Aaz"/>
+                <outlet property="duoi_02Lb" destination="mCf-85-51s" id="cza-b9-VYX"/>
+                <outlet property="duoi_03Lb" destination="36b-rd-sET" id="b6l-H3-ANh"/>
+                <outlet property="duoi_04Lb" destination="YCB-dp-VJA" id="jbl-Kq-cAr"/>
+                <outlet property="duoi_05Lb" destination="dx2-md-c1d" id="UTu-Yl-sIe"/>
+                <outlet property="duoi_06Lb" destination="KCX-Ao-c5E" id="AGp-Fb-uRF"/>
+                <outlet property="duoi_07Lb" destination="9zh-Me-p3O" id="En9-0S-YIz"/>
+                <outlet property="duoi_08Lb" destination="W8Y-Y3-Aty" id="Z0x-vH-OyX"/>
+                <outlet property="duoi_09Lb" destination="zeX-MM-fKv" id="qHN-Ce-Q0u"/>
+                <outlet property="g1Lb" destination="bCx-8d-OvO" id="ejf-kk-XkM"/>
+                <outlet property="g2_01Lb" destination="Aan-AN-dor" id="cXq-Vh-dWW"/>
+                <outlet property="g2_02Lb" destination="eMh-Af-lW5" id="gll-nR-26h"/>
+                <outlet property="g3_01Lb" destination="Mxk-Hd-wdv" id="QwP-zo-RNn"/>
+                <outlet property="g3_02Lb" destination="Fzk-zu-zKu" id="JWt-LK-eP1"/>
+                <outlet property="g3_03Lb" destination="w3P-Gu-M68" id="9eh-Wv-GSS"/>
+                <outlet property="g3_04Lb" destination="4tI-im-UJX" id="x5K-sd-Tjp"/>
+                <outlet property="g3_05Lb" destination="kgW-OL-aSH" id="Auk-NR-Sfh"/>
+                <outlet property="g3_06Lb" destination="HCT-mT-n84" id="g5U-mg-8nx"/>
+                <outlet property="g4_01Lb" destination="gOV-lL-hjt" id="li0-Ff-y8G"/>
+                <outlet property="g4_02Lb" destination="BJw-Ja-djW" id="d90-u0-raH"/>
+                <outlet property="g4_03Lb" destination="Haj-K9-4YT" id="d3h-gV-VLG"/>
+                <outlet property="g4_04Lb" destination="IuX-EO-ngS" id="jTd-Bz-gu8"/>
+                <outlet property="g5_01Lb" destination="mTV-2T-bU1" id="tDJ-bv-mf8"/>
+                <outlet property="g5_02Lb" destination="nb0-Tv-TJ2" id="tpE-K0-IsG"/>
+                <outlet property="g5_03Lb" destination="8vZ-QD-Cro" id="wqj-gW-tEF"/>
+                <outlet property="g5_04Lb" destination="KGD-HT-8GE" id="dqY-b9-T0c"/>
+                <outlet property="g5_05Lb" destination="lgD-xI-S5t" id="vSO-vp-UPJ"/>
+                <outlet property="g5_06Lb" destination="fwe-qn-NRc" id="oyh-d3-zcO"/>
+                <outlet property="g6_01Lb" destination="mKI-W6-yda" id="1wI-En-wxn"/>
+                <outlet property="g6_02Lb" destination="kZF-QZ-8FY" id="AJY-eR-3pf"/>
+                <outlet property="g6_03Lb" destination="sNe-3I-sui" id="JRa-fa-Lwb"/>
+                <outlet property="g7_01Lb" destination="lFb-zr-kk7" id="ony-AE-eZl"/>
+                <outlet property="g7_02Lb" destination="6uB-04-GYC" id="RUX-DD-ulP"/>
+                <outlet property="g7_03Lb" destination="kd1-Aa-tmj" id="trO-Rr-WoF"/>
+                <outlet property="g7_04Lb" destination="KAO-l4-qi5" id="GqB-vD-mCH"/>
+                <outlet property="quangCaoView" destination="kga-uY-5EK" id="bV4-Ae-qbb"/>
+            </connections>
             <point key="canvasLocation" x="-743" y="-11"/>
         </collectionViewCell>
     </objects>

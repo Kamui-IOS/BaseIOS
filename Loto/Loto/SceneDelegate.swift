@@ -51,10 +51,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func openMainView(_ winScene: UIWindowScene) {
             self.window = UIWindow(windowScene: winScene)
-            let registerVC = MienBacViewController()
-            let naviVC : UINavigationController = UINavigationController(rootViewController: registerVC)
-            naviVC.setNavigationBarHidden(true, animated: true)
-            self.window?.rootViewController = naviVC
+            let tabbarController = TabbarViewController()
+//            let registerVC = MienBacViewController()
+//            let naviVC : UINavigationController = UINavigationController(rootViewController: registerVC)
+//            naviVC.setNavigationBarHidden(true, animated: true)
+            self.window?.rootViewController = tabbarController
             self.window?.makeKeyAndVisible()
         }
 
