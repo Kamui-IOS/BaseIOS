@@ -19,9 +19,5 @@ class RegisterViewController: BaseViewController {
 
     }
 
-    @IBAction func openMenu(_ sender: UIButton) {
-        self.openMenu()
-    }
-
 
 }

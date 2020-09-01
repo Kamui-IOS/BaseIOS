@@ -25,9 +25,9 @@
 		EF78F91024FE320C003FC516 /* DetailTotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F90E24FE320C003FC516 /* DetailTotalViewController.swift */; };
 		EF78F91124FE320C003FC516 /* DetailTotalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF78F90F24FE320C003FC516 /* DetailTotalViewController.xib */; };
 		EF78F91624FE3500003FC516 /* TabbarKQDai.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F91524FE3500003FC516 /* TabbarKQDai.swift */; };
-		EF78F91824FE3510003FC516 /* TabbarMoThuongHomNay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F91724FE3510003FC516 /* TabbarMoThuongHomNay.swift */; };
 		EF78F91C24FE3894003FC516 /* TraCuuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F91A24FE3894003FC516 /* TraCuuViewController.swift */; };
 		EF78F91D24FE3894003FC516 /* TraCuuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF78F91B24FE3894003FC516 /* TraCuuViewController.xib */; };
+		EF78F91F24FE463F003FC516 /* BaseNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F91E24FE463F003FC516 /* BaseNavigation.swift */; };
 		EF7D17AA24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17A824FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift */; };
 		EF7D17AB24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17A924FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib */; };
 		EF7D17AF24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17AD24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift */; };
@@ -76,9 +76,9 @@
 		EF78F90E24FE320C003FC516 /* DetailTotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTotalViewController.swift; sourceTree = "<group>"; };
 		EF78F90F24FE320C003FC516 /* DetailTotalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTotalViewController.xib; sourceTree = "<group>"; };
 		EF78F91524FE3500003FC516 /* TabbarKQDai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarKQDai.swift; sourceTree = "<group>"; };
-		EF78F91724FE3510003FC516 /* TabbarMoThuongHomNay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarMoThuongHomNay.swift; sourceTree = "<group>"; };
 		EF78F91A24FE3894003FC516 /* TraCuuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraCuuViewController.swift; sourceTree = "<group>"; };
 		EF78F91B24FE3894003FC516 /* TraCuuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TraCuuViewController.xib; sourceTree = "<group>"; };
+		EF78F91E24FE463F003FC516 /* BaseNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigation.swift; sourceTree = "<group>"; };
 		EF7D17A824FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNam2ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF7D17A924FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNam2ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		EF7D17AD24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNam3ItemCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -160,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				EF78F91524FE3500003FC516 /* TabbarKQDai.swift */,
-				EF78F91724FE3510003FC516 /* TabbarMoThuongHomNay.swift */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -296,6 +295,7 @@
 				EFFCB8ED24FBA6DC000A880D /* DangKy */,
 				EF78F91924FE3811003FC516 /* TraCuu */,
 				EF78F8F924FDF828003FC516 /* BaseViewController.swift */,
+				EF78F91E24FE463F003FC516 /* BaseNavigation.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -461,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF78F91F24FE463F003FC516 /* BaseNavigation.swift in Sources */,
 				EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */,
 				EF7D17C724FCF06D00BD11C0 /* SoMoDeViewController.swift in Sources */,
 				EF78F91C24FE3894003FC516 /* TraCuuViewController.swift in Sources */,
@@ -485,7 +486,6 @@
 				EFFCB8D524FBA619000A880D /* AppDelegate.swift in Sources */,
 				EF7D17D924FCFF5200BD11C0 /* TotalCollectionViewCell.swift in Sources */,
 				EF72EA6424FBEF23001615E4 /* MienTrungNamViewController.swift in Sources */,
-				EF78F91824FE3510003FC516 /* TabbarMoThuongHomNay.swift in Sources */,
 				EFFCB8D724FBA619000A880D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

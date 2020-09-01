@@ -14,8 +14,8 @@ class TabbarKQDai: UITabBarController, UITabBarControllerDelegate
     var mienTrung = TotalViewController()
     var mienNam = TotalViewController()
     
-    let titles = ["Miền Trung","Miền Nam"]
-    
+    static var status: Bool = true
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
@@ -24,15 +24,17 @@ class TabbarKQDai: UITabBarController, UITabBarControllerDelegate
     
     func setTabbar()
     {
-        let mienTrungNavi = UINavigationController(rootViewController: mienTrung)
-        let mienNamNavi = UINavigationController(rootViewController: mienNam)
+        let leftNavi = BaseNavigation(rootViewController: mienTrung)
+        let rightNavi = BaseNavigation(rootViewController: mienNam)
         
-        let tabbarController = UITabBarController()
-        tabbarController.viewControllers = [mienTrungNavi, mienNamNavi]
-    
-        mienTrung.tabBarItem = UITabBarItem(title: "Miền Trung", image: nil, selectedImage: nil)
-        mienNam.tabBarItem = UITabBarItem(title: "Miền Nam", image: nil, selectedImage: nil)
+        if TabbarKQDai.status {
+            leftNavi.tabBarItem = UITabBarItem(title: "Miền Trung", image: nil, selectedImage: nil)
+            rightNavi.tabBarItem = UITabBarItem(title: "Miền Nam", image: nil, selectedImage: nil)
+        }else {
+            leftNavi.tabBarItem = UITabBarItem(title: "Today", image: nil, selectedImage: nil)
+            rightNavi.tabBarItem = UITabBarItem(title: "Yesterday", image: nil, selectedImage: nil)
+        }
         
-        viewControllers = [mienTrung, mienNam]
+        viewControllers = [leftNavi, rightNavi]
     }
 }

@@ -18,6 +18,7 @@ class BaseViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         createSideMenu()
+        setLeftNavi()
     }
     
     func createSideMenu()    {
@@ -27,7 +28,12 @@ class BaseViewController: UIViewController {
         SideMenuManager.default.addPanGestureToPresent(toView: self.view)
     }
     
-    func openMenu() {
+    func setLeftNavi() {
+        let leftButton = UIBarButtonItem(title: "Menu", style: .done, target: self, action: #selector(openMenu))
+        navigationItem.leftBarButtonItem = leftButton
+    }
+    
+    @objc func openMenu() {
         present(menu!, animated: true, completion: nil)
     }
     

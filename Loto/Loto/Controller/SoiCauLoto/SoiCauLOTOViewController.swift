@@ -14,12 +14,18 @@ class SoiCauLOTOViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var data = ["Ha Noi","Ho Chi Minh"]
+    var index: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setupTableView()
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("\(index)")
     }
     
     func setupTableView() {
@@ -27,10 +33,6 @@ class SoiCauLOTOViewController: BaseViewController {
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "SoiCauLOTOTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         self.tableView.tableFooterView = footView
-    }
-
-    @IBAction func openMenu(_ sender: Any) {
-        self.openMenu()
     }
 }
 

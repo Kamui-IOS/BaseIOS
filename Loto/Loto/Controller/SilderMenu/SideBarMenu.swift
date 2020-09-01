@@ -18,8 +18,9 @@ class SideBarMenu: UIViewController {
     
     @IBAction func DangKy(_ sender: UIButton) {
         let registerVC = RegisterViewController()
-        registerVC.modalPresentationStyle = .fullScreen
-        present(registerVC, animated: true, completion: nil)
+        let registerNavi = BaseNavigation(rootViewController: registerVC)
+        registerNavi.modalPresentationStyle = .fullScreen
+        present(registerNavi, animated: true, completion: nil)
     }
     
     @IBAction func TrucTiepXoSo(_ sender: UIButton) {
@@ -35,24 +36,28 @@ class SideBarMenu: UIViewController {
     
     @IBAction func SoiCauLOTO188(_ sender: Any) {
         let soiCauVC = SoiCauLOTOViewController()
-        soiCauVC.modalPresentationStyle = .fullScreen
-        present(soiCauVC, animated: true, completion: nil)
+        let soiCauNavi = BaseNavigation(rootViewController: soiCauVC)
+        soiCauVC.index = 100
+        soiCauNavi.modalPresentationStyle = .fullScreen
+        present(soiCauNavi, animated: true, completion: nil)
     }
     
     @IBAction func SoMoDe(_ sender: Any) {
         let soMoDeVC = SoMoDeViewController()
         soMoDeVC.modalPresentationStyle = .fullScreen
-        present(soMoDeVC, animated: true, completion: nil)
+        navigationController?.pushViewController(soMoDeVC, animated: true)
     }
     
     @IBAction func KetQuaDai(_ sender: Any) {
         let tabbar = TabbarKQDai()
+        TabbarKQDai.status = false
         tabbar.modalPresentationStyle = .fullScreen
         present(tabbar, animated: true, completion: nil)
     }
     
     @IBAction func MoThuongHomNay(_ sender: Any) {
-        let tabbar = TabbarMoThuongHomNay()
+        let tabbar = TabbarKQDai()
+        TabbarKQDai.status = true
         tabbar.modalPresentationStyle = .fullScreen
         present(tabbar, animated: true, completion: nil)
     }

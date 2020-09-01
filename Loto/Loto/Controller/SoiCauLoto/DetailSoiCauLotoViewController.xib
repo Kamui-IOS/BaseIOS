@@ -13,7 +13,6 @@
                 <outlet property="cauamduong" destination="lmB-Cs-SPS" id="kEb-97-k6D"/>
                 <outlet property="lotobachthu" destination="OFc-ZR-nPQ" id="o5V-Jy-pkK"/>
                 <outlet property="thamkhaoloto" destination="pEh-Zw-hFU" id="RVO-DM-dqU"/>
-                <outlet property="titleNavi" destination="mq3-a4-10S" id="S20-sT-xGT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,43 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWi-iP-5ub">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o33-ZH-Nbx">
-                            <rect key="frame" x="10" y="8.5" width="34" height="30"/>
-                            <state key="normal" title="back"/>
-                            <connections>
-                                <action selector="backClick:" destination="-1" eventType="touchUpInside" id="PnN-re-Jgm"/>
-                            </connections>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detai Soi cầu LOTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq3-a4-10S">
-                            <rect key="frame" x="113.5" y="13" width="148.5" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Onx-3o-mpr">
-                            <rect key="frame" x="0.0" y="47" width="375" height="1"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="1" id="cKG-Km-Il3"/>
-                            </constraints>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <constraints>
-                        <constraint firstItem="mq3-a4-10S" firstAttribute="centerX" secondItem="bWi-iP-5ub" secondAttribute="centerX" id="2I1-fE-1dg"/>
-                        <constraint firstAttribute="trailing" secondItem="Onx-3o-mpr" secondAttribute="trailing" id="CDR-YC-7Ww"/>
-                        <constraint firstItem="o33-ZH-Nbx" firstAttribute="centerY" secondItem="bWi-iP-5ub" secondAttribute="centerY" id="Xum-Hi-J02"/>
-                        <constraint firstItem="mq3-a4-10S" firstAttribute="centerY" secondItem="bWi-iP-5ub" secondAttribute="centerY" id="gnL-pf-fh2"/>
-                        <constraint firstItem="o33-ZH-Nbx" firstAttribute="leading" secondItem="bWi-iP-5ub" secondAttribute="leading" constant="10" id="hw7-eJ-qp8"/>
-                        <constraint firstAttribute="bottom" secondItem="Onx-3o-mpr" secondAttribute="bottom" constant="-1" id="mam-Tz-DMf"/>
-                        <constraint firstAttribute="height" constant="47" id="pyg-oK-Idf"/>
-                        <constraint firstItem="Onx-3o-mpr" firstAttribute="leading" secondItem="bWi-iP-5ub" secondAttribute="leading" id="rAk-38-gqU"/>
-                    </constraints>
-                </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rg0-Dv-kev">
-                    <rect key="frame" x="0.0" y="47" width="375" height="620"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsZ-bR-DJW">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
@@ -220,13 +184,10 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="bWi-iP-5ub" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="1be-28-4nq"/>
+                <constraint firstItem="Rg0-Dv-kev" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2k5-iQ-19z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Rg0-Dv-kev" secondAttribute="bottom" id="6JC-Sw-Tzk"/>
-                <constraint firstItem="bWi-iP-5ub" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KAJ-lq-Ejl"/>
-                <constraint firstItem="Rg0-Dv-kev" firstAttribute="top" secondItem="bWi-iP-5ub" secondAttribute="bottom" id="bgx-h4-6x3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rg0-Dv-kev" secondAttribute="trailing" id="gWY-E0-dP5"/>
                 <constraint firstItem="Rg0-Dv-kev" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mPq-1C-ea4"/>
-                <constraint firstItem="bWi-iP-5ub" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nW8-Vb-RKa"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="114.69265367316342"/>

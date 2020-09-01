@@ -10,13 +10,13 @@ import UIKit
 
 class SoMoDeViewController: BaseViewController {
 
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupTableView()
     }
     
     func setupTableView() {
@@ -24,11 +24,9 @@ class SoMoDeViewController: BaseViewController {
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "SoMoDeTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
-    
-    @IBAction func backButton(_ sender: Any) {
-        self.backViewController()
+    override func setLeftNavi() {
+
     }
-    
 }
 
 extension SoMoDeViewController: UITableViewDelegate, UITableViewDataSource {
