@@ -8,23 +8,29 @@
 
 import UIKit
 
-class DetailSoiCauLotoViewController: UIViewController {
+class DetailSoiCauLotoViewController: BaseViewController {
 
+    @IBOutlet weak var titleNavi: UILabel!
+    
+    @IBOutlet weak var lotobachthu: UILabel!
+    @IBOutlet weak var thamkhaoloto: UILabel!
+    @IBOutlet weak var cauamduong: UILabel!
+    @IBOutlet weak var amduong: UILabel!
+    
+    var nameTitle = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupNavi()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setupNavi() {
+        self.titleNavi.text = nameTitle
     }
-    */
-
+    
+    @IBAction func backClick(_ sender: Any) {
+        self.backViewController()
+    }
+    
 }

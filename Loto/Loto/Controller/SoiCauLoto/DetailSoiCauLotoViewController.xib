@@ -9,6 +9,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailSoiCauLotoViewController" customModule="Loto" customModuleProvider="target">
             <connections>
+                <outlet property="amduong" destination="gjK-nc-umR" id="eA2-wy-OGg"/>
+                <outlet property="cauamduong" destination="lmB-Cs-SPS" id="kEb-97-k6D"/>
+                <outlet property="lotobachthu" destination="OFc-ZR-nPQ" id="o5V-Jy-pkK"/>
+                <outlet property="thamkhaoloto" destination="pEh-Zw-hFU" id="RVO-DM-dqU"/>
+                <outlet property="titleNavi" destination="mq3-a4-10S" id="S20-sT-xGT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,8 +26,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o33-ZH-Nbx">
-                            <rect key="frame" x="10" y="8.5" width="39" height="30"/>
-                            <state key="normal" title="Menu"/>
+                            <rect key="frame" x="10" y="8.5" width="34" height="30"/>
+                            <state key="normal" title="back"/>
+                            <connections>
+                                <action selector="backClick:" destination="-1" eventType="touchUpInside" id="PnN-re-Jgm"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detai Soi cầu LOTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq3-a4-10S">
                             <rect key="frame" x="113.5" y="13" width="148.5" height="21"/>

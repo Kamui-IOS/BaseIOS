@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SoMoDeViewController" customModule="Loto" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="sAA-Bb-Ncb" id="yOg-l5-4XE"/>
+                <outlet property="tableView" destination="IaW-G4-RDo" id="9Ll-i1-YmI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,14 +20,40 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJ8-69-zDa">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUU-zv-ye6">
+                            <rect key="frame" x="10" y="10" width="34" height="30"/>
+                            <state key="normal" title="back"/>
+                            <connections>
+                                <action selector="backButton:" destination="-1" eventType="touchUpInside" id="KNm-J1-Jid"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hôm nay bạn mơ gì?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U32-bK-XeQ">
+                            <rect key="frame" x="109.5" y="5" width="156.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="sAA-Bb-Ncb">
+                            <rect key="frame" x="0.0" y="34" width="375" height="56"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="wyD-Js-JnO"/>
+                        <constraint firstItem="jUU-zv-ye6" firstAttribute="top" secondItem="LJ8-69-zDa" secondAttribute="top" constant="10" id="4Xj-GE-5HX"/>
+                        <constraint firstItem="U32-bK-XeQ" firstAttribute="top" secondItem="LJ8-69-zDa" secondAttribute="top" constant="5" id="QxH-0y-SBU"/>
+                        <constraint firstItem="jUU-zv-ye6" firstAttribute="leading" secondItem="LJ8-69-zDa" secondAttribute="leading" constant="10" id="hMt-Fn-L14"/>
+                        <constraint firstAttribute="trailing" secondItem="sAA-Bb-Ncb" secondAttribute="trailing" id="mqq-tV-k6Z"/>
+                        <constraint firstItem="sAA-Bb-Ncb" firstAttribute="leading" secondItem="LJ8-69-zDa" secondAttribute="leading" id="q4z-n7-WA6"/>
+                        <constraint firstAttribute="height" constant="90" id="wyD-Js-JnO"/>
+                        <constraint firstAttribute="bottom" secondItem="sAA-Bb-Ncb" secondAttribute="bottom" id="xys-H3-LDR"/>
+                        <constraint firstItem="U32-bK-XeQ" firstAttribute="centerX" secondItem="LJ8-69-zDa" secondAttribute="centerX" id="ykG-fo-QnP"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IaW-G4-RDo">
-                    <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                    <rect key="frame" x="0.0" y="90" width="375" height="577"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
             </subviews>

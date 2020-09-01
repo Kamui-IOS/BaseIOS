@@ -15,6 +15,19 @@
 		EF72EA6524FBEF23001615E4 /* MienTrungNamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */; };
 		EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */; };
 		EF737A9D24FC272100B31D48 /* MienBacCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF737A9B24FC272100B31D48 /* MienBacCollectionViewCell.xib */; };
+		EF78F8FA24FDF828003FC516 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F8F924FDF828003FC516 /* BaseViewController.swift */; };
+		EF78F8FF24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F8FD24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift */; };
+		EF78F90024FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF78F8FE24FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib */; };
+		EF78F90324FE0FDC003FC516 /* SoMoDeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F90124FE0FDC003FC516 /* SoMoDeTableViewCell.swift */; };
+		EF78F90424FE0FDC003FC516 /* SoMoDeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF78F90224FE0FDC003FC516 /* SoMoDeTableViewCell.xib */; };
+		EF78F90824FE28E4003FC516 /* TotalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F90624FE28E4003FC516 /* TotalTableViewCell.swift */; };
+		EF78F90924FE28E4003FC516 /* TotalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF78F90724FE28E4003FC516 /* TotalTableViewCell.xib */; };
+		EF78F91024FE320C003FC516 /* DetailTotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F90E24FE320C003FC516 /* DetailTotalViewController.swift */; };
+		EF78F91124FE320C003FC516 /* DetailTotalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF78F90F24FE320C003FC516 /* DetailTotalViewController.xib */; };
+		EF78F91624FE3500003FC516 /* TabbarKQDai.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F91524FE3500003FC516 /* TabbarKQDai.swift */; };
+		EF78F91824FE3510003FC516 /* TabbarMoThuongHomNay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F91724FE3510003FC516 /* TabbarMoThuongHomNay.swift */; };
+		EF78F91C24FE3894003FC516 /* TraCuuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F91A24FE3894003FC516 /* TraCuuViewController.swift */; };
+		EF78F91D24FE3894003FC516 /* TraCuuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF78F91B24FE3894003FC516 /* TraCuuViewController.xib */; };
 		EF7D17AA24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17A824FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift */; };
 		EF7D17AB24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17A924FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib */; };
 		EF7D17AF24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17AD24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift */; };
@@ -27,13 +40,10 @@
 		EF7D17BD24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17BB24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.xib */; };
 		EF7D17C724FCF06D00BD11C0 /* SoMoDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17C524FCF06D00BD11C0 /* SoMoDeViewController.swift */; };
 		EF7D17C824FCF06E00BD11C0 /* SoMoDeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17C624FCF06D00BD11C0 /* SoMoDeViewController.xib */; };
-		EF7D17CD24FCF5DB00BD11C0 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17CC24FCF5DB00BD11C0 /* NavigationBarView.swift */; };
-		EF7D17CF24FCF5FB00BD11C0 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17CE24FCF5FB00BD11C0 /* NavigationBarView.xib */; };
 		EF7D17D424FCFC7000BD11C0 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17D224FCFC7000BD11C0 /* TotalViewController.swift */; };
 		EF7D17D524FCFC7000BD11C0 /* TotalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17D324FCFC7000BD11C0 /* TotalViewController.xib */; };
 		EF7D17D924FCFF5200BD11C0 /* TotalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17D724FCFF5200BD11C0 /* TotalCollectionViewCell.swift */; };
 		EF7D17DA24FCFF5200BD11C0 /* TotalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17D824FCFF5200BD11C0 /* TotalCollectionViewCell.xib */; };
-		EF83906E24FD7A5B002672DF /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83906D24FD7A5B002672DF /* ControllerDelegate.swift */; };
 		EFF6FE2D24FBC8820062F307 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */; };
 		EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */; };
 		EFFCB8D524FBA619000A880D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCB8D424FBA619000A880D /* AppDelegate.swift */; };
@@ -56,6 +66,19 @@
 		EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNamViewController.xib; sourceTree = "<group>"; };
 		EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienBacCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF737A9B24FC272100B31D48 /* MienBacCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienBacCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF78F8F924FDF828003FC516 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EF78F8FD24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoiCauLOTOTableViewCell.swift; sourceTree = "<group>"; };
+		EF78F8FE24FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoiCauLOTOTableViewCell.xib; sourceTree = "<group>"; };
+		EF78F90124FE0FDC003FC516 /* SoMoDeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoMoDeTableViewCell.swift; sourceTree = "<group>"; };
+		EF78F90224FE0FDC003FC516 /* SoMoDeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoMoDeTableViewCell.xib; sourceTree = "<group>"; };
+		EF78F90624FE28E4003FC516 /* TotalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTableViewCell.swift; sourceTree = "<group>"; };
+		EF78F90724FE28E4003FC516 /* TotalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalTableViewCell.xib; sourceTree = "<group>"; };
+		EF78F90E24FE320C003FC516 /* DetailTotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTotalViewController.swift; sourceTree = "<group>"; };
+		EF78F90F24FE320C003FC516 /* DetailTotalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTotalViewController.xib; sourceTree = "<group>"; };
+		EF78F91524FE3500003FC516 /* TabbarKQDai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarKQDai.swift; sourceTree = "<group>"; };
+		EF78F91724FE3510003FC516 /* TabbarMoThuongHomNay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarMoThuongHomNay.swift; sourceTree = "<group>"; };
+		EF78F91A24FE3894003FC516 /* TraCuuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraCuuViewController.swift; sourceTree = "<group>"; };
+		EF78F91B24FE3894003FC516 /* TraCuuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TraCuuViewController.xib; sourceTree = "<group>"; };
 		EF7D17A824FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNam2ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF7D17A924FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNam2ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		EF7D17AD24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNam3ItemCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -68,13 +91,10 @@
 		EF7D17BB24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSoiCauLotoViewController.xib; sourceTree = "<group>"; };
 		EF7D17C524FCF06D00BD11C0 /* SoMoDeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoMoDeViewController.swift; sourceTree = "<group>"; };
 		EF7D17C624FCF06D00BD11C0 /* SoMoDeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoMoDeViewController.xib; sourceTree = "<group>"; };
-		EF7D17CC24FCF5DB00BD11C0 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
-		EF7D17CE24FCF5FB00BD11C0 /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
 		EF7D17D224FCFC7000BD11C0 /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
 		EF7D17D324FCFC7000BD11C0 /* TotalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalViewController.xib; sourceTree = "<group>"; };
 		EF7D17D724FCFF5200BD11C0 /* TotalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF7D17D824FCFF5200BD11C0 /* TotalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalCollectionViewCell.xib; sourceTree = "<group>"; };
-		EF83906D24FD7A5B002672DF /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
 		EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionApplication.swift; sourceTree = "<group>"; };
 		EFFCB8D124FBA619000A880D /* Loto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +147,33 @@
 			path = SilderMenu;
 			sourceTree = "<group>";
 		};
+		EF78F90524FE28C3003FC516 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF78F90624FE28E4003FC516 /* TotalTableViewCell.swift */,
+				EF78F90724FE28E4003FC516 /* TotalTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		EF78F91424FE34CC003FC516 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				EF78F91524FE3500003FC516 /* TabbarKQDai.swift */,
+				EF78F91724FE3510003FC516 /* TabbarMoThuongHomNay.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		EF78F91924FE3811003FC516 /* TraCuu */ = {
+			isa = PBXGroup;
+			children = (
+				EF78F91A24FE3894003FC516 /* TraCuuViewController.swift */,
+				EF78F91B24FE3894003FC516 /* TraCuuViewController.xib */,
+			);
+			path = TraCuu;
+			sourceTree = "<group>";
+		};
 		EF7D17AC24FCBF6000BD11C0 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +196,8 @@
 				EF7D17B724FCDEEF00BD11C0 /* SoiCauLOTOViewController.xib */,
 				EF7D17BA24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.swift */,
 				EF7D17BB24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.xib */,
+				EF78F8FD24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift */,
+				EF78F8FE24FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib */,
 			);
 			path = SoiCauLoto;
 			sourceTree = "<group>";
@@ -156,26 +205,17 @@
 		EF7D17C424FCF01500BD11C0 /* SoMoDe */ = {
 			isa = PBXGroup;
 			children = (
-				EF7D17C924FCF3E500BD11C0 /* Navigation */,
 				EF7D17C524FCF06D00BD11C0 /* SoMoDeViewController.swift */,
 				EF7D17C624FCF06D00BD11C0 /* SoMoDeViewController.xib */,
+				EF78F90124FE0FDC003FC516 /* SoMoDeTableViewCell.swift */,
+				EF78F90224FE0FDC003FC516 /* SoMoDeTableViewCell.xib */,
 			);
 			path = SoMoDe;
-			sourceTree = "<group>";
-		};
-		EF7D17C924FCF3E500BD11C0 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				EF7D17CC24FCF5DB00BD11C0 /* NavigationBarView.swift */,
-				EF7D17CE24FCF5FB00BD11C0 /* NavigationBarView.xib */,
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 		EF7D17D024FCF94200BD11C0 /* KQDai */ = {
 			isa = PBXGroup;
 			children = (
-				EF7D17D624FCFF3600BD11C0 /* CollectionViewCells */,
 				EF7D17D124FCF95800BD11C0 /* Total */,
 			);
 			path = KQDai;
@@ -184,8 +224,13 @@
 		EF7D17D124FCF95800BD11C0 /* Total */ = {
 			isa = PBXGroup;
 			children = (
+				EF78F91424FE34CC003FC516 /* Tabbar */,
+				EF7D17D624FCFF3600BD11C0 /* CollectionViewCells */,
+				EF78F90524FE28C3003FC516 /* TableViewCell */,
 				EF7D17D224FCFC7000BD11C0 /* TotalViewController.swift */,
 				EF7D17D324FCFC7000BD11C0 /* TotalViewController.xib */,
+				EF78F90E24FE320C003FC516 /* DetailTotalViewController.swift */,
+				EF78F90F24FE320C003FC516 /* DetailTotalViewController.xib */,
 			);
 			path = Total;
 			sourceTree = "<group>";
@@ -197,14 +242,6 @@
 				EF7D17D824FCFF5200BD11C0 /* TotalCollectionViewCell.xib */,
 			);
 			path = CollectionViewCells;
-			sourceTree = "<group>";
-		};
-		EF83906C24FD7A35002672DF /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				EF83906D24FD7A5B002672DF /* ControllerDelegate.swift */,
-			);
-			path = Delegate;
 			sourceTree = "<group>";
 		};
 		EFF6FE2B24FBC8490062F307 /* Extension */ = {
@@ -256,19 +293,20 @@
 				EF7D17C424FCF01500BD11C0 /* SoMoDe */,
 				EF7D17B524FCDE5700BD11C0 /* SoiCauLoto */,
 				EFFCB8EE24FBA85B000A880D /* XoSo */,
-				EFFCB8ED24FBA6DC000A880D /* Register */,
-				EF83906C24FD7A35002672DF /* Delegate */,
+				EFFCB8ED24FBA6DC000A880D /* DangKy */,
+				EF78F91924FE3811003FC516 /* TraCuu */,
+				EF78F8F924FDF828003FC516 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		EFFCB8ED24FBA6DC000A880D /* Register */ = {
+		EFFCB8ED24FBA6DC000A880D /* DangKy */ = {
 			isa = PBXGroup;
 			children = (
 				EFFCB8E824FBA6C6000A880D /* RegisterViewController.swift */,
 				EFFCB8E924FBA6C6000A880D /* RegisterViewController.xib */,
 			);
-			path = Register;
+			path = DangKy;
 			sourceTree = "<group>";
 		};
 		EFFCB8EE24FBA85B000A880D /* XoSo */ = {
@@ -369,14 +407,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF737A9D24FC272100B31D48 /* MienBacCollectionViewCell.xib in Resources */,
+				EF78F90424FE0FDC003FC516 /* SoMoDeTableViewCell.xib in Resources */,
+				EF78F90924FE28E4003FC516 /* TotalTableViewCell.xib in Resources */,
 				EF7D17BD24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.xib in Resources */,
 				EF7D17B424FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.xib in Resources */,
 				EF7D17D524FCFC7000BD11C0 /* TotalViewController.xib in Resources */,
-				EF7D17CF24FCF5FB00BD11C0 /* NavigationBarView.xib in Resources */,
+				EF78F90024FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib in Resources */,
 				EFFCB8F524FBA93F000A880D /* MienBacViewController.xib in Resources */,
 				EF7D17DA24FCFF5200BD11C0 /* TotalCollectionViewCell.xib in Resources */,
 				EF72EA6524FBEF23001615E4 /* MienTrungNamViewController.xib in Resources */,
+				EF78F91124FE320C003FC516 /* DetailTotalViewController.xib in Resources */,
 				EFFCB8E124FBA61B000A880D /* LaunchScreen.storyboard in Resources */,
+				EF78F91D24FE3894003FC516 /* TraCuuViewController.xib in Resources */,
 				EFFCB8DE24FBA61B000A880D /* Assets.xcassets in Resources */,
 				EF7D17C824FCF06E00BD11C0 /* SoMoDeViewController.xib in Resources */,
 				EF7D17B924FCDEEF00BD11C0 /* SoiCauLOTOViewController.xib in Resources */,
@@ -421,12 +463,17 @@
 			files = (
 				EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */,
 				EF7D17C724FCF06D00BD11C0 /* SoMoDeViewController.swift in Sources */,
+				EF78F91C24FE3894003FC516 /* TraCuuViewController.swift in Sources */,
+				EF78F90824FE28E4003FC516 /* TotalTableViewCell.swift in Sources */,
 				EFFCB8F424FBA93F000A880D /* MienBacViewController.swift in Sources */,
+				EF78F90324FE0FDC003FC516 /* SoMoDeTableViewCell.swift in Sources */,
 				EF7D17B824FCDEEF00BD11C0 /* SoiCauLOTOViewController.swift in Sources */,
 				EF7D17AF24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift in Sources */,
+				EF78F91024FE320C003FC516 /* DetailTotalViewController.swift in Sources */,
+				EF78F8FA24FDF828003FC516 /* BaseViewController.swift in Sources */,
 				EF42CEDB24FD68D90056D8D1 /* SideBarMenu.swift in Sources */,
+				EF78F91624FE3500003FC516 /* TabbarKQDai.swift in Sources */,
 				EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */,
-				EF83906E24FD7A5B002672DF /* ControllerDelegate.swift in Sources */,
 				EFF6FE2D24FBC8820062F307 /* ExtensionViewController.swift in Sources */,
 				EF7D17D424FCFC7000BD11C0 /* TotalViewController.swift in Sources */,
 				EF42CED824FD5C8B0056D8D1 /* TabbarViewController.swift in Sources */,
@@ -434,11 +481,12 @@
 				EF7D17BC24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.swift in Sources */,
 				EF7D17AA24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift in Sources */,
 				EFFCB8EA24FBA6C6000A880D /* RegisterViewController.swift in Sources */,
+				EF78F8FF24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift in Sources */,
 				EFFCB8D524FBA619000A880D /* AppDelegate.swift in Sources */,
 				EF7D17D924FCFF5200BD11C0 /* TotalCollectionViewCell.swift in Sources */,
 				EF72EA6424FBEF23001615E4 /* MienTrungNamViewController.swift in Sources */,
+				EF78F91824FE3510003FC516 /* TabbarMoThuongHomNay.swift in Sources */,
 				EFFCB8D724FBA619000A880D /* SceneDelegate.swift in Sources */,
-				EF7D17CD24FCF5DB00BD11C0 /* NavigationBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

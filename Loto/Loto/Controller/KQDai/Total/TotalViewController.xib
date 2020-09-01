@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TotalViewController" customModule="Loto" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="i1D-0J-Z29" id="Tp0-qK-hNd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,6 +24,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNG-Gh-1Rf">
                             <rect key="frame" x="10" y="8.5" width="39" height="30"/>
                             <state key="normal" title="Menu"/>
+                            <connections>
+                                <action selector="openMenu:" destination="-1" eventType="touchUpInside" id="1tE-Kw-SoA"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kết quả đài" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irc-4u-ddd">
                             <rect key="frame" x="145" y="13" width="85.5" height="21"/>
@@ -52,23 +56,17 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3l-EE-mgi">
                     <rect key="frame" x="0.0" y="47" width="375" height="620"/>
                     <subviews>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8Sj-HP-EjT">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i1D-0J-Z29">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ycb-3r-Bea">
-                                <size key="itemSize" width="128" height="128"/>
-                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            </collectionViewFlowLayout>
-                        </collectionView>
+                        </tableView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="8Sj-HP-EjT" secondAttribute="bottom" id="8Em-zo-IXd"/>
-                        <constraint firstItem="8Sj-HP-EjT" firstAttribute="top" secondItem="x3l-EE-mgi" secondAttribute="top" id="8JC-3x-mii"/>
-                        <constraint firstAttribute="trailing" secondItem="8Sj-HP-EjT" secondAttribute="trailing" id="GBc-c6-cjO"/>
-                        <constraint firstItem="8Sj-HP-EjT" firstAttribute="leading" secondItem="x3l-EE-mgi" secondAttribute="leading" id="ybi-1P-xTW"/>
+                        <constraint firstAttribute="trailing" secondItem="i1D-0J-Z29" secondAttribute="trailing" id="2A4-cR-HpI"/>
+                        <constraint firstAttribute="bottom" secondItem="i1D-0J-Z29" secondAttribute="bottom" id="58q-rA-bXp"/>
+                        <constraint firstItem="i1D-0J-Z29" firstAttribute="top" secondItem="x3l-EE-mgi" secondAttribute="top" id="jKX-UZ-3hf"/>
+                        <constraint firstItem="i1D-0J-Z29" firstAttribute="leading" secondItem="x3l-EE-mgi" secondAttribute="leading" id="soH-D3-oke"/>
                     </constraints>
                 </view>
             </subviews>
