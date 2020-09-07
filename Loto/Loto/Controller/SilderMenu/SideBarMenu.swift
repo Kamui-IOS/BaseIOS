@@ -63,5 +63,8 @@ class SideBarMenu: UIViewController {
     }
     
     @IBAction func TraCuuXoSo(_ sender: Any) {
+        let tracuuVC = TraCuuViewController()
+        tracuuVC.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(tracuuVC, animated: false)
     }
 }

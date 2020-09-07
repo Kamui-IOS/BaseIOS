@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFC8CB0A792D4EDB38BE683C /* libPods-Loto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABE0C9CEFFA958CEA71D97E /* libPods-Loto.a */; };
+		562C204884F376F7370B5E85 /* Pods_Loto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E37B644DC3E784AA7504D91 /* Pods_Loto.framework */; };
 		EF42CED824FD5C8B0056D8D1 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42CED724FD5C8B0056D8D1 /* TabbarViewController.swift */; };
 		EF42CEDB24FD68D90056D8D1 /* SideBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42CEDA24FD68D90056D8D1 /* SideBarMenu.swift */; };
 		EF42CEDD24FD68F40056D8D1 /* SideBarMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF42CEDC24FD68F40056D8D1 /* SideBarMenu.xib */; };
@@ -57,7 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2ABE0C9CEFFA958CEA71D97E /* libPods-Loto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Loto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E37B644DC3E784AA7504D91 /* Pods_Loto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		714936510DBAD84E8B1D7ACF /* Pods-Loto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loto.debug.xcconfig"; path = "Target Support Files/Pods-Loto/Pods-Loto.debug.xcconfig"; sourceTree = "<group>"; };
 		EF42CED724FD5C8B0056D8D1 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		EF42CEDA24FD68D90056D8D1 /* SideBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenu.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFC8CB0A792D4EDB38BE683C /* libPods-Loto.a in Frameworks */,
+				562C204884F376F7370B5E85 /* Pods_Loto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +125,7 @@
 		DCA87C210B314990E1709ADF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2ABE0C9CEFFA958CEA71D97E /* libPods-Loto.a */,
+				0E37B644DC3E784AA7504D91 /* Pods_Loto.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -358,6 +358,7 @@
 				EFFCB8CD24FBA619000A880D /* Sources */,
 				EFFCB8CE24FBA619000A880D /* Frameworks */,
 				EFFCB8CF24FBA619000A880D /* Resources */,
+				2FCA32A1C9C9167C544E3DBE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -432,6 +433,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2FCA32A1C9C9167C544E3DBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loto/Pods-Loto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loto/Pods-Loto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Loto/Pods-Loto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5A90B220FCA1A110DF282650 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

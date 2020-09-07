@@ -1,3 +1,5 @@
 target 'Loto' do
- pod 'SideMenu'
+use_frameworks!
+pod 'SideMenu'
+pod 'FSCalendar'
 end

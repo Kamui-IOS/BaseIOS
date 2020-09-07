@@ -24,12 +24,6 @@ class MienBacViewController: BaseViewController {
         self.collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "MienBacCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
     }
-
-    // MARK: - Action View Header
-    @IBAction func btnMenu(_ sender: UIButton) {
-        self.openMenu()
-    }
-
 }
 
 extension MienBacViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

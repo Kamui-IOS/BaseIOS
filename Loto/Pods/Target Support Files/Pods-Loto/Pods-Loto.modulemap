@@ -1,4 +1,4 @@
-module Pods_Loto {
+framework module Pods_Loto {
   umbrella header "Pods-Loto-umbrella.h"
 
   export *

@@ -34,6 +34,7 @@ class BaseViewController: UIViewController {
     }
     
     @objc func openMenu() {
+        navigationController?.popViewController(animated: true)
         present(menu!, animated: true, completion: nil)
     }
     
