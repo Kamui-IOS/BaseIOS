@@ -18,46 +18,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEL-Gs-3wr">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSC-Qu-h0C">
-                            <rect key="frame" x="10" y="8.5" width="34" height="30"/>
-                            <state key="normal" title="back"/>
-                            <connections>
-                                <action selector="backClick:" destination="-1" eventType="touchUpInside" id="zAN-ve-dPC"/>
-                            </connections>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kết quả đài" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eh1-gt-B2h">
-                            <rect key="frame" x="145" y="13" width="85.5" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ALe-So-muM">
-                            <rect key="frame" x="0.0" y="47" width="375" height="1"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="1" id="2Yt-bz-iL0"/>
-                            </constraints>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="ALe-So-muM" secondAttribute="trailing" id="3AY-IO-B7f"/>
-                        <constraint firstItem="ALe-So-muM" firstAttribute="leading" secondItem="WEL-Gs-3wr" secondAttribute="leading" id="4IC-O6-xvk"/>
-                        <constraint firstAttribute="height" constant="47" id="EDy-UB-36Y"/>
-                        <constraint firstItem="eh1-gt-B2h" firstAttribute="centerY" secondItem="WEL-Gs-3wr" secondAttribute="centerY" id="InW-ey-ZN4"/>
-                        <constraint firstItem="eh1-gt-B2h" firstAttribute="centerX" secondItem="WEL-Gs-3wr" secondAttribute="centerX" id="XTD-LW-ynd"/>
-                        <constraint firstItem="eSC-Qu-h0C" firstAttribute="leading" secondItem="WEL-Gs-3wr" secondAttribute="leading" constant="10" id="dXu-6Z-9bg"/>
-                        <constraint firstAttribute="bottom" secondItem="ALe-So-muM" secondAttribute="bottom" constant="-1" id="kC9-QE-q0L"/>
-                        <constraint firstItem="eSC-Qu-h0C" firstAttribute="centerY" secondItem="WEL-Gs-3wr" secondAttribute="centerY" id="qf3-ws-fHN"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72p-3h-ZG0">
-                    <rect key="frame" x="0.0" y="47" width="375" height="620"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wKE-Tb-mql">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="p9s-PO-bgF">
                                 <size key="itemSize" width="128" height="128"/>
@@ -78,13 +43,10 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="72p-3h-ZG0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AQ0-pP-YC6"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="72p-3h-ZG0" secondAttribute="trailing" id="JkU-4P-4Ew"/>
-                <constraint firstItem="WEL-Gs-3wr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XlH-KB-WS6"/>
-                <constraint firstItem="72p-3h-ZG0" firstAttribute="top" secondItem="WEL-Gs-3wr" secondAttribute="bottom" id="XoH-o0-9VQ"/>
-                <constraint firstItem="WEL-Gs-3wr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZZN-zs-BOT"/>
                 <constraint firstItem="72p-3h-ZG0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fGu-lQ-D6A"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="72p-3h-ZG0" secondAttribute="bottom" id="ujI-t6-fYg"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WEL-Gs-3wr" secondAttribute="trailing" id="vZ2-q1-9wt"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="93"/>

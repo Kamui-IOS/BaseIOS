@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailTotalViewController: BaseViewController {
+class DetailTotalViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -16,16 +16,18 @@ class DetailTotalViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
         setupCollectionView()
+        
     }
+    
+        override func viewWillLayoutSubviews() {
+            super.viewWillLayoutSubviews()
+            tabBarController?.tabBar.isHidden = true
+        }
     
     func setupCollectionView() {
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         self.collectionView.register(UINib(nibName: "TotalCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
-    }
-    
-    @IBAction func backClick(_ sender: Any) {
-        self.backViewController()
     }
 }
 

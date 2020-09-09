@@ -2,4 +2,5 @@ target 'Loto' do
 use_frameworks!
 pod 'SideMenu'
 pod 'FSCalendar'
+pod 'Firebase/Database'
 end

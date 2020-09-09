@@ -12,6 +12,7 @@ import SideMenu
 class BaseViewController: UIViewController {
 
     var menu: SideMenuNavigationController?
+    static var isCheck: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +30,19 @@ class BaseViewController: UIViewController {
     }
     
     func setLeftNavi() {
-        let leftButton = UIBarButtonItem(title: "Menu", style: .done, target: self, action: #selector(openMenu))
-        navigationItem.leftBarButtonItem = leftButton
+        
+        if BaseViewController.isCheck == true {
+            let leftButton = UIBarButtonItem(title: "Menu", style: .done, target: self, action: #selector(openMenu))
+            navigationItem.leftBarButtonItem = leftButton
+        }
+        else {
+            let leftButton = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(back))
+            navigationItem.leftBarButtonItem = leftButton
+        }
+    }
+    
+    @objc func search() {
+        
     }
     
     @objc func openMenu() {
@@ -38,8 +50,8 @@ class BaseViewController: UIViewController {
         present(menu!, animated: true, completion: nil)
     }
     
-    func backViewController() {
+    @objc func back() {
         dismiss(animated: true, completion: nil)
+        BaseViewController.isCheck = true
     }
-
 }

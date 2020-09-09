@@ -17,12 +17,21 @@ class MienBacViewController: BaseViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupCollection()
+        setupNavi()
     }
     
     func setupCollection() {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "MienBacCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
+    }
+    
+    func setupNavi() {
+        if SideBarMenu.isCheckSideMenu == 2 {
+            self.title = "Trực tiếp"
+        } else {
+            self.title = "Kết quả xổ số"
+        }
     }
 }
 

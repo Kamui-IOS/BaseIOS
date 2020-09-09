@@ -19,17 +19,17 @@ class TraCuuViewController: BaseViewController, FSCalendarDelegate {
         // Do any additional setup after loading the view.
         calendar.delegate = self
         calendar.scrollDirection = .vertical
+        self.title = "Tra cứu kết quả"
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let time = DateFormatter()
         time.dateFormat = "EEEE YYYY-MM-dd"
         print(time.string(from: date))
-        
         let tabbar = TabbarViewController()
-        
+        navigationController?.navigationBar.isHidden = true
+        BaseViewController.isCheck = false
         tabbar.modalPresentationStyle = .fullScreen
-        
         navigationController?.pushViewController(tabbar, animated: true)
     }
 

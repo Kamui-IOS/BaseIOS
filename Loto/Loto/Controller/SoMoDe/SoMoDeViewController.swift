@@ -17,15 +17,29 @@ class SoMoDeViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
         setupTableView()
+        setRightNavi()
+        self.title = "Hôm nay bạn mơ gì?"
+    }
+    
+    override func setLeftNavi() {
+        let leftButton = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(back))
+        navigationItem.leftBarButtonItem = leftButton
+    }
+    
+    func setRightNavi() {
+        let rightButton = UIBarButtonItem(title: "Search", style: .done, target: self, action: #selector(search))
+        navigationItem.rightBarButtonItem = rightButton
+    }
+    
+    override func back() {
+        dismiss(animated: true, completion: nil)
+        SideBarMenu.isCheckSideMenu = 0
     }
     
     func setupTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "SoMoDeTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-    }
-    override func setLeftNavi() {
-
     }
 }
 

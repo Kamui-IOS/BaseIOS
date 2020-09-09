@@ -9,7 +9,7 @@
 import UIKit
 
 class MienTrungNam2ItemCollectionViewCell: UICollectionViewCell {
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

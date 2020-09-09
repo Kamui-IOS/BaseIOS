@@ -8,9 +8,8 @@
 
 import UIKit
 
-class DetailSoiCauLotoViewController: BaseViewController {
+class DetailSoiCauLotoViewController: UIViewController {
 
-    @IBOutlet weak var titleNavi: UILabel!
     
     @IBOutlet weak var lotobachthu: UILabel!
     @IBOutlet weak var thamkhaoloto: UILabel!
@@ -22,15 +21,6 @@ class DetailSoiCauLotoViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setupNavi()
+        self.title = nameTitle
     }
-    
-    func setupNavi() {
-        self.titleNavi.text = nameTitle
-    }
-    
-    @IBAction func backClick(_ sender: Any) {
-        self.backViewController()
-    }
-    
 }

@@ -20,15 +20,16 @@ class TotalViewController: BaseViewController {
         setupTableView()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        tabBarController?.tabBar.isHidden = false
+    }
+    
     func setupTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "TotalTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
-    @IBAction func openMenu(_ sender: Any) {
-        self.openMenu()
-    }
-    
 }
 
 extension TotalViewController: UITableViewDataSource, UITableViewDelegate {
@@ -46,7 +47,7 @@ extension TotalViewController: UITableViewDataSource, UITableViewDelegate {
         print(indexPath.row)
         let detaiTotalVC = DetailTotalViewController()
         detaiTotalVC.modalPresentationStyle = .fullScreen
-        present(detaiTotalVC, animated: true, completion: nil)
+        navigationController?.pushViewController(detaiTotalVC, animated: true)
     }
     
 }

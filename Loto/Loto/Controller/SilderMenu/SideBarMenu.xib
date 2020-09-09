@@ -117,7 +117,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <connections>
                                 <action selector="KetQuaXoSo:" destination="-1" eventType="touchUpInside" id="J6x-to-cQ8"/>
-                                <action selector="TrucTiepXoSo:" destination="-1" eventType="touchUpInside" id="j46-qI-1Fy"/>
                             </connections>
                         </button>
                     </subviews>
@@ -155,7 +154,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <connections>
                                 <action selector="SoiCauLOTO188:" destination="-1" eventType="touchUpInside" id="MVD-lP-QRt"/>
-                                <action selector="TrucTiepXoSo:" destination="-1" eventType="touchUpInside" id="xhh-0t-GXg"/>
                             </connections>
                         </button>
                     </subviews>
@@ -193,7 +191,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <connections>
                                 <action selector="SoMoDe:" destination="-1" eventType="touchUpInside" id="5cN-0U-236"/>
-                                <action selector="TrucTiepXoSo:" destination="-1" eventType="touchUpInside" id="x7y-bG-jvI"/>
                             </connections>
                         </button>
                     </subviews>
@@ -231,7 +228,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <connections>
                                 <action selector="KetQuaDai:" destination="-1" eventType="touchUpInside" id="Sso-7z-WBb"/>
-                                <action selector="TrucTiepXoSo:" destination="-1" eventType="touchUpInside" id="gfn-aG-wyU"/>
                             </connections>
                         </button>
                     </subviews>
@@ -269,7 +265,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <connections>
                                 <action selector="MoThuongHomNay:" destination="-1" eventType="touchUpInside" id="QSS-xg-raQ"/>
-                                <action selector="TrucTiepXoSo:" destination="-1" eventType="touchUpInside" id="L4q-bG-Gh7"/>
                             </connections>
                         </button>
                     </subviews>
@@ -307,7 +302,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <connections>
                                 <action selector="TraCuuXoSo:" destination="-1" eventType="touchUpInside" id="mC2-cc-8LU"/>
-                                <action selector="TrucTiepXoSo:" destination="-1" eventType="touchUpInside" id="Wic-K2-CyM"/>
                             </connections>
                         </button>
                     </subviews>

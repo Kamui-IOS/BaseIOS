@@ -52,7 +52,7 @@ extension SoiCauLOTOViewController: UITableViewDataSource, UITableViewDelegate {
         let soiCauDetailVC = DetailSoiCauLotoViewController()
         soiCauDetailVC.nameTitle = data[indexPath.row]
         soiCauDetailVC.modalPresentationStyle = .fullScreen
-        present(soiCauDetailVC, animated: true, completion: nil)
+        navigationController?.pushViewController(soiCauDetailVC, animated: true)
     }
     
 }

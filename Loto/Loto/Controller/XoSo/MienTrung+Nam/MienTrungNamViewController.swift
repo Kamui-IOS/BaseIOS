@@ -16,6 +16,7 @@ class MienTrungNamViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
         setupCollection()
+        setupNavi()
     }
     
     func setupCollection() {
@@ -24,8 +25,12 @@ class MienTrungNamViewController: BaseViewController {
         self.collectionView.register(UINib(nibName: "MienTrungNam3ItemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
     }
     
-    @IBAction func btnMenu(_ sender: UIButton) {
-        self.openMenu()
+    func setupNavi() {
+        if SideBarMenu.isCheckSideMenu == 2 {
+            self.title = "Trực tiếp"
+        } else {
+            self.title = "Kết quả xổ số"
+        }
     }
 }
 

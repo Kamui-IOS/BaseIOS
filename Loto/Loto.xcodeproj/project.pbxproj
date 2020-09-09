@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		EF72EA6524FBEF23001615E4 /* MienTrungNamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */; };
 		EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */; };
 		EF737A9D24FC272100B31D48 /* MienBacCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF737A9B24FC272100B31D48 /* MienBacCollectionViewCell.xib */; };
+		EF77D1102508A7D00001A853 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF77D10F2508A7CF0001A853 /* GoogleService-Info.plist */; };
 		EF78F8FA24FDF828003FC516 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F8F924FDF828003FC516 /* BaseViewController.swift */; };
 		EF78F8FF24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F8FD24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift */; };
 		EF78F90024FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF78F8FE24FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib */; };
@@ -66,6 +67,7 @@
 		EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNamViewController.xib; sourceTree = "<group>"; };
 		EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienBacCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF737A9B24FC272100B31D48 /* MienBacCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienBacCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF77D10F2508A7CF0001A853 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF78F8F924FDF828003FC516 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EF78F8FD24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoiCauLOTOTableViewCell.swift; sourceTree = "<group>"; };
 		EF78F8FE24FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoiCauLOTOTableViewCell.xib; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 		EFFCB8D324FBA619000A880D /* Loto */ = {
 			isa = PBXGroup;
 			children = (
+				EF77D10F2508A7CF0001A853 /* GoogleService-Info.plist */,
 				EFFCB8D424FBA619000A880D /* AppDelegate.swift */,
 				EFFCB8D624FBA619000A880D /* SceneDelegate.swift */,
 				EFFCB8EC24FBA6CE000A880D /* Controller */,
@@ -427,6 +430,7 @@
 				EF7D17B024FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.xib in Resources */,
 				EF7D17AB24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib in Resources */,
 				EF42CEDD24FD68F40056D8D1 /* SideBarMenu.xib in Resources */,
+				EF77D1102508A7D00001A853 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,7 +651,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-.Loto";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lita.lixia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -665,7 +669,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-.Loto";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lita.lixia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
