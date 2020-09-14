@@ -146,21 +146,21 @@ class APIManager: NSObject {
 }
 
 extension APIManager {
-    func getXSMB(date: String ,completionHander: @escaping (SXMB) -> ()) {
+    func getXSMB(date: String ,completionHander: @escaping (Jackport?) -> ()) {
         let url = APIDefine.sxmbToday.url() + "\(date)"
         let paramJSON: String = ""
         
         
         request(urlString: url, paramJSON: paramJSON, headerString: GetHeader.header(), method: .get, completionHander: {(status, data) in
             if data == nil {
-                completionHander(SXMB())
+                completionHander(nil)
                 return
             }
             if data as? String == nil {
-                completionHander(SXMB())
+                completionHander(nil)
                 return
             }
-            completionHander(SXMB(JSONString: data as! String)!)
+            completionHander(Jackport(JSONString: data as! String))
         })
         
     }
