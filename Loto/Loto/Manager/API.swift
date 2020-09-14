@@ -24,7 +24,7 @@ fileprivate enum HTTPMethod: String {
 }
 
 fileprivate enum APIDefine: String {
-    case sxmbToday = "https://apix.ld6688.net/v1/lottery-result?date="
+    case sxmbToday = "https://lotto.lotusapi.com/lottery-results/public?date="
     
     func url() -> String {
         let HOST = ""
@@ -146,21 +146,32 @@ class APIManager: NSObject {
 }
 
 extension APIManager {
-    func getXSMB(date: String ,completionHander: @escaping (SXMB) -> ()) {
+    func getXSMB(date: String ,completionHander: @escaping ([Jackport]?) -> ()) {
         let url = APIDefine.sxmbToday.url() + "\(date)"
         let paramJSON: String = ""
-        
-        
+        var result = [Jackport]()
         request(urlString: url, paramJSON: paramJSON, headerString: GetHeader.header(), method: .get, completionHander: {(status, data) in
             if data == nil {
-                completionHander(SXMB())
+                completionHander(nil)
                 return
             }
-            if data as? String == nil {
-                completionHander(SXMB())
-                return
+            guard let dataDic = (data as? String) else { return }
+            let datas = dataDic.data(using: .utf8)!
+            do {
+                if let jsonArray = try JSONSerialization.jsonObject(with: datas, options : .allowFragments) as? [Dictionary<String,Any>]
+                {
+                    for item in jsonArray {
+                        if let jackport = Jackport(JSON: item) {
+                            result.append(jackport)
+                        }
+                    }
+                } else {
+                    print("1235")
+                }
+            } catch let error as NSError {
+                print(error)
             }
-            completionHander(SXMB(JSONString: data as! String)!)
+            completionHander(result)
         })
         
     }

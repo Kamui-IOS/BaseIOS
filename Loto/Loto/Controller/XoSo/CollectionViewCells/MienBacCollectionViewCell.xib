@@ -2125,6 +2125,7 @@
             </collectionViewCellContentView>
             <connections>
                 <outlet property="dacBietLb" destination="A4t-ka-oB1" id="UzN-S2-20Y"/>
+                <outlet property="dau_0" destination="Nwv-S8-mma" id="dka-QN-X5u"/>
                 <outlet property="dau_00Lb" destination="Nwv-S8-mma" id="zmc-73-1nB"/>
                 <outlet property="dau_01Lb" destination="Z1c-r8-4g4" id="ZEk-GC-w4Q"/>
                 <outlet property="dau_02Lb" destination="pg9-DZ-jGH" id="w2X-Ln-2Rg"/>
@@ -2135,7 +2136,17 @@
                 <outlet property="dau_07Lb" destination="xss-12-LKJ" id="Bor-pd-Dkd"/>
                 <outlet property="dau_08Lb" destination="Nt5-wT-Pxh" id="RqK-jc-Fxm"/>
                 <outlet property="dau_09Lb" destination="FQa-F4-MCB" id="fjL-SS-EMV"/>
+                <outlet property="dau_1" destination="Z1c-r8-4g4" id="giW-R8-JoJ"/>
+                <outlet property="dau_2" destination="pg9-DZ-jGH" id="PXx-rC-Dia"/>
+                <outlet property="dau_3" destination="OF3-kB-Kah" id="Izp-vD-12c"/>
+                <outlet property="dau_4" destination="uIe-n9-AIs" id="JYx-xB-TmD"/>
+                <outlet property="dau_5" destination="LUz-rR-Mkw" id="4hC-fg-Nfn"/>
+                <outlet property="dau_6" destination="FwU-sV-ACP" id="kjk-Mc-ezP"/>
+                <outlet property="dau_7" destination="xss-12-LKJ" id="yxr-Zu-Fco"/>
+                <outlet property="dau_8" destination="Nt5-wT-Pxh" id="5Dg-1q-2NN"/>
+                <outlet property="dau_9" destination="FQa-F4-MCB" id="9x9-oL-A1h"/>
                 <outlet property="days" destination="Glr-c9-1bu" id="Fxn-FX-9Cz"/>
+                <outlet property="duoi_0" destination="5Xk-VA-f1g" id="V4z-iL-JEz"/>
                 <outlet property="duoi_00Lb" destination="5Xk-VA-f1g" id="95v-Ds-tO8"/>
                 <outlet property="duoi_01Lb" destination="0ik-S6-pld" id="lIl-nm-Aaz"/>
                 <outlet property="duoi_02Lb" destination="mCf-85-51s" id="cza-b9-VYX"/>
@@ -2146,6 +2157,15 @@
                 <outlet property="duoi_07Lb" destination="9zh-Me-p3O" id="En9-0S-YIz"/>
                 <outlet property="duoi_08Lb" destination="W8Y-Y3-Aty" id="Z0x-vH-OyX"/>
                 <outlet property="duoi_09Lb" destination="zeX-MM-fKv" id="qHN-Ce-Q0u"/>
+                <outlet property="duoi_1" destination="0ik-S6-pld" id="rnX-s2-S8V"/>
+                <outlet property="duoi_2" destination="mCf-85-51s" id="dSF-FO-wbl"/>
+                <outlet property="duoi_3" destination="36b-rd-sET" id="Lyt-B7-BKk"/>
+                <outlet property="duoi_4" destination="YCB-dp-VJA" id="9il-lq-3DF"/>
+                <outlet property="duoi_5" destination="dx2-md-c1d" id="rlU-U6-nMB"/>
+                <outlet property="duoi_6" destination="KCX-Ao-c5E" id="f0Z-Cv-4nR"/>
+                <outlet property="duoi_7" destination="9zh-Me-p3O" id="qCe-Zy-rnt"/>
+                <outlet property="duoi_8" destination="W8Y-Y3-Aty" id="8of-Iv-Co6"/>
+                <outlet property="duoi_9" destination="zeX-MM-fKv" id="ouG-Yc-Aqf"/>
                 <outlet property="g1Lb" destination="bCx-8d-OvO" id="ejf-kk-XkM"/>
                 <outlet property="g2_01Lb" destination="Aan-AN-dor" id="cXq-Vh-dWW"/>
                 <outlet property="g2_02Lb" destination="eMh-Af-lW5" id="gll-nR-26h"/>

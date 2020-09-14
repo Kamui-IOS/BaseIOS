@@ -14,6 +14,7 @@
 		EF7136A3250F30F50092FA5C /* SXMB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136A2250F30F50092FA5C /* SXMB.swift */; };
 		EF7136AD250F50510092FA5C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136AC250F50510092FA5C /* API.swift */; };
 		EF7136AF250F50730092FA5C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136AE250F50730092FA5C /* Reachability.swift */; };
+		EF7136B1250F72CE0092FA5C /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136B0250F72CE0092FA5C /* ExtensionData.swift */; };
 		EF72EA6424FBEF23001615E4 /* MienTrungNamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF72EA6224FBEF23001615E4 /* MienTrungNamViewController.swift */; };
 		EF72EA6524FBEF23001615E4 /* MienTrungNamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */; };
 		EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */; };
@@ -69,6 +70,7 @@
 		EF7136A2250F30F50092FA5C /* SXMB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXMB.swift; sourceTree = "<group>"; };
 		EF7136AC250F50510092FA5C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		EF7136AE250F50730092FA5C /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		EF7136B0250F72CE0092FA5C /* ExtensionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionData.swift; sourceTree = "<group>"; };
 		EF72EA6224FBEF23001615E4 /* MienTrungNamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNamViewController.swift; sourceTree = "<group>"; };
 		EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNamViewController.xib; sourceTree = "<group>"; };
 		EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienBacCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 			children = (
 				EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */,
 				EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */,
+				EF7136B0250F72CE0092FA5C /* ExtensionData.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				EF7D17D424FCFC7000BD11C0 /* TotalViewController.swift in Sources */,
 				EF42CED824FD5C8B0056D8D1 /* TabbarViewController.swift in Sources */,
 				EF7D17B324FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.swift in Sources */,
+				EF7136B1250F72CE0092FA5C /* ExtensionData.swift in Sources */,
 				EF7D17BC24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.swift in Sources */,
 				EF7D17AA24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift in Sources */,
 				EFFCB8EA24FBA6C6000A880D /* RegisterViewController.swift in Sources */,

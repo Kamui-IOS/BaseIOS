@@ -17,7 +17,10 @@ class MienBacViewController: BaseViewController {
         // Do any additional setup after loading the view.
         setupCollection()
         setupNavi()
+        getKQToday()
     }
+    
+    var dataToday: Jackport?
     
     func setupCollection() {
         self.collectionView.delegate = self
@@ -33,10 +36,34 @@ class MienBacViewController: BaseViewController {
         }
     }
     
+    func getDate(_ isCheck: Bool) -> String
+    {
+        if isCheck {
+            let date = Date.yesterday
+            let dateformat = DateFormatter()
+            dateformat.dateFormat = "YYYY-MM-dd"
+            let dateString = dateformat.string(from: date)
+            return dateString
+        } else {
+            let date = Date.yesterday
+            let dateformat = DateFormatter()
+            dateformat.dateFormat = "EEEE dd/MM/YYY"
+            let dateString = dateformat.string(from: date)
+            return dateString
+        }
+    }
+    
     func getKQToday() {
         
-        APIManager.share.getXSMB(date: <#T##String#>, completionHander: {(SXMB) in
-            
+        APIManager.share.getXSMB(date: getDate(true), completionHander: {(Jackport) in
+            if let data = Jackport {
+                for index in 0..<data.count {
+                    if data[index].type == .hanoi {
+                        self.dataToday = data[index]
+                        self.collectionView.reloadData()
+                    }
+                }
+            }
         })
     }
 }
@@ -49,7 +76,11 @@ extension MienBacViewController: UICollectionViewDelegate, UICollectionViewDataS
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MienBacCollectionViewCell
-        cell.loadDataCells()
+        
+        if let data = self.dataToday {
+            cell.loadDataCells(date: getDate(false),data: data)
+        }
+        
         return cell
     }
     
