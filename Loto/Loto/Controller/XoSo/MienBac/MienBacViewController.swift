@@ -35,9 +35,9 @@ class MienBacViewController: BaseViewController {
     
     func getKQToday() {
         
-        APIManager.share.getXSMB(date: <#T##String#>, completionHander: {(SXMB) in
+//        APIManager.share.getXSMB(date: <#T##String#>, completionHander: {(SXMB) in
             
-        })
+//        })/
     }
 }
 
