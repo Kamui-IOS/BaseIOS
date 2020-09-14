@@ -3,4 +3,5 @@ use_frameworks!
 pod 'SideMenu'
 pod 'FSCalendar'
 pod 'Firebase/Database'
+pod 'ObjectMapper'
 end

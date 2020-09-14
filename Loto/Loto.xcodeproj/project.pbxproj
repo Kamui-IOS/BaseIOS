@@ -11,6 +11,9 @@
 		EF42CED824FD5C8B0056D8D1 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42CED724FD5C8B0056D8D1 /* TabbarViewController.swift */; };
 		EF42CEDB24FD68D90056D8D1 /* SideBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42CEDA24FD68D90056D8D1 /* SideBarMenu.swift */; };
 		EF42CEDD24FD68F40056D8D1 /* SideBarMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF42CEDC24FD68F40056D8D1 /* SideBarMenu.xib */; };
+		EF7136A3250F30F50092FA5C /* SXMB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136A2250F30F50092FA5C /* SXMB.swift */; };
+		EF7136AD250F50510092FA5C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136AC250F50510092FA5C /* API.swift */; };
+		EF7136AF250F50730092FA5C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136AE250F50730092FA5C /* Reachability.swift */; };
 		EF72EA6424FBEF23001615E4 /* MienTrungNamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF72EA6224FBEF23001615E4 /* MienTrungNamViewController.swift */; };
 		EF72EA6524FBEF23001615E4 /* MienTrungNamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */; };
 		EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */; };
@@ -63,6 +66,9 @@
 		EF42CED724FD5C8B0056D8D1 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		EF42CEDA24FD68D90056D8D1 /* SideBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenu.swift; sourceTree = "<group>"; };
 		EF42CEDC24FD68F40056D8D1 /* SideBarMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideBarMenu.xib; sourceTree = "<group>"; };
+		EF7136A2250F30F50092FA5C /* SXMB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXMB.swift; sourceTree = "<group>"; };
+		EF7136AC250F50510092FA5C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		EF7136AE250F50730092FA5C /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		EF72EA6224FBEF23001615E4 /* MienTrungNamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNamViewController.swift; sourceTree = "<group>"; };
 		EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNamViewController.xib; sourceTree = "<group>"; };
 		EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienBacCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -147,6 +153,31 @@
 				EF42CEDC24FD68F40056D8D1 /* SideBarMenu.xib */,
 			);
 			path = SilderMenu;
+			sourceTree = "<group>";
+		};
+		EF7136A0250F308C0092FA5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF7136A1250F309E0092FA5C /* SXMB */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF7136A1250F309E0092FA5C /* SXMB */ = {
+			isa = PBXGroup;
+			children = (
+				EF7136A2250F30F50092FA5C /* SXMB.swift */,
+			);
+			path = SXMB;
+			sourceTree = "<group>";
+		};
+		EF7136AB250F50390092FA5C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EF7136AC250F50510092FA5C /* API.swift */,
+				EF7136AE250F50730092FA5C /* Reachability.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		EF78F90524FE28C3003FC516 /* TableViewCell */ = {
@@ -275,9 +306,11 @@
 		EFFCB8D324FBA619000A880D /* Loto */ = {
 			isa = PBXGroup;
 			children = (
+				EF7136AB250F50390092FA5C /* Manager */,
 				EF77D10F2508A7CF0001A853 /* GoogleService-Info.plist */,
 				EFFCB8D424FBA619000A880D /* AppDelegate.swift */,
 				EFFCB8D624FBA619000A880D /* SceneDelegate.swift */,
+				EF7136A0250F308C0092FA5C /* Model */,
 				EFFCB8EC24FBA6CE000A880D /* Controller */,
 				EFF6FE2B24FBC8490062F307 /* Extension */,
 				EFFCB8DD24FBA61B000A880D /* Assets.xcassets */,
@@ -487,8 +520,10 @@
 				EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */,
 				EF7D17C724FCF06D00BD11C0 /* SoMoDeViewController.swift in Sources */,
 				EF78F91C24FE3894003FC516 /* TraCuuViewController.swift in Sources */,
+				EF7136AD250F50510092FA5C /* API.swift in Sources */,
 				EF78F90824FE28E4003FC516 /* TotalTableViewCell.swift in Sources */,
 				EFFCB8F424FBA93F000A880D /* MienBacViewController.swift in Sources */,
+				EF7136A3250F30F50092FA5C /* SXMB.swift in Sources */,
 				EF78F90324FE0FDC003FC516 /* SoMoDeTableViewCell.swift in Sources */,
 				EF7D17B824FCDEEF00BD11C0 /* SoiCauLOTOViewController.swift in Sources */,
 				EF7D17AF24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift in Sources */,
@@ -497,6 +532,7 @@
 				EF42CEDB24FD68D90056D8D1 /* SideBarMenu.swift in Sources */,
 				EF78F91624FE3500003FC516 /* TabbarKQDai.swift in Sources */,
 				EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */,
+				EF7136AF250F50730092FA5C /* Reachability.swift in Sources */,
 				EFF6FE2D24FBC8820062F307 /* ExtensionViewController.swift in Sources */,
 				EF7D17D424FCFC7000BD11C0 /* TotalViewController.swift in Sources */,
 				EF42CED824FD5C8B0056D8D1 /* TabbarViewController.swift in Sources */,

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SideMenu
 
 class MienBacViewController: BaseViewController {
 
@@ -32,6 +31,13 @@ class MienBacViewController: BaseViewController {
         } else {
             self.title = "Kết quả xổ số"
         }
+    }
+    
+    func getKQToday() {
+        
+        APIManager.share.getXSMB(date: <#T##String#>, completionHander: {(SXMB) in
+            
+        })
     }
 }
 

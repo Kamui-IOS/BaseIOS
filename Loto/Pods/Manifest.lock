@@ -29,12 +29,14 @@ PODS:
     - nanopb/encode (= 1.30906.0)
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
+  - ObjectMapper (4.2.0)
   - PromisesObjC (1.2.10)
   - SideMenu (6.4.9)
 
 DEPENDENCIES:
   - Firebase/Database
   - FSCalendar
+  - ObjectMapper
   - SideMenu
 
 SPEC REPOS:
@@ -48,6 +50,7 @@ SPEC REPOS:
     - GoogleUtilities
     - leveldb-library
     - nanopb
+    - ObjectMapper
     - PromisesObjC
     - SideMenu
 
@@ -61,9 +64,10 @@ SPEC CHECKSUMS:
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   SideMenu: 8ef57a3cfc024a2d3fc1c036c7fe98537baec9e0
 
-PODFILE CHECKSUM: 6dd555088b198fd1d2bf517d0fd8699575ddca4e
+PODFILE CHECKSUM: b3fa8f336e48035850eb2cd3dde1de144785008b
 
 COCOAPODS: 1.9.3
