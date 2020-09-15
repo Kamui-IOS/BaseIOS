@@ -9,8 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SoMoDeViewController" customModule="Loto" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="IaW-G4-RDo" id="9Ll-i1-YmI"/>
+                <outlet property="numberLabel" destination="J8f-Mi-VUF" id="JZM-Ig-40p"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewPlayer" destination="Tup-Iw-CFa" id="yVI-Bo-Ml4"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,17 +19,38 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IaW-G4-RDo">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tup-Iw-CFa">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                </tableView>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Lxt-oI-XpY"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8f-Mi-VUF">
+                    <rect key="frame" x="166.5" y="230" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vr8-do-QLv">
+                    <rect key="frame" x="159.5" y="301" width="56" height="30"/>
+                    <state key="normal" title="Quay số">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="quaySo:" destination="-1" eventType="touchUpInside" id="qRO-h1-qIf"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="IaW-G4-RDo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6bw-Nk-wao"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IaW-G4-RDo" secondAttribute="bottom" id="AIc-FJ-r5A"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IaW-G4-RDo" secondAttribute="trailing" id="BjQ-Y3-D9k"/>
-                <constraint firstItem="IaW-G4-RDo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="V1i-6y-dxb"/>
+                <constraint firstItem="Tup-Iw-CFa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7xV-oY-rlf"/>
+                <constraint firstItem="J8f-Mi-VUF" firstAttribute="top" secondItem="Tup-Iw-CFa" secondAttribute="bottom" constant="30" id="Ekv-dQ-xBD"/>
+                <constraint firstItem="Vr8-do-QLv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KWy-uK-Yj6"/>
+                <constraint firstItem="J8f-Mi-VUF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N9E-fL-pgj"/>
+                <constraint firstItem="Tup-Iw-CFa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PkY-7j-fIJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tup-Iw-CFa" secondAttribute="trailing" id="XP8-hp-8dS"/>
+                <constraint firstItem="Vr8-do-QLv" firstAttribute="top" secondItem="J8f-Mi-VUF" secondAttribute="bottom" constant="50" id="Xcs-Hl-Aoe"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="114.69265367316342"/>

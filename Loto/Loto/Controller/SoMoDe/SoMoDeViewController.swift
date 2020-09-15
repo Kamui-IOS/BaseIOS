@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class SoMoDeViewController: BaseViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var viewPlayer: UIView!
+    @IBOutlet weak var numberLabel: UILabel!
+    var player: AVPlayer!
+    var avpController = AVPlayerViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +23,7 @@ class SoMoDeViewController: BaseViewController {
         // Do any additional setup after loading the view.
         setupTableView()
         setRightNavi()
-        self.title = "Hôm nay bạn mơ gì?"
+        self.title = "Con số may mắn"
     }
     
     override func setLeftNavi() {
@@ -37,22 +42,30 @@ class SoMoDeViewController: BaseViewController {
     }
     
     func setupTableView() {
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.tableView.register(UINib(nibName: "SoMoDeTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        
+        self.numberLabel.text = "Con số may mắn là: "
+        
+        guard let path = Bundle.main.path(forResource: "roulette_ball_v2_compress", ofType:"mp4") else {
+            print("video.m4v not found")
+            return
+        }
+        player = AVPlayer(url: URL(fileURLWithPath: path))
+
+        avpController.player = player
+
+        avpController.view.frame.size.height = viewPlayer.frame.size.height
+
+        avpController.view.frame.size.width = viewPlayer.frame.size.width
+
+        self.addChild(avpController)
+        self.viewPlayer.addSubview(avpController.view)
+        player.play()
+
+    }
+    
+    @IBAction func quaySo(_ sender: Any) {
+        let number = Int.random(in: 00...99)
+        self.numberLabel.text = "Con số may mắn là: " + "\(number)"
     }
 }
 
-extension SoMoDeViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SoMoDeTableViewCell
-        cell.loadDataCell()
-        return cell
-    }
-    
-    
-}
