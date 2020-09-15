@@ -11,12 +11,16 @@ import UIKit
 class MienTrungNamViewController: BaseViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var dataToday: [Jackport]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setupCollection()
         setupNavi()
+        getKQToday()
     }
     
     func setupCollection() {
@@ -32,6 +36,37 @@ class MienTrungNamViewController: BaseViewController {
             self.title = "Kết quả xổ số"
         }
     }
+    
+    func getDate(_ isCheck: Bool) -> String
+    {
+        if isCheck {
+            let date = Date.yesterday
+            let dateformat = DateFormatter()
+            dateformat.dateFormat = "YYYY-MM-dd"
+            let dateString = dateformat.string(from: date)
+            return dateString
+        } else {
+            let date = Date.yesterday
+            let dateformat = DateFormatter()
+            dateformat.dateFormat = "EEEE dd/MM/YYY"
+            let dateString = dateformat.string(from: date)
+            return dateString
+        }
+    }
+    
+    func getKQToday() {
+           
+           APIManager.share.getXSMB(date: getDate(true), completionHander: {(Jackport) in
+               if let data = Jackport {
+                   for index in 0..<data.count {
+                    if data[index].type != .hanoi && data[index].type != nil {
+                            self.dataToday?.append(data[index])
+                            self.collectionView.reloadData()
+                       }
+                   }
+               }
+           })
+       }
 }
 
 extension MienTrungNamViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
