@@ -20,7 +20,7 @@ struct Jackport: Mappable {
     var fiveth: [String]?
     var sixth: [String]?
     var seventh: [String]?
-    var eighth: [String]?
+    var eighth: String?
     
     init(map: Map) {
     }

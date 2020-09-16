@@ -87,6 +87,7 @@ class MienBacCollectionViewCell: UICollectionViewCell {
     
     
     var dataLoto: [String] = [""]
+    var dauduoi: DauDuoiLoto?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -153,11 +154,16 @@ class MienBacCollectionViewCell: UICollectionViewCell {
         self.dataLoto.append(data.seventh?[2] ?? "")
         self.dataLoto.append(data.seventh?[3] ?? "")
 
-        loadDataLoto(data: self.dataLoto)
+        
     }
     
-    func loadDataLoto(data: [String]) {
+    func loto(str: String) {
+        let start = str.index(str.endIndex, offsetBy: -2)
+        let end = str.index(str.endIndex, offsetBy: 0)
+        let range = start..<end
+        let value = str[range]
         
+        DauDuoiLoto(loto: String(value))
     }
 
 }

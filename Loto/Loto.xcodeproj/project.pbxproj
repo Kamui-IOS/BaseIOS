@@ -48,6 +48,7 @@
 		EF7D17D524FCFC7000BD11C0 /* TotalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17D324FCFC7000BD11C0 /* TotalViewController.xib */; };
 		EF7D17D924FCFF5200BD11C0 /* TotalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17D724FCFF5200BD11C0 /* TotalCollectionViewCell.swift */; };
 		EF7D17DA24FCFF5200BD11C0 /* TotalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17D824FCFF5200BD11C0 /* TotalCollectionViewCell.xib */; };
+		EFD497572511A86000821553 /* DauDuoiLoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD497562511A86000821553 /* DauDuoiLoto.swift */; };
 		EFF6FE2D24FBC8820062F307 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */; };
 		EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */; };
 		EFFCB8D524FBA619000A880D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCB8D424FBA619000A880D /* AppDelegate.swift */; };
@@ -103,6 +104,7 @@
 		EF7D17D324FCFC7000BD11C0 /* TotalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalViewController.xib; sourceTree = "<group>"; };
 		EF7D17D724FCFF5200BD11C0 /* TotalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF7D17D824FCFF5200BD11C0 /* TotalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalCollectionViewCell.xib; sourceTree = "<group>"; };
+		EFD497562511A86000821553 /* DauDuoiLoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DauDuoiLoto.swift; sourceTree = "<group>"; };
 		EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionApplication.swift; sourceTree = "<group>"; };
 		EFFCB8D124FBA619000A880D /* Loto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				EF7136A2250F30F50092FA5C /* SXMB.swift */,
+				EFD497562511A86000821553 /* DauDuoiLoto.swift */,
 			);
 			path = SXMB;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF78F91F24FE463F003FC516 /* BaseNavigation.swift in Sources */,
+				EFD497572511A86000821553 /* DauDuoiLoto.swift in Sources */,
 				EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */,
 				EF7D17C724FCF06D00BD11C0 /* SoMoDeViewController.swift in Sources */,
 				EF78F91C24FE3894003FC516 /* TraCuuViewController.swift in Sources */,

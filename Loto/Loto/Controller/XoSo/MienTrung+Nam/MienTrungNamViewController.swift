@@ -12,7 +12,8 @@ class MienTrungNamViewController: BaseViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var dataToday: [Jackport]?
+    var dataToday = [Jackport]()
+    var isCheckCell = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,8 @@ class MienTrungNamViewController: BaseViewController {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "MienTrungNam3ItemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
+        self.collectionView.register(UINib(nibName: "MienTrungNam4ItemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cells")
+
     }
     
     func setupNavi() {
@@ -60,10 +63,11 @@ class MienTrungNamViewController: BaseViewController {
                if let data = Jackport {
                    for index in 0..<data.count {
                     if data[index].type != .hanoi && data[index].type != nil {
-                            self.dataToday?.append(data[index])
-                            self.collectionView.reloadData()
+                            self.dataToday.append(data[index])
+                            self.isCheckCell = index + 1
                        }
                    }
+                self.collectionView.reloadData()
                }
            })
        }
@@ -75,9 +79,17 @@ extension MienTrungNamViewController: UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MienTrungNam3ItemCollectionViewCell
-//        cell.loadDataCells()
-        return cell
+        if self.isCheckCell == 4 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cells", for: indexPath) as! MienTrungNam4ItemCollectionViewCell
+            
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MienTrungNam3ItemCollectionViewCell
+            if self.dataToday.count != 0 {
+                cell.loadCell(date: getDate(false), data: self.dataToday)
+            }
+            return cell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

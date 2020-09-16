@@ -2456,6 +2456,96 @@
                 <constraint firstItem="W0B-nu-dt0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mvC-QC-o2U"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="city_01" destination="4j5-xO-3YC" id="EAx-Xi-BXI"/>
+                <outlet property="city_02" destination="tqF-3p-iYC" id="Qnh-dq-gyS"/>
+                <outlet property="city_03" destination="IBp-C6-xXT" id="uaF-HC-44V"/>
+                <outlet property="dau_01" destination="xRS-lh-ABU" id="FFl-FH-vFM"/>
+                <outlet property="dau_02" destination="3rW-1d-tky" id="t8b-DP-Rnp"/>
+                <outlet property="dau_03" destination="MAh-Gn-puV" id="tOF-ZN-ArZ"/>
+                <outlet property="dau_11" destination="6aL-qy-scp" id="nbm-cc-OmF"/>
+                <outlet property="dau_12" destination="b8N-ny-HFZ" id="KMu-oi-xn8"/>
+                <outlet property="dau_13" destination="1DE-9Q-rEH" id="AtD-F4-TLq"/>
+                <outlet property="dau_21" destination="4S5-np-0B0" id="7f1-Vc-Gyo"/>
+                <outlet property="dau_22" destination="kZp-MK-INE" id="9ml-sg-BNQ"/>
+                <outlet property="dau_23" destination="SXt-mU-WNX" id="Avw-Mc-iLc"/>
+                <outlet property="dau_31" destination="IDv-Di-JFQ" id="8eS-ye-qDy"/>
+                <outlet property="dau_32" destination="0jR-GL-5VQ" id="2JL-Ot-S13"/>
+                <outlet property="dau_33" destination="NBW-c0-lw2" id="boo-gk-c4I"/>
+                <outlet property="dau_41" destination="vYe-tM-T2r" id="lK3-Xk-jfc"/>
+                <outlet property="dau_42" destination="Ut5-9M-L0d" id="8Om-t7-xah"/>
+                <outlet property="dau_43" destination="KAW-XZ-Dy3" id="hvN-NZ-0WF"/>
+                <outlet property="dau_51" destination="rMc-Ld-vNT" id="Lkm-VX-7UF"/>
+                <outlet property="dau_52" destination="C8S-T7-KBD" id="FC2-vJ-h8o"/>
+                <outlet property="dau_53" destination="vTc-Zk-h7H" id="Av8-jj-gwY"/>
+                <outlet property="dau_61" destination="KcN-ot-0kw" id="pIC-r4-1Mx"/>
+                <outlet property="dau_62" destination="QeG-G1-N8I" id="yQ8-zD-VyP"/>
+                <outlet property="dau_63" destination="GwT-Iz-fza" id="ryt-Fr-YAD"/>
+                <outlet property="dau_71" destination="o9e-za-RJZ" id="Dsu-ws-obu"/>
+                <outlet property="dau_72" destination="vya-hV-el8" id="Abl-pH-VPu"/>
+                <outlet property="dau_73" destination="6sb-yz-ScV" id="Ts2-Qr-KUk"/>
+                <outlet property="dau_81" destination="h29-Ln-DG6" id="eky-7c-lIn"/>
+                <outlet property="dau_82" destination="Bhs-Ge-GXY" id="vZT-66-6YL"/>
+                <outlet property="dau_83" destination="PaM-zd-H9B" id="g2j-uz-Rlq"/>
+                <outlet property="dau_91" destination="GDY-fS-kn8" id="6Xl-4H-ogO"/>
+                <outlet property="dau_92" destination="KgR-9Q-7oN" id="4uY-om-k1P"/>
+                <outlet property="dau_93" destination="h3V-nB-70p" id="h1G-OR-6rh"/>
+                <outlet property="days" destination="Msy-kS-I7w" id="vlE-4O-nlY"/>
+                <outlet property="db_01" destination="u9a-IZ-FJp" id="34D-1w-A1Q"/>
+                <outlet property="db_02" destination="Wdt-Xb-NFJ" id="eDq-qk-FKi"/>
+                <outlet property="db_03" destination="eNf-jB-MRo" id="LHK-JQ-dG0"/>
+                <outlet property="g1_01" destination="QhG-Rd-eUI" id="CoN-0Y-JLo"/>
+                <outlet property="g1_02" destination="lwB-wC-Y8c" id="txs-B9-A3F"/>
+                <outlet property="g1_03" destination="jP4-ZL-En6" id="b1p-cf-17P"/>
+                <outlet property="g2_01" destination="Ky1-pB-vi3" id="HpW-GH-oXJ"/>
+                <outlet property="g2_02" destination="bSb-VP-hlf" id="w9r-Wa-ayQ"/>
+                <outlet property="g2_03" destination="FLY-BB-gMW" id="mfk-0N-Ll4"/>
+                <outlet property="g3_011" destination="uYi-mh-0Eq" id="dcs-kO-qMM"/>
+                <outlet property="g3_012" destination="eKE-Am-b6F" id="jDa-0u-JrK"/>
+                <outlet property="g3_021" destination="Rz1-1U-9ot" id="1wq-Ba-op5"/>
+                <outlet property="g3_022" destination="7YL-5t-LIY" id="2d3-nH-1Qh"/>
+                <outlet property="g3_031" destination="UEc-Oh-eXV" id="Cix-vZ-cTh"/>
+                <outlet property="g3_032" destination="J8g-ML-vKm" id="jGM-Qo-Lge"/>
+                <outlet property="g4_011" destination="EcI-Se-Dok" id="5ba-zE-Ald"/>
+                <outlet property="g4_012" destination="iJz-se-XIG" id="MKq-vu-IcN"/>
+                <outlet property="g4_013" destination="fuE-KR-bD0" id="kbA-8f-3HE"/>
+                <outlet property="g4_014" destination="NDs-qg-uGG" id="fF5-rl-jde"/>
+                <outlet property="g4_015" destination="J1l-Ij-3yZ" id="W9x-3q-KdR"/>
+                <outlet property="g4_016" destination="Lsf-b3-e7N" id="QQU-iR-RBe"/>
+                <outlet property="g4_017" destination="G23-5j-T9c" id="tMl-7D-HWO"/>
+                <outlet property="g4_021" destination="PAH-qM-KGp" id="yfB-D0-VzH"/>
+                <outlet property="g4_022" destination="f3J-D0-7aO" id="VYR-b9-Mv1"/>
+                <outlet property="g4_023" destination="Xnq-3z-hpJ" id="rth-Zs-kgD"/>
+                <outlet property="g4_024" destination="tbv-ld-XNb" id="ywm-FB-xdZ"/>
+                <outlet property="g4_025" destination="cfJ-Zf-McJ" id="rpe-PT-Pih"/>
+                <outlet property="g4_026" destination="vt5-GW-DHZ" id="Ecf-C8-p8U"/>
+                <outlet property="g4_027" destination="bpY-gw-f8b" id="e5w-Ee-zRm"/>
+                <outlet property="g4_031" destination="8dG-4g-sZI" id="EYZ-d0-Kgm"/>
+                <outlet property="g4_032" destination="cva-tG-h0X" id="YzX-8e-2pl"/>
+                <outlet property="g4_033" destination="oth-OM-v76" id="dMt-z5-EIX"/>
+                <outlet property="g4_034" destination="2y0-XU-Nxw" id="H20-rr-gCw"/>
+                <outlet property="g4_035" destination="IQF-cu-iB6" id="IYL-1C-H8x"/>
+                <outlet property="g4_036" destination="oga-45-MNg" id="its-33-qdG"/>
+                <outlet property="g4_037" destination="5Py-it-5YD" id="VWA-lX-1MV"/>
+                <outlet property="g5_01" destination="ts9-Ag-MM7" id="TaP-Ln-xqU"/>
+                <outlet property="g5_02" destination="lhS-RA-bSb" id="KNI-lO-CnL"/>
+                <outlet property="g5_03" destination="U2C-Oc-8Yg" id="nAt-3w-wVC"/>
+                <outlet property="g6_011" destination="Dzu-Ju-5WH" id="EKA-vD-q7o"/>
+                <outlet property="g6_012" destination="GJd-LJ-rgL" id="qd2-NX-gRr"/>
+                <outlet property="g6_013" destination="Kc8-4l-eas" id="b43-Yx-bB9"/>
+                <outlet property="g6_021" destination="kwT-WM-Q6i" id="SGY-VC-BfM"/>
+                <outlet property="g6_022" destination="8V5-94-JXK" id="lSG-O2-Prx"/>
+                <outlet property="g6_023" destination="p8G-r0-xF5" id="ztF-LJ-Ika"/>
+                <outlet property="g6_031" destination="00Q-HA-C1l" id="yi6-sZ-BES"/>
+                <outlet property="g6_032" destination="MR3-IW-Qhc" id="ciW-Xj-5cH"/>
+                <outlet property="g6_033" destination="hcs-gn-Kjl" id="fRc-Z0-L9r"/>
+                <outlet property="g7_01" destination="Cq0-wi-ac3" id="TFt-zU-ONf"/>
+                <outlet property="g7_02" destination="Qty-SR-kM5" id="UAv-dB-N92"/>
+                <outlet property="g7_03" destination="P1D-Dg-fpT" id="hM0-HY-zWj"/>
+                <outlet property="g8_01" destination="fGY-Qq-FGy" id="8Zs-rf-Sz8"/>
+                <outlet property="g8_02" destination="be7-Bn-MyI" id="HOg-0y-Ub3"/>
+                <outlet property="g8_03" destination="KdQ-Nf-dUo" id="kxl-eD-EDQ"/>
+            </connections>
             <point key="canvasLocation" x="132" y="115"/>
         </collectionViewCell>
     </objects>
