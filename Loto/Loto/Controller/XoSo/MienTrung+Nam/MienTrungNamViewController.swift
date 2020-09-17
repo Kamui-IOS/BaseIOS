@@ -34,9 +34,9 @@ class MienTrungNamViewController: BaseViewController {
     
     func setupNavi() {
         if SideBarMenu.isCheckSideMenu == 2 {
-            self.title = "Trực tiếp"
+            self.navigationItem.title = "Trực tiếp"
         } else {
-            self.title = "Kết quả xổ số"
+            self.navigationItem.title = "Kết quả xổ số"
         }
     }
     

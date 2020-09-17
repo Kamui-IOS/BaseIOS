@@ -86,8 +86,9 @@ class MienBacCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dau_9: UILabel!
     
     
-    var dataLoto: [String] = [""]
-    var dauduoi: DauDuoiLoto?
+    var dataLoto =  [String]()
+    
+    var dauduoiArr = [DauDuoiLoto]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -96,6 +97,19 @@ class MienBacCollectionViewCell: UICollectionViewCell {
     
     func loadDataCells(date: String ,data: Jackport)
     {
+        
+        self.dataLoto.append(data.jackport ?? "")
+        self.dataLoto.append(data.first ?? "")
+        self.dataLoto.append(contentsOf: data.second ?? [])
+        self.dataLoto.append(contentsOf: data.third ?? [])
+        self.dataLoto.append(contentsOf: data.fourth ?? [])
+        self.dataLoto.append(contentsOf: data.fiveth ?? [])
+        self.dataLoto.append(contentsOf: data.sixth ?? [])
+        self.dataLoto.append(contentsOf: data.seventh ?? [])
+        
+//        dauduoi?.getData(data: <#T##String#>)
+        loto(dataLotoArray: self.dataLoto)
+        
         self.days.text = date
         
         self.dacBietLb.text = data.jackport
@@ -126,44 +140,19 @@ class MienBacCollectionViewCell: UICollectionViewCell {
         self.g7_03Lb.text = data.seventh?[2]
         self.g7_04Lb.text = data.seventh?[3]
 
-        self.dataLoto.append(data.jackport ?? "")
-        self.dataLoto.append(data.first ?? "")
-        self.dataLoto.append(data.second?[0] ?? "")
-        self.dataLoto.append(data.second?[1] ?? "")
-        self.dataLoto.append(data.third?[0] ?? "")
-        self.dataLoto.append(data.third?[1] ?? "")
-        self.dataLoto.append(data.third?[2] ?? "")
-        self.dataLoto.append(data.third?[3] ?? "")
-        self.dataLoto.append(data.third?[4] ?? "")
-        self.dataLoto.append(data.third?[5] ?? "")
-        self.dataLoto.append(data.fourth?[0] ?? "")
-        self.dataLoto.append(data.fourth?[1] ?? "")
-        self.dataLoto.append(data.fourth?[2] ?? "")
-        self.dataLoto.append(data.fourth?[3] ?? "")
-        self.dataLoto.append(data.fiveth?[0] ?? "")
-        self.dataLoto.append(data.fiveth?[1] ?? "")
-        self.dataLoto.append(data.fiveth?[2] ?? "")
-        self.dataLoto.append(data.fiveth?[3] ?? "")
-        self.dataLoto.append(data.fiveth?[4] ?? "")
-        self.dataLoto.append(data.fiveth?[5] ?? "")
-        self.dataLoto.append(data.sixth?[0] ?? "")
-        self.dataLoto.append(data.sixth?[1] ?? "")
-        self.dataLoto.append(data.sixth?[2] ?? "")
-        self.dataLoto.append(data.seventh?[0] ?? "")
-        self.dataLoto.append(data.seventh?[1] ?? "")
-        self.dataLoto.append(data.seventh?[2] ?? "")
-        self.dataLoto.append(data.seventh?[3] ?? "")
-
         
     }
     
-    func loto(str: String) {
-        let start = str.index(str.endIndex, offsetBy: -2)
-        let end = str.index(str.endIndex, offsetBy: 0)
-        let range = start..<end
-        let value = str[range]
+    func loto(dataLotoArray: [String]) {
         
-        DauDuoiLoto(loto: String(value))
+        for str in dataLotoArray {
+            var dauduoi = DauDuoiLoto()
+            dauduoi.getData(data: str)
+            self.dauduoiArr.append(dauduoi)
+        }
     }
-
+    
+    func showData(lotoArr: [DauDuoiLoto]) {
+        
+    }
 }
