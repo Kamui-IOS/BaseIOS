@@ -20,6 +20,7 @@
 		EF72EA6524FBEF23001615E4 /* MienTrungNamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */; };
 		EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */; };
 		EF737A9D24FC272100B31D48 /* MienBacCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF737A9B24FC272100B31D48 /* MienBacCollectionViewCell.xib */; };
+		EF77B1512515ACC0009508E5 /* ExtensionSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77B1502515ACC0009508E5 /* ExtensionSequence.swift */; };
 		EF77D1102508A7D00001A853 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF77D10F2508A7CF0001A853 /* GoogleService-Info.plist */; };
 		EF78F8FA24FDF828003FC516 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F8F924FDF828003FC516 /* BaseViewController.swift */; };
 		EF78F8FF24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F8FD24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift */; };
@@ -76,6 +77,7 @@
 		EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNamViewController.xib; sourceTree = "<group>"; };
 		EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienBacCollectionViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		EF737A9B24FC272100B31D48 /* MienBacCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienBacCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF77B1502515ACC0009508E5 /* ExtensionSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSequence.swift; sourceTree = "<group>"; };
 		EF77D10F2508A7CF0001A853 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF78F8F924FDF828003FC516 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EF78F8FD24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoiCauLOTOTableViewCell.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */,
 				EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */,
 				EF7136B0250F72CE0092FA5C /* ExtensionData.swift */,
+				EF77B1502515ACC0009508E5 /* ExtensionSequence.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF78F91F24FE463F003FC516 /* BaseNavigation.swift in Sources */,
+				EF77B1512515ACC0009508E5 /* ExtensionSequence.swift in Sources */,
 				EFD497572511A86000821553 /* DauDuoiLoto.swift in Sources */,
 				EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */,
 				EF7D17C724FCF06D00BD11C0 /* SoMoDeViewController.swift in Sources */,
