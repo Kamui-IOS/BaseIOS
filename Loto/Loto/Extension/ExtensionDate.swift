@@ -1,5 +1,5 @@
 //
-//  ExtensionData.swift
+//  ExtensionDate.swift
 //  Loto
 //
 //  Created by Nam Hoang Van on 9/14/20.

@@ -22,18 +22,12 @@ class SoMoDeViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
         setupTableView()
-        setRightNavi()
         self.title = "Con số may mắn"
     }
     
     override func setLeftNavi() {
-        let leftButton = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(back))
+        let leftButton = UIBarButtonItem(image: UIImage(named: "Group"), style: .done, target: self, action: #selector(back))
         navigationItem.leftBarButtonItem = leftButton
-    }
-    
-    func setRightNavi() {
-        let rightButton = UIBarButtonItem(title: "Search", style: .done, target: self, action: #selector(search))
-        navigationItem.rightBarButtonItem = rightButton
     }
     
     override func back() {

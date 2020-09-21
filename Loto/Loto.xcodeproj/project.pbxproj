@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		562C204884F376F7370B5E85 /* Pods_Loto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E37B644DC3E784AA7504D91 /* Pods_Loto.framework */; };
 		EF1FD5262510AABF00972817 /* roulette_ball_v2_compress.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EF1FD5252510AABF00972817 /* roulette_ball_v2_compress.mp4 */; };
+		EF2DC24F2518D0FB0001D8DA /* DataServers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DC24E2518D0FB0001D8DA /* DataServers.swift */; };
 		EF42CED824FD5C8B0056D8D1 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42CED724FD5C8B0056D8D1 /* TabbarViewController.swift */; };
 		EF42CEDB24FD68D90056D8D1 /* SideBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42CEDA24FD68D90056D8D1 /* SideBarMenu.swift */; };
 		EF42CEDD24FD68F40056D8D1 /* SideBarMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF42CEDC24FD68F40056D8D1 /* SideBarMenu.xib */; };
 		EF7136A3250F30F50092FA5C /* SXMB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136A2250F30F50092FA5C /* SXMB.swift */; };
 		EF7136AD250F50510092FA5C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136AC250F50510092FA5C /* API.swift */; };
 		EF7136AF250F50730092FA5C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136AE250F50730092FA5C /* Reachability.swift */; };
-		EF7136B1250F72CE0092FA5C /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136B0250F72CE0092FA5C /* ExtensionData.swift */; };
+		EF7136B1250F72CE0092FA5C /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7136B0250F72CE0092FA5C /* ExtensionDate.swift */; };
 		EF72EA6424FBEF23001615E4 /* MienTrungNamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF72EA6224FBEF23001615E4 /* MienTrungNamViewController.swift */; };
 		EF72EA6524FBEF23001615E4 /* MienTrungNamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */; };
 		EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */; };
@@ -66,13 +67,14 @@
 		0E37B644DC3E784AA7504D91 /* Pods_Loto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		714936510DBAD84E8B1D7ACF /* Pods-Loto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loto.debug.xcconfig"; path = "Target Support Files/Pods-Loto/Pods-Loto.debug.xcconfig"; sourceTree = "<group>"; };
 		EF1FD5252510AABF00972817 /* roulette_ball_v2_compress.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = roulette_ball_v2_compress.mp4; sourceTree = "<group>"; };
+		EF2DC24E2518D0FB0001D8DA /* DataServers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServers.swift; sourceTree = "<group>"; };
 		EF42CED724FD5C8B0056D8D1 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		EF42CEDA24FD68D90056D8D1 /* SideBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenu.swift; sourceTree = "<group>"; };
 		EF42CEDC24FD68F40056D8D1 /* SideBarMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideBarMenu.xib; sourceTree = "<group>"; };
 		EF7136A2250F30F50092FA5C /* SXMB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXMB.swift; sourceTree = "<group>"; };
 		EF7136AC250F50510092FA5C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		EF7136AE250F50730092FA5C /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		EF7136B0250F72CE0092FA5C /* ExtensionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionData.swift; sourceTree = "<group>"; };
+		EF7136B0250F72CE0092FA5C /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		EF72EA6224FBEF23001615E4 /* MienTrungNamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNamViewController.swift; sourceTree = "<group>"; };
 		EF72EA6324FBEF23001615E4 /* MienTrungNamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNamViewController.xib; sourceTree = "<group>"; };
 		EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienBacCollectionViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -284,7 +286,7 @@
 			children = (
 				EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */,
 				EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */,
-				EF7136B0250F72CE0092FA5C /* ExtensionData.swift */,
+				EF7136B0250F72CE0092FA5C /* ExtensionDate.swift */,
 				EF77B1502515ACC0009508E5 /* ExtensionSequence.swift */,
 			);
 			path = Extension;
@@ -319,6 +321,7 @@
 				EF7136A0250F308C0092FA5C /* Model */,
 				EFFCB8EC24FBA6CE000A880D /* Controller */,
 				EFF6FE2B24FBC8490062F307 /* Extension */,
+				EF2DC24E2518D0FB0001D8DA /* DataServers.swift */,
 				EFFCB8DD24FBA61B000A880D /* Assets.xcassets */,
 				EFFCB8DF24FBA61B000A880D /* LaunchScreen.storyboard */,
 				EFFCB8E224FBA61B000A880D /* Info.plist */,
@@ -556,13 +559,14 @@
 				EF78F8FA24FDF828003FC516 /* BaseViewController.swift in Sources */,
 				EF42CEDB24FD68D90056D8D1 /* SideBarMenu.swift in Sources */,
 				EF78F91624FE3500003FC516 /* TabbarKQDai.swift in Sources */,
+				EF2DC24F2518D0FB0001D8DA /* DataServers.swift in Sources */,
 				EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */,
 				EF7136AF250F50730092FA5C /* Reachability.swift in Sources */,
 				EFF6FE2D24FBC8820062F307 /* ExtensionViewController.swift in Sources */,
 				EF7D17D424FCFC7000BD11C0 /* TotalViewController.swift in Sources */,
 				EF42CED824FD5C8B0056D8D1 /* TabbarViewController.swift in Sources */,
 				EF7D17B324FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.swift in Sources */,
-				EF7136B1250F72CE0092FA5C /* ExtensionData.swift in Sources */,
+				EF7136B1250F72CE0092FA5C /* ExtensionDate.swift in Sources */,
 				EF7D17BC24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.swift in Sources */,
 				EF7D17AA24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift in Sources */,
 				EFFCB8EA24FBA6C6000A880D /* RegisterViewController.swift in Sources */,

@@ -32,11 +32,11 @@ class BaseViewController: UIViewController {
     func setLeftNavi() {
         
         if BaseViewController.isCheck == true {
-            let leftButton = UIBarButtonItem(title: "Menu", style: .done, target: self, action: #selector(openMenu))
+            let leftButton = UIBarButtonItem(image: UIImage(named: "ic_menu"), style: .done, target: self, action: #selector(openMenu))
             navigationItem.leftBarButtonItem = leftButton
         }
         else {
-            let leftButton = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(back))
+            let leftButton = UIBarButtonItem(image: UIImage(named: "Group"), style: .done, target: self, action: #selector(back))
             navigationItem.leftBarButtonItem = leftButton
         }
     }
@@ -51,7 +51,15 @@ class BaseViewController: UIViewController {
     }
     
     @objc func back() {
-        dismiss(animated: true, completion: nil)
+        SideBarMenu.isCheckSideMenu = 0
         BaseViewController.isCheck = true
+        if SideBarMenu.isCheckSideMenu != 8 {
+            let tracuuVC = TraCuuViewController()
+            let tracuuNavi = BaseNavigation(rootViewController: tracuuVC)
+            tracuuNavi.modalPresentationStyle = .fullScreen
+            SideBarMenu.isCheckSideMenu = 8
+            present(tracuuNavi, animated: true, completion: nil)
+        }
+        
     }
 }

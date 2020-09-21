@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,20 +24,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAN-b3-kF8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="690"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xổ Số Miền Trung" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxQ-cX-HlM">
-                                        <rect key="frame" x="54.5" y="1" width="211" height="33.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xổ Số Miền Nam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxQ-cX-HlM">
+                                        <rect key="frame" x="60" y="1" width="200" height="33.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chủ Nhật, ngày 30/08/2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msy-kS-I7w">
-                                        <rect key="frame" x="52.5" y="35" width="215" height="21"/>
+                                        <rect key="frame" x="53.5" y="35" width="213" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.36505335570000003" green="0.74017924069999996" blue="0.1121888086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tường thuật trực tiếp lúc 17h15'" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElY-ef-6mu">
-                                        <rect key="frame" x="40" y="69" width="240.5" height="21"/>
+                                        <rect key="frame" x="40.5" y="69" width="239" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.36505335570000003" green="0.74017924069999996" blue="0.1121888086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -48,7 +50,7 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGE-aI-xqQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="35"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="wL1-iT-H2i"/>
                                                         </constraints>
@@ -63,7 +65,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="3Lf-DE-cxS" firstAttribute="centerX" secondItem="Nhh-k6-ci6" secondAttribute="centerX" id="6oM-Rs-oTO"/>
                                                             <constraint firstItem="3Lf-DE-cxS" firstAttribute="centerY" secondItem="Nhh-k6-ci6" secondAttribute="centerY" id="aqM-XK-J1H"/>
@@ -74,13 +76,13 @@
                                                         <rect key="frame" x="0.0" y="67" width="60" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G.7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9f-zx-HQF">
-                                                                <rect key="frame" x="16.5" y="4.5" width="27" height="21"/>
+                                                                <rect key="frame" x="17" y="4.5" width="26" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="h9f-zx-HQF" firstAttribute="centerY" secondItem="nGN-Dv-Ppo" secondAttribute="centerY" id="FoR-AH-dlb"/>
                                                             <constraint firstItem="h9f-zx-HQF" firstAttribute="centerX" secondItem="nGN-Dv-Ppo" secondAttribute="centerX" id="H1W-l4-60B"/>
@@ -97,7 +99,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="LE4-ay-qp8" firstAttribute="centerX" secondItem="KFs-bL-QsX" secondAttribute="centerX" id="0Sd-CE-Iq2"/>
                                                             <constraint firstItem="LE4-ay-qp8" firstAttribute="centerY" secondItem="KFs-bL-QsX" secondAttribute="centerY" id="0Um-bg-AhV"/>
@@ -114,7 +116,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="Y2R-hj-K7v" firstAttribute="centerY" secondItem="rN3-hP-QV2" secondAttribute="centerY" id="KNd-rE-8G2"/>
                                                             <constraint firstItem="Y2R-hj-K7v" firstAttribute="centerX" secondItem="rN3-hP-QV2" secondAttribute="centerX" id="lOT-eD-ABk"/>
@@ -125,13 +127,13 @@
                                                         <rect key="frame" x="0.0" y="222" width="60" height="216"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G.4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmV-XN-sv0">
-                                                                <rect key="frame" x="16.5" y="97.5" width="27.5" height="21"/>
+                                                                <rect key="frame" x="16.5" y="97.5" width="27" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="AmV-XN-sv0" firstAttribute="centerX" secondItem="iYm-r6-8CG" secondAttribute="centerX" id="50R-8f-6xz"/>
                                                             <constraint firstAttribute="height" constant="216" id="DOB-50-HAg"/>
@@ -148,7 +150,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="Izf-A1-EA8" firstAttribute="centerY" secondItem="Feg-Q2-uRU" secondAttribute="centerY" id="MTb-2q-AhL"/>
                                                             <constraint firstItem="Izf-A1-EA8" firstAttribute="centerX" secondItem="Feg-Q2-uRU" secondAttribute="centerX" id="Nfg-bF-mBN"/>
@@ -165,7 +167,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="FLb-RG-74z"/>
                                                             <constraint firstItem="h6A-9y-VFa" firstAttribute="centerX" secondItem="nVz-Kg-qUN" secondAttribute="centerX" id="ewF-y3-NF8"/>
@@ -182,7 +184,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="z98-ch-Zdi" firstAttribute="centerY" secondItem="g0I-cy-Byh" secondAttribute="centerY" id="7x0-hw-Ruf"/>
                                                             <constraint firstAttribute="height" constant="30" id="9Es-Xp-tcF"/>
@@ -199,7 +201,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="BWY-X8-wXN" firstAttribute="centerY" secondItem="mvH-rc-xiC" secondAttribute="centerY" id="EEA-2u-d4P"/>
                                                             <constraint firstItem="BWY-X8-wXN" firstAttribute="centerX" secondItem="mvH-rc-xiC" secondAttribute="centerX" id="e2s-vb-K8q"/>
@@ -254,11 +256,11 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đà Nẵng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j5-xO-3YC">
                                                                         <rect key="frame" x="11.5" y="8" width="63" height="19.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="4j5-xO-3YC" firstAttribute="centerX" secondItem="IxT-8E-gJY" secondAttribute="centerX" id="OHc-Tp-WNe"/>
                                                                     <constraint firstAttribute="height" constant="35" id="dvp-bL-KW6"/>
@@ -275,7 +277,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="fGY-Qq-FGy" firstAttribute="centerY" secondItem="AsL-Lg-Huf" secondAttribute="centerY" id="JcB-E5-g4k"/>
                                                                     <constraint firstAttribute="height" constant="30" id="jD6-JI-uSS"/>
@@ -309,7 +311,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="0Tx-u6-1zy"/>
                                                                     <constraint firstItem="Dzu-Ju-5WH" firstAttribute="centerX" secondItem="010-5i-BtS" secondAttribute="centerX" id="Ajf-ak-6Mu"/>
@@ -343,7 +345,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="Kc8-4l-eas" firstAttribute="centerX" secondItem="KUk-re-Stk" secondAttribute="centerX" id="J7a-AO-zEJ"/>
                                                                     <constraint firstAttribute="height" constant="30" id="cox-dV-Qbh"/>
@@ -377,7 +379,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="EcI-Se-Dok" firstAttribute="centerY" secondItem="jMm-qV-h0a" secondAttribute="centerY" id="mru-J2-blp"/>
                                                                     <constraint firstAttribute="height" constant="30" id="s0g-B4-4h5"/>
@@ -411,7 +413,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="ieO-su-tQ9"/>
                                                                     <constraint firstItem="fuE-KR-bD0" firstAttribute="centerX" secondItem="SXa-UO-YM4" secondAttribute="centerX" id="jjn-Ma-5rW"/>
@@ -445,7 +447,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="J1l-Ij-3yZ" firstAttribute="centerY" secondItem="DUY-Sv-3xE" secondAttribute="centerY" id="1NX-hZ-Zqd"/>
                                                                     <constraint firstAttribute="height" constant="30" id="RJR-0I-EVE"/>
@@ -479,7 +481,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="G23-5j-T9c" firstAttribute="centerX" secondItem="JZQ-lF-hOS" secondAttribute="centerX" id="LWF-kU-jsC"/>
                                                                     <constraint firstAttribute="height" constant="30" id="T7L-dO-esG"/>
@@ -513,7 +515,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="eKE-Am-b6F" firstAttribute="centerX" secondItem="lZv-H4-9gj" secondAttribute="centerX" id="Ui2-PO-z27"/>
                                                                     <constraint firstAttribute="height" constant="30" id="ntm-PG-V79"/>
@@ -547,7 +549,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="QhG-Rd-eUI" firstAttribute="centerY" secondItem="IKB-HY-7s5" secondAttribute="centerY" id="9es-nG-oOl"/>
                                                                     <constraint firstAttribute="height" constant="30" id="Hhq-V9-4eb"/>
@@ -560,7 +562,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9a-IZ-FJp">
                                                                         <rect key="frame" x="18.5" y="4.5" width="48.5" height="21"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -643,11 +645,11 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quảng Ngãi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqF-3p-iYC">
                                                                         <rect key="frame" x="0.5" y="8" width="85.5" height="19.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="tqF-3p-iYC" firstAttribute="centerY" secondItem="ax6-2D-2Bo" secondAttribute="centerY" id="NbX-sv-xU2"/>
                                                                     <constraint firstItem="tqF-3p-iYC" firstAttribute="centerX" secondItem="ax6-2D-2Bo" secondAttribute="centerX" id="g0E-BB-sbP"/>
@@ -664,7 +666,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="BlH-pW-nyG"/>
                                                                     <constraint firstItem="be7-Bn-MyI" firstAttribute="centerX" secondItem="nI4-lU-qRh" secondAttribute="centerX" id="SYw-il-H1v"/>
@@ -698,7 +700,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="kwT-WM-Q6i" firstAttribute="centerY" secondItem="NvV-Ky-0cP" secondAttribute="centerY" id="2KJ-VH-Tk6"/>
                                                                     <constraint firstItem="kwT-WM-Q6i" firstAttribute="centerX" secondItem="NvV-Ky-0cP" secondAttribute="centerX" id="gzS-xG-wMc"/>
@@ -732,7 +734,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="0hX-Fv-jBk"/>
                                                                     <constraint firstItem="p8G-r0-xF5" firstAttribute="centerY" secondItem="wJV-Mj-Iaw" secondAttribute="centerY" id="Eov-ek-2hS"/>
@@ -766,7 +768,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="PAH-qM-KGp" firstAttribute="centerY" secondItem="wMC-2q-UHv" secondAttribute="centerY" id="Ave-8z-Yy8"/>
                                                                     <constraint firstAttribute="height" constant="30" id="P7f-gp-4XZ"/>
@@ -800,7 +802,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="Xnq-3z-hpJ" firstAttribute="centerX" secondItem="rHB-2f-RIg" secondAttribute="centerX" id="6MQ-1i-u6l"/>
                                                                     <constraint firstItem="Xnq-3z-hpJ" firstAttribute="centerY" secondItem="rHB-2f-RIg" secondAttribute="centerY" id="M89-OU-sQM"/>
@@ -834,7 +836,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="C0t-gY-igi"/>
                                                                     <constraint firstItem="cfJ-Zf-McJ" firstAttribute="centerY" secondItem="Muo-dL-1Nk" secondAttribute="centerY" id="MF5-SV-2pL"/>
@@ -868,7 +870,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="PBe-7q-QJf"/>
                                                                     <constraint firstItem="bpY-gw-f8b" firstAttribute="centerX" secondItem="1bi-cj-1ai" secondAttribute="centerX" id="Y51-Nl-7Lg"/>
@@ -902,7 +904,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="fCy-Ty-yg7"/>
                                                                     <constraint firstItem="7YL-5t-LIY" firstAttribute="centerY" secondItem="PJU-tT-81L" secondAttribute="centerY" id="fbF-ge-5wb"/>
@@ -936,7 +938,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="lwB-wC-Y8c" firstAttribute="centerY" secondItem="y7v-Wd-5tT" secondAttribute="centerY" id="1hK-Ms-TDj"/>
                                                                     <constraint firstItem="lwB-wC-Y8c" firstAttribute="centerX" secondItem="y7v-Wd-5tT" secondAttribute="centerX" id="CJG-UB-UAM"/>
@@ -949,7 +951,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdt-Xb-NFJ">
                                                                         <rect key="frame" x="19" y="4.5" width="48.5" height="21"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -1032,11 +1034,11 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đắc Nông" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBp-C6-xXT">
                                                                         <rect key="frame" x="6.5" y="8" width="72" height="19.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="IBp-C6-xXT" firstAttribute="centerX" secondItem="pfu-TL-b9P" secondAttribute="centerX" id="DLS-7u-DVQ"/>
                                                                     <constraint firstItem="IBp-C6-xXT" firstAttribute="centerY" secondItem="pfu-TL-b9P" secondAttribute="centerY" id="YAv-H9-b1i"/>
@@ -1053,7 +1055,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="KdQ-Nf-dUo" firstAttribute="centerX" secondItem="Sce-fL-s25" secondAttribute="centerX" id="4s1-5m-VWi"/>
                                                                     <constraint firstAttribute="height" constant="30" id="EWa-D1-HVZ"/>
@@ -1087,7 +1089,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="4Av-cU-XY6"/>
                                                                     <constraint firstItem="00Q-HA-C1l" firstAttribute="centerX" secondItem="gdB-Vp-8vC" secondAttribute="centerX" id="b66-uk-6v3"/>
@@ -1121,7 +1123,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="hcs-gn-Kjl" firstAttribute="centerY" secondItem="2OB-JY-4IA" secondAttribute="centerY" id="0fV-Hp-owS"/>
                                                                     <constraint firstAttribute="height" constant="30" id="I6I-S3-oAT"/>
@@ -1155,7 +1157,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="8dG-4g-sZI" firstAttribute="centerX" secondItem="LCS-rS-aAg" secondAttribute="centerX" id="6if-3E-Ic6"/>
                                                                     <constraint firstItem="8dG-4g-sZI" firstAttribute="centerY" secondItem="LCS-rS-aAg" secondAttribute="centerY" id="S26-AB-JFE"/>
@@ -1189,7 +1191,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="7hm-5n-ZDK"/>
                                                                     <constraint firstItem="oth-OM-v76" firstAttribute="centerY" secondItem="2q2-CY-lCY" secondAttribute="centerY" id="945-GS-XNy"/>
@@ -1223,7 +1225,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="IQF-cu-iB6" firstAttribute="centerY" secondItem="WC5-D1-Duj" secondAttribute="centerY" id="gIl-it-Zw4"/>
                                                                     <constraint firstAttribute="height" constant="30" id="jvh-sm-kbO"/>
@@ -1257,7 +1259,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="5Py-it-5YD" firstAttribute="centerY" secondItem="VLN-tQ-OZH" secondAttribute="centerY" id="Cug-Tt-SHQ"/>
                                                                     <constraint firstItem="5Py-it-5YD" firstAttribute="centerX" secondItem="VLN-tQ-OZH" secondAttribute="centerX" id="Mob-s3-CJf"/>
@@ -1291,7 +1293,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="J8g-ML-vKm" firstAttribute="centerX" secondItem="1t6-ws-YAI" secondAttribute="centerX" id="Eji-dE-qFT"/>
                                                                     <constraint firstAttribute="height" constant="30" id="Ol1-Cs-lDs"/>
@@ -1325,7 +1327,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="jP4-ZL-En6" firstAttribute="centerX" secondItem="9PY-cp-LJm" secondAttribute="centerX" id="2b7-cN-qiL"/>
                                                                     <constraint firstAttribute="height" constant="30" id="34X-zQ-zPg"/>
@@ -1338,7 +1340,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNf-jB-MRo">
                                                                         <rect key="frame" x="18.5" y="4.5" width="48.5" height="21"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -1443,7 +1445,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="ElY-ef-6mu" firstAttribute="centerX" secondItem="HAN-b3-kF8" secondAttribute="centerX" id="2Ly-Sa-5Qq"/>
                                     <constraint firstItem="H0n-ts-xSH" firstAttribute="leading" secondItem="HAN-b3-kF8" secondAttribute="leading" id="2aR-Tu-5yh"/>
@@ -1467,7 +1469,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstItem="v6k-iQ-rgM" firstAttribute="centerX" secondItem="vB1-7G-PZR" secondAttribute="centerX" id="kJl-oi-Ov2"/>
                                     <constraint firstAttribute="height" constant="100" id="mo0-Wp-vdQ"/>
@@ -1478,7 +1480,7 @@
                                 <rect key="frame" x="0.0" y="790" width="320" height="386"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bảng thống kê Loto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1in-BE-dwV">
-                                        <rect key="frame" x="85.5" y="13" width="149" height="21"/>
+                                        <rect key="frame" x="86" y="13" width="148" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.36505335570000003" green="0.74017924069999996" blue="0.1121888086" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1491,7 +1493,7 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hdf-td-E6q">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="35"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="xdy-S0-jjn"/>
                                                         </constraints>
@@ -1506,7 +1508,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="H7R-uO-wWt" firstAttribute="centerY" secondItem="dvs-e6-FIF" secondAttribute="centerY" id="977-ur-xzN"/>
                                                             <constraint firstAttribute="height" constant="30" id="FGU-EU-jq9"/>
@@ -1523,7 +1525,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="KnA-g6-3Yo" firstAttribute="centerY" secondItem="MC8-06-3m6" secondAttribute="centerY" id="RcF-Qf-R5W"/>
                                                             <constraint firstItem="KnA-g6-3Yo" firstAttribute="centerX" secondItem="MC8-06-3m6" secondAttribute="centerX" id="iqA-DZ-zAx"/>
@@ -1540,7 +1542,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="bSH-LV-tmn"/>
                                                             <constraint firstItem="knC-sD-1Sg" firstAttribute="centerY" secondItem="lvR-AC-4rm" secondAttribute="centerY" id="e2h-dd-DK5"/>
@@ -1557,7 +1559,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="Uxk-4q-gb4" firstAttribute="centerY" secondItem="q2n-9I-NZp" secondAttribute="centerY" id="4bG-6B-0MR"/>
                                                             <constraint firstAttribute="height" constant="30" id="KON-MB-CPo"/>
@@ -1574,7 +1576,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="SS5-Ph-M3K"/>
                                                             <constraint firstItem="92y-E3-mrU" firstAttribute="centerY" secondItem="wnw-SY-wst" secondAttribute="centerY" id="Yks-K6-7Vb"/>
@@ -1591,7 +1593,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="5nt-Ia-wne"/>
                                                             <constraint firstItem="pc3-8c-Mcp" firstAttribute="centerY" secondItem="3CD-AJ-P7r" secondAttribute="centerY" id="UFh-nm-rxV"/>
@@ -1608,7 +1610,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="TMX-TY-oEQ"/>
                                                             <constraint firstItem="3c3-t7-zOQ" firstAttribute="centerX" secondItem="jcf-eD-18c" secondAttribute="centerX" id="ovE-TT-Lha"/>
@@ -1625,7 +1627,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="HjO-Vc-fJc"/>
                                                             <constraint firstItem="bah-6D-snc" firstAttribute="centerX" secondItem="TFE-yO-C9L" secondAttribute="centerX" id="pPM-Dn-B8Y"/>
@@ -1642,7 +1644,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="ZXs-wo-opb"/>
                                                             <constraint firstItem="PJd-h4-DZw" firstAttribute="centerX" secondItem="CHk-Ya-aWx" secondAttribute="centerX" id="tTH-8s-L6P"/>
@@ -1659,7 +1661,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="Dp2-dK-JMh"/>
                                                             <constraint firstItem="XIa-Sg-L14" firstAttribute="centerY" secondItem="frF-sw-hcS" secondAttribute="centerY" id="fvc-H0-4kZ"/>
@@ -1717,11 +1719,11 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đà Nẵng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ej9-dA-iUs">
                                                                         <rect key="frame" x="11" y="8" width="63" height="19.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="5xx-YS-P7a"/>
                                                                     <constraint firstItem="ej9-dA-iUs" firstAttribute="centerY" secondItem="LVn-Kr-JNG" secondAttribute="centerY" id="AYb-7A-au5"/>
@@ -1738,7 +1740,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="xRS-lh-ABU" firstAttribute="centerY" secondItem="VPj-dc-9s8" secondAttribute="centerY" id="MRk-fS-aTV"/>
                                                                     <constraint firstAttribute="height" constant="30" id="eHe-ob-KUY"/>
@@ -1772,7 +1774,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="4S5-np-0B0" firstAttribute="centerY" secondItem="zEV-Jf-UoI" secondAttribute="centerY" id="g62-p5-CA9"/>
                                                                     <constraint firstAttribute="height" constant="30" id="guT-er-TE6"/>
@@ -1806,7 +1808,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="vYe-tM-T2r" firstAttribute="centerX" secondItem="ZNt-qR-sjV" secondAttribute="centerX" id="774-iL-2Wc"/>
                                                                     <constraint firstItem="vYe-tM-T2r" firstAttribute="centerY" secondItem="ZNt-qR-sjV" secondAttribute="centerY" id="FtC-8b-tfB"/>
@@ -1840,7 +1842,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="KX6-J0-LMA"/>
                                                                     <constraint firstItem="KcN-ot-0kw" firstAttribute="centerY" secondItem="ldL-ns-gPY" secondAttribute="centerY" id="Kmk-NL-nRx"/>
@@ -1874,7 +1876,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="07J-cX-KuX"/>
                                                                     <constraint firstItem="h29-Ln-DG6" firstAttribute="centerY" secondItem="Rd6-Us-STF" secondAttribute="centerY" id="ASz-zH-aYB"/>
@@ -1945,11 +1947,11 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đắc Nông" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnO-Hw-KWH">
                                                                         <rect key="frame" x="9" y="8.5" width="68" height="18"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="EnO-Hw-KWH" firstAttribute="centerY" secondItem="DPp-FJ-TUq" secondAttribute="centerY" id="BvK-Hd-F6a"/>
                                                                     <constraint firstItem="EnO-Hw-KWH" firstAttribute="centerX" secondItem="DPp-FJ-TUq" secondAttribute="centerX" id="Y0L-f5-Mxe"/>
@@ -1966,7 +1968,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="5O9-bl-YKN"/>
                                                                     <constraint firstItem="MAh-Gn-puV" firstAttribute="centerY" secondItem="cM5-N6-srb" secondAttribute="centerY" id="ZPW-AB-VlK"/>
@@ -2000,7 +2002,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="Q0f-4c-8c6"/>
                                                                     <constraint firstItem="SXt-mU-WNX" firstAttribute="centerY" secondItem="2Zm-qG-yct" secondAttribute="centerY" id="oy3-J3-06Z"/>
@@ -2034,7 +2036,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="JeH-pb-phK"/>
                                                                     <constraint firstItem="KAW-XZ-Dy3" firstAttribute="centerX" secondItem="gxT-yB-7Jr" secondAttribute="centerX" id="XOZ-Ek-Lj5"/>
@@ -2068,7 +2070,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="GwT-Iz-fza" firstAttribute="centerX" secondItem="3my-eD-iwC" secondAttribute="centerX" id="I1q-fi-ldm"/>
                                                                     <constraint firstItem="GwT-Iz-fza" firstAttribute="centerY" secondItem="3my-eD-iwC" secondAttribute="centerY" id="Zew-rE-C4G"/>
@@ -2102,7 +2104,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="Fvx-ip-gHt"/>
                                                                     <constraint firstItem="PaM-zd-H9B" firstAttribute="centerY" secondItem="qYV-7o-cWz" secondAttribute="centerY" id="kYd-FO-KoB"/>
@@ -2173,11 +2175,11 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quảng Ngãi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvt-P2-efc">
                                                                         <rect key="frame" x="0.0" y="8" width="85.5" height="19.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="bvt-P2-efc" firstAttribute="centerY" secondItem="TVv-ue-AIz" secondAttribute="centerY" id="MJJ-aR-zeW"/>
                                                                     <constraint firstItem="bvt-P2-efc" firstAttribute="centerX" secondItem="TVv-ue-AIz" secondAttribute="centerX" id="WcV-QH-Bhr"/>
@@ -2194,7 +2196,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="3rW-1d-tky" firstAttribute="centerX" secondItem="6SD-9j-LaX" secondAttribute="centerX" id="CFE-FG-aq2"/>
                                                                     <constraint firstAttribute="height" constant="30" id="giQ-P2-biS"/>
@@ -2228,7 +2230,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="kZp-MK-INE" firstAttribute="centerX" secondItem="kbm-pL-fNZ" secondAttribute="centerX" id="YQB-89-9Uz"/>
                                                                     <constraint firstItem="kZp-MK-INE" firstAttribute="centerY" secondItem="kbm-pL-fNZ" secondAttribute="centerY" id="gHN-DC-kHy"/>
@@ -2262,7 +2264,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="Ut5-9M-L0d" firstAttribute="centerX" secondItem="xfK-hx-6rf" secondAttribute="centerX" id="URo-sW-ewT"/>
                                                                     <constraint firstAttribute="height" constant="30" id="W3n-PU-6r3"/>
@@ -2296,7 +2298,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="WMc-IT-HUs"/>
                                                                     <constraint firstItem="QeG-G1-N8I" firstAttribute="centerX" secondItem="ejf-GC-2gw" secondAttribute="centerX" id="X6c-2p-J8R"/>
@@ -2330,7 +2332,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="Bhs-Ge-GXY" firstAttribute="centerY" secondItem="pPv-xR-gFC" secondAttribute="centerY" id="TZm-xH-M3O"/>
                                                                     <constraint firstItem="Bhs-Ge-GXY" firstAttribute="centerX" secondItem="pPv-xR-gFC" secondAttribute="centerX" id="Yln-SN-agv"/>
@@ -2423,7 +2425,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="ZYi-ke-8ly" secondAttribute="trailing" id="4nf-fy-PJL"/>
                                     <constraint firstAttribute="bottom" secondItem="ZYi-ke-8ly" secondAttribute="bottom" id="FdR-WD-GrR"/>
@@ -2433,7 +2435,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vB1-7G-PZR" firstAttribute="leading" secondItem="W0B-nu-dt0" secondAttribute="leading" id="Mnt-Pe-L7J"/>
                             <constraint firstItem="HAN-b3-kF8" firstAttribute="leading" secondItem="W0B-nu-dt0" secondAttribute="leading" id="N3O-AA-AsH"/>
@@ -2449,14 +2451,17 @@
                     </view>
                 </subviews>
             </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="W0B-nu-dt0" secondAttribute="trailing" id="6kp-Q4-BjL"/>
                 <constraint firstAttribute="bottom" secondItem="W0B-nu-dt0" secondAttribute="bottom" id="ObU-xw-4g7"/>
                 <constraint firstItem="W0B-nu-dt0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Tjh-oO-JvR"/>
                 <constraint firstItem="W0B-nu-dt0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mvC-QC-o2U"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
+                <outlet property="cityLoto01" destination="4j5-xO-3YC" id="QAY-RI-LTi"/>
+                <outlet property="cityLoto02" destination="tqF-3p-iYC" id="kKO-IM-wpV"/>
+                <outlet property="cityLoto03" destination="IBp-C6-xXT" id="XIu-iG-WQD"/>
                 <outlet property="city_01" destination="4j5-xO-3YC" id="EAx-Xi-BXI"/>
                 <outlet property="city_02" destination="tqF-3p-iYC" id="Qnh-dq-gyS"/>
                 <outlet property="city_03" destination="IBp-C6-xXT" id="uaF-HC-44V"/>
@@ -2549,4 +2554,15 @@
             <point key="canvasLocation" x="132" y="115"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

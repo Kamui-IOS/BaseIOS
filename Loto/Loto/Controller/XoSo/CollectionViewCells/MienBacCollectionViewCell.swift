@@ -107,7 +107,6 @@ class MienBacCollectionViewCell: UICollectionViewCell {
         self.dataLoto.append(contentsOf: data.sixth ?? [])
         self.dataLoto.append(contentsOf: data.seventh ?? [])
         
-//        dauduoi?.getData(data: <#T##String#>)
         loto(dataLotoArray: self.dataLoto)
         
         self.days.text = date
@@ -150,12 +149,7 @@ class MienBacCollectionViewCell: UICollectionViewCell {
             dauduoi.getData(data: str)
             self.dauduoiArr.append(dauduoi)
         }
-        showData(lotoArr: self.dauduoiArr)
-    }
-    
-    func showData(lotoArr: [DauDuoiLoto]) {
-        
-        showFoot(data: lotoArr)
+        showFoot(data: self.dauduoiArr)
     }
     
     func showFoot(data: [DauDuoiLoto]){
@@ -170,16 +164,16 @@ class MienBacCollectionViewCell: UICollectionViewCell {
         self.dau_8.text = getDataLoto(isCheck: true, data: data, dataCheck: "8")
         self.dau_9.text = getDataLoto(isCheck: true, data: data, dataCheck: "9")
         
-        self.duoi_0.text = getDataLoto(isCheck: true, data: data, dataCheck: "0")
-        self.duoi_1.text = getDataLoto(isCheck: true, data: data, dataCheck: "1")
-        self.duoi_2.text = getDataLoto(isCheck: true, data: data, dataCheck: "2")
-        self.duoi_3.text = getDataLoto(isCheck: true, data: data, dataCheck: "3")
-        self.duoi_4.text = getDataLoto(isCheck: true, data: data, dataCheck: "4")
-        self.duoi_5.text = getDataLoto(isCheck: true, data: data, dataCheck: "5")
-        self.duoi_6.text = getDataLoto(isCheck: true, data: data, dataCheck: "6")
-        self.duoi_7.text = getDataLoto(isCheck: true, data: data, dataCheck: "7")
-        self.duoi_8.text = getDataLoto(isCheck: true, data: data, dataCheck: "8")
-        self.duoi_9.text = getDataLoto(isCheck: true, data: data, dataCheck: "9")
+        self.duoi_0.text = getDataLoto(isCheck: false, data: data, dataCheck: "0")
+        self.duoi_1.text = getDataLoto(isCheck: false, data: data, dataCheck: "1")
+        self.duoi_2.text = getDataLoto(isCheck: false, data: data, dataCheck: "2")
+        self.duoi_3.text = getDataLoto(isCheck: false, data: data, dataCheck: "3")
+        self.duoi_4.text = getDataLoto(isCheck: false, data: data, dataCheck: "4")
+        self.duoi_5.text = getDataLoto(isCheck: false, data: data, dataCheck: "5")
+        self.duoi_6.text = getDataLoto(isCheck: false, data: data, dataCheck: "6")
+        self.duoi_7.text = getDataLoto(isCheck: false, data: data, dataCheck: "7")
+        self.duoi_8.text = getDataLoto(isCheck: false, data: data, dataCheck: "8")
+        self.duoi_9.text = getDataLoto(isCheck: false, data: data, dataCheck: "9")
         }
         
     func getDataLoto(isCheck: Bool ,data: [DauDuoiLoto], dataCheck: String) -> String {

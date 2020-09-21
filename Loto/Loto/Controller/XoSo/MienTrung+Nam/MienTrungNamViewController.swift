@@ -14,6 +14,7 @@ class MienTrungNamViewController: BaseViewController {
     
     var dataToday = [Jackport]()
     var isCheckCell = 0
+    var date: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,26 +41,25 @@ class MienTrungNamViewController: BaseViewController {
         }
     }
     
-    func getDate(_ isCheck: Bool) -> String
+    func getDate() -> String
     {
-        if isCheck {
+        self.date = DataServer.share.datemiennam ?? ""
+        if self.date == "" {
             let date = Date.yesterday
             let dateformat = DateFormatter()
             dateformat.dateFormat = "YYYY-MM-dd"
             let dateString = dateformat.string(from: date)
             return dateString
         } else {
-            let date = Date.yesterday
-            let dateformat = DateFormatter()
-            dateformat.dateFormat = "EEEE dd/MM/YYY"
-            let dateString = dateformat.string(from: date)
-            return dateString
+            DataServer.share.datemiennam = ""
+            return self.date
         }
+        
     }
     
     func getKQToday() {
            
-           APIManager.share.getXSMB(date: getDate(true), completionHander: {(Jackport) in
+           APIManager.share.getXSMB(date: getDate(), completionHander: {(Jackport) in
                if let data = Jackport {
                    for index in 0..<data.count {
                     if data[index].type != .hanoi && data[index].type != nil {
@@ -86,7 +86,7 @@ extension MienTrungNamViewController: UICollectionViewDataSource, UICollectionVi
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MienTrungNam3ItemCollectionViewCell
             if self.dataToday.count != 0 {
-                cell.loadCell(date: getDate(false), data: self.dataToday)
+                cell.loadCell(date: getDate(), data: self.dataToday)
             }
             return cell
         }

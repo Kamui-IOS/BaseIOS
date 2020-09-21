@@ -24,8 +24,13 @@ class TraCuuViewController: BaseViewController, FSCalendarDelegate {
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let time = DateFormatter()
-        time.dateFormat = "EEEE YYYY-MM-dd"
+        time.dateFormat = "YYYY-MM-dd"
         print(time.string(from: date))
+        
+        DataServer.share.datemienbac = time.string(from: date)
+        DataServer.share.datemiennam = time.string(from: date)
+        
+        
         let tabbar = TabbarViewController()
         navigationController?.navigationBar.isHidden = true
         BaseViewController.isCheck = false

@@ -28,11 +28,11 @@ class TabbarKQDai: UITabBarController, UITabBarControllerDelegate
         let rightNavi = BaseNavigation(rootViewController: mienNam)
         
         if TabbarKQDai.status {
-            leftNavi.tabBarItem = UITabBarItem(title: "Miền Trung", image: nil, selectedImage: nil)
-            rightNavi.tabBarItem = UITabBarItem(title: "Miền Nam", image: nil, selectedImage: nil)
+            leftNavi.tabBarItem = UITabBarItem(title: "Miền Trung", image: UIImage(named: "ic_menu_language"), selectedImage: nil)
+            rightNavi.tabBarItem = UITabBarItem(title: "Miền Nam", image: UIImage(named: "ic_menu_language"), selectedImage: nil)
         }else {
-            leftNavi.tabBarItem = UITabBarItem(title: "Today", image: nil, selectedImage: nil)
-            rightNavi.tabBarItem = UITabBarItem(title: "Yesterday", image: nil, selectedImage: nil)
+            leftNavi.tabBarItem = UITabBarItem(title: "Today", image: UIImage(named: "ic_menu_language"), selectedImage: nil)
+            rightNavi.tabBarItem = UITabBarItem(title: "Yesterday", image: UIImage(named: "ic_menu_language"), selectedImage: nil)
         }
         
         viewControllers = [leftNavi, rightNavi]
