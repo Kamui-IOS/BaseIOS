@@ -25,10 +25,10 @@ class SoMoDeViewController: BaseViewController {
         self.title = "Con số may mắn"
     }
     
-    override func setLeftNavi() {
-        let leftButton = UIBarButtonItem(image: UIImage(named: "Group"), style: .done, target: self, action: #selector(back))
-        navigationItem.leftBarButtonItem = leftButton
-    }
+//    override func setLeftNavi() {
+//        let leftButton = UIBarButtonItem(image: UIImage(named: "Group"), style: .done, target: self, action: #selector(back))
+//        navigationItem.leftBarButtonItem = leftButton
+//    }
     
     override func back() {
         dismiss(animated: true, completion: nil)

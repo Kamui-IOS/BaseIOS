@@ -29,9 +29,9 @@ class TabbarViewController: UITabBarController, UITabBarControllerDelegate
 //        let mienTrungNavi = BaseNavigation(rootViewController: mienTrung)
         let mienNamNavi = BaseNavigation(rootViewController: mienNam)
         
-        mienBacNavi.tabBarItem = UITabBarItem(title: "Miền Bắc", image: UIImage(named: "ic_menu_language"), selectedImage: nil)
+        mienBacNavi.tabBarItem = UITabBarItem(title: "Miền Bắc", image: UIImage(named: "icons8-squared-menu-35"), selectedImage: nil)
 //        mienTrungNavi.tabBarItem = UITabBarItem(title: "Miền Trung", image: nil, selectedImage: nil)
-        mienNamNavi.tabBarItem = UITabBarItem(title: "Miền Nam", image: UIImage(named: "ic_menu_language"), selectedImage: nil)
+        mienNamNavi.tabBarItem = UITabBarItem(title: "Miền Nam", image: UIImage(named: "icons8-squared-menu-35"), selectedImage: nil)
         
         viewControllers = [mienBacNavi, mienNamNavi]
     }
