@@ -9,9 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SoMoDeViewController" customModule="Loto" customModuleProvider="target">
             <connections>
-                <outlet property="numberLabel" destination="J8f-Mi-VUF" id="JZM-Ig-40p"/>
+                <outlet property="randomNumber" destination="wNV-sg-puH" id="5iC-u4-Qwx"/>
+                <outlet property="spinningWhell" destination="Z5u-Zy-Lee" id="qEc-WB-HtT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="viewPlayer" destination="Tup-Iw-CFa" id="yVI-Bo-Ml4"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,41 +19,61 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tup-Iw-CFa">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5u-Zy-Lee" customClass="TTFortuneWheel" customModule="TTFortuneWheel">
+                    <rect key="frame" x="15" y="161" width="345" height="345"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="Lxt-oI-XpY"/>
+                        <constraint firstAttribute="width" secondItem="Z5u-Zy-Lee" secondAttribute="height" multiplier="1:1" id="3n0-PI-kIJ"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8f-Mi-VUF">
-                    <rect key="frame" x="166.5" y="230" width="42" height="21"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wheelFrame" translatesAutoresizingMaskIntoConstraints="NO" id="fa7-jG-eiI">
+                    <rect key="frame" x="-1" y="147.5" width="377" height="394"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fa7-jG-eiI" secondAttribute="height" multiplier="369:386" id="ahs-FA-SDQ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTj-VL-a8f">
+                    <rect key="frame" x="99.5" y="252.5" width="176" height="178"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="9" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="-29" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="SPIN" backgroundImage="spin">
+                        <color key="titleColor" red="0.90196078430000004" green="0.90588235289999997" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="rotateButton:" destination="-1" eventType="touchUpInside" id="Y7a-fF-vZ9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNV-sg-puH">
+                    <rect key="frame" x="20" y="117.5" width="335" height="0.0"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vr8-do-QLv">
-                    <rect key="frame" x="159.5" y="301" width="56" height="30"/>
-                    <state key="normal" title="Quay số">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <connections>
-                        <action selector="quaySo:" destination="-1" eventType="touchUpInside" id="qRO-h1-qIf"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="Tup-Iw-CFa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7xV-oY-rlf"/>
-                <constraint firstItem="J8f-Mi-VUF" firstAttribute="top" secondItem="Tup-Iw-CFa" secondAttribute="bottom" constant="30" id="Ekv-dQ-xBD"/>
-                <constraint firstItem="Vr8-do-QLv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KWy-uK-Yj6"/>
-                <constraint firstItem="J8f-Mi-VUF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N9E-fL-pgj"/>
-                <constraint firstItem="Tup-Iw-CFa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PkY-7j-fIJ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tup-Iw-CFa" secondAttribute="trailing" id="XP8-hp-8dS"/>
-                <constraint firstItem="Vr8-do-QLv" firstAttribute="top" secondItem="J8f-Mi-VUF" secondAttribute="bottom" constant="50" id="Xcs-Hl-Aoe"/>
+                <constraint firstItem="Z5u-Zy-Lee" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0vN-r7-gHq"/>
+                <constraint firstItem="CTj-VL-a8f" firstAttribute="centerY" secondItem="fa7-jG-eiI" secondAttribute="centerY" constant="-3" id="399-N7-adk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wNV-sg-puH" secondAttribute="trailing" constant="20" id="3cr-qz-xVq"/>
+                <constraint firstItem="Z5u-Zy-Lee" firstAttribute="centerX" secondItem="fa7-jG-eiI" secondAttribute="centerX" id="3mj-Uu-cwD"/>
+                <constraint firstItem="fa7-jG-eiI" firstAttribute="width" secondItem="fa7-jG-eiI" secondAttribute="height" multiplier="369:386" id="MOE-SZ-KwJ"/>
+                <constraint firstItem="CTj-VL-a8f" firstAttribute="centerX" secondItem="fa7-jG-eiI" secondAttribute="centerX" id="PdU-GC-R4n"/>
+                <constraint firstItem="wNV-sg-puH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bhS-zr-qu9"/>
+                <constraint firstItem="Z5u-Zy-Lee" firstAttribute="centerY" secondItem="fa7-jG-eiI" secondAttribute="centerY" constant="-11" id="cyD-V7-zm0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z5u-Zy-Lee" secondAttribute="trailing" constant="15" id="e15-ug-feW"/>
+                <constraint firstItem="Z5u-Zy-Lee" firstAttribute="leading" secondItem="fa7-jG-eiI" secondAttribute="leading" constant="16" id="eNb-7r-jBH"/>
+                <constraint firstItem="Z5u-Zy-Lee" firstAttribute="width" secondItem="Z5u-Zy-Lee" secondAttribute="height" multiplier="1:1" id="fK6-iH-ZbI"/>
+                <constraint firstItem="Z5u-Zy-Lee" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="i9Q-lU-JrF"/>
+                <constraint firstItem="fa7-jG-eiI" firstAttribute="top" secondItem="wNV-sg-puH" secondAttribute="bottom" constant="30" id="rh5-4i-tHO"/>
+                <constraint firstItem="fa7-jG-eiI" firstAttribute="trailing" secondItem="Z5u-Zy-Lee" secondAttribute="trailing" constant="16" id="rts-ll-WhO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="114.69265367316342"/>
         </view>
     </objects>
+    <resources>
+        <image name="spin" width="176" height="178"/>
+        <image name="wheelFrame" width="369" height="386"/>
+    </resources>
 </document>

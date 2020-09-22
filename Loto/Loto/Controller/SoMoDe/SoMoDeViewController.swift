@@ -7,59 +7,63 @@
 //
 
 import UIKit
-import AVKit
-import AVFoundation
+import TTFortuneWheel
 
 class SoMoDeViewController: BaseViewController {
 
-    @IBOutlet weak var viewPlayer: UIView!
-    @IBOutlet weak var numberLabel: UILabel!
-    var player: AVPlayer!
-    var avpController = AVPlayerViewController()
-    
+    @IBOutlet weak var randomNumber: UILabel!
+    @IBOutlet weak var spinningWhell: TTFortuneWheel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setupTableView()
         self.title = "Con số may mắn"
-    }
-    
-//    override func setLeftNavi() {
-//        let leftButton = UIBarButtonItem(image: UIImage(named: "Group"), style: .done, target: self, action: #selector(back))
-//        navigationItem.leftBarButtonItem = leftButton
-//    }
-    
-    override func back() {
-        dismiss(animated: true, completion: nil)
-        SideBarMenu.isCheckSideMenu = 0
+        self.randomNumber.text = "Hãy tìm kiếm vận may của chính mình!"
+        setupTableView()
     }
     
     func setupTableView() {
         
-        self.numberLabel.text = "Con số may mắn là: "
-        
-        guard let path = Bundle.main.path(forResource: "roulette_ball_v2_compress", ofType:"mp4") else {
-            print("video.m4v not found")
-            return
+        let slices = [ CarnivalWheelSlice.init(title: "Jackport 100 $"),
+        CarnivalWheelSlice.init(title: "0 $"),
+        CarnivalWheelSlice.init(title: "2 $"),
+        CarnivalWheelSlice.init(title: "5 $"),
+        CarnivalWheelSlice.init(title: "10 $"),
+        CarnivalWheelSlice.init(title: "15 $"),
+        CarnivalWheelSlice.init(title: "25 $"),
+        CarnivalWheelSlice.init(title: "50 $")]
+        spinningWhell.slices = slices
+        spinningWhell.equalSlices = true
+        spinningWhell.frameStroke.width = 0
+        spinningWhell.titleRotation = CGFloat.pi
+        spinningWhell.slices.enumerated().forEach { (pair) in
+            let slice = pair.element as! CarnivalWheelSlice
+            let offset = pair.offset
+            switch offset % 4 {
+            case 0: slice.style = .brickRed
+            case 1: slice.style = .sandYellow
+            case 2: slice.style = .babyBlue
+            case 3: slice.style = .deepBlue
+            default: slice.style = .brickRed
+            }
+            
         }
-        player = AVPlayer(url: URL(fileURLWithPath: path))
-
-        avpController.player = player
-
-        avpController.view.frame.size.height = viewPlayer.frame.size.height
-
-        avpController.view.frame.size.width = viewPlayer.frame.size.width
-
-        self.addChild(avpController)
-        self.viewPlayer.addSubview(avpController.view)
-        player.play()
-
     }
-    
-    @IBAction func quaySo(_ sender: Any) {
-        let number = Int.random(in: 00...99)
-        self.numberLabel.text = "Con số may mắn là: " + "\(number)"
+    @IBAction func rotateButton(_ sender: Any) {
+        spinningWhell.startAnimating()
+        let number = Int.random(in: 0..<8)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.spinningWhell.startAnimating(fininshIndex: number) { (finished) in
+                
+                if number >= 2 {
+                    self.randomNumber.text = "Chúc mừng: " + "\(self.spinningWhell.slices[number - 2].title)"
+                } else {
+                    self.randomNumber.text = "Chúc mừng: " + "\(self.spinningWhell.slices[number + 6].title)"
+                }
+                
+            }
+        }
     }
 }
 

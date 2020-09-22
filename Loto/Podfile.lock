@@ -32,12 +32,14 @@ PODS:
   - ObjectMapper (4.2.0)
   - PromisesObjC (1.2.10)
   - SideMenu (6.4.9)
+  - TTFortuneWheel (0.1.8)
 
 DEPENDENCIES:
   - Firebase/Database
   - FSCalendar
   - ObjectMapper
   - SideMenu
+  - TTFortuneWheel
 
 SPEC REPOS:
   trunk:
@@ -53,6 +55,7 @@ SPEC REPOS:
     - ObjectMapper
     - PromisesObjC
     - SideMenu
+    - TTFortuneWheel
 
 SPEC CHECKSUMS:
   Firebase: 658370fa0181826a74b7cfca8d68c5856ca749ae
@@ -67,7 +70,8 @@ SPEC CHECKSUMS:
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   SideMenu: 8ef57a3cfc024a2d3fc1c036c7fe98537baec9e0
+  TTFortuneWheel: ed40c860e88ae5da8abad77da4c616932c6a6d74
 
-PODFILE CHECKSUM: b3fa8f336e48035850eb2cd3dde1de144785008b
+PODFILE CHECKSUM: 3e7ddc164d9f7bf3199113e07f03fe95fb3b4e95
 
 COCOAPODS: 1.9.3

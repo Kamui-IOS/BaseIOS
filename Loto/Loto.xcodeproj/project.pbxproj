@@ -34,6 +34,11 @@
 		EF78F91C24FE3894003FC516 /* TraCuuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F91A24FE3894003FC516 /* TraCuuViewController.swift */; };
 		EF78F91D24FE3894003FC516 /* TraCuuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF78F91B24FE3894003FC516 /* TraCuuViewController.xib */; };
 		EF78F91F24FE463F003FC516 /* BaseNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F91E24FE463F003FC516 /* BaseNavigation.swift */; };
+		EF7CE7A32519CBC800CDB685 /* CarnivalWheelSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7CE7A22519CBC800CDB685 /* CarnivalWheelSlice.swift */; };
+		EF7CE7AA2519D2B700CDB685 /* Phosphate.ttc in Resources */ = {isa = PBXBuildFile; fileRef = EF7CE7A62519D2B700CDB685 /* Phosphate.ttc */; };
+		EF7CE7AB2519D2B700CDB685 /* Chunkfive.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF7CE7A72519D2B700CDB685 /* Chunkfive.otf */; };
+		EF7CE7AC2519D2B700CDB685 /* Lobster_1.3.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF7CE7A82519D2B700CDB685 /* Lobster_1.3.otf */; };
+		EF7CE7AD2519D2B700CDB685 /* BEBAS___.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF7CE7A92519D2B700CDB685 /* BEBAS___.ttf */; };
 		EF7D17AA24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17A824FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift */; };
 		EF7D17AB24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF7D17A924FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib */; };
 		EF7D17AF24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D17AD24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift */; };
@@ -92,6 +97,11 @@
 		EF78F91A24FE3894003FC516 /* TraCuuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraCuuViewController.swift; sourceTree = "<group>"; };
 		EF78F91B24FE3894003FC516 /* TraCuuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TraCuuViewController.xib; sourceTree = "<group>"; };
 		EF78F91E24FE463F003FC516 /* BaseNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigation.swift; sourceTree = "<group>"; };
+		EF7CE7A22519CBC800CDB685 /* CarnivalWheelSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarnivalWheelSlice.swift; sourceTree = "<group>"; };
+		EF7CE7A62519D2B700CDB685 /* Phosphate.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Phosphate.ttc; sourceTree = "<group>"; };
+		EF7CE7A72519D2B700CDB685 /* Chunkfive.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chunkfive.otf; sourceTree = "<group>"; };
+		EF7CE7A82519D2B700CDB685 /* Lobster_1.3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lobster_1.3.otf; sourceTree = "<group>"; };
+		EF7CE7A92519D2B700CDB685 /* BEBAS___.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BEBAS___.ttf"; sourceTree = "<group>"; };
 		EF7D17A824FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNam2ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF7D17A924FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienTrungNam2ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		EF7D17AD24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienTrungNam3ItemCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -213,6 +223,17 @@
 			path = TraCuu;
 			sourceTree = "<group>";
 		};
+		EF7CE7A42519D23B00CDB685 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF7CE7A92519D2B700CDB685 /* BEBAS___.ttf */,
+				EF7CE7A72519D2B700CDB685 /* Chunkfive.otf */,
+				EF7CE7A82519D2B700CDB685 /* Lobster_1.3.otf */,
+				EF7CE7A62519D2B700CDB685 /* Phosphate.ttc */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		EF7D17AC24FCBF6000BD11C0 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +267,7 @@
 			children = (
 				EF7D17C524FCF06D00BD11C0 /* SoMoDeViewController.swift */,
 				EF7D17C624FCF06D00BD11C0 /* SoMoDeViewController.xib */,
+				EF7CE7A22519CBC800CDB685 /* CarnivalWheelSlice.swift */,
 			);
 			path = SoMoDe;
 			sourceTree = "<group>";
@@ -321,6 +343,7 @@
 				EF7136A0250F308C0092FA5C /* Model */,
 				EFFCB8EC24FBA6CE000A880D /* Controller */,
 				EFF6FE2B24FBC8490062F307 /* Extension */,
+				EF7CE7A42519D23B00CDB685 /* Resources */,
 				EF2DC24E2518D0FB0001D8DA /* DataServers.swift */,
 				EFFCB8DD24FBA61B000A880D /* Assets.xcassets */,
 				EFFCB8DF24FBA61B000A880D /* LaunchScreen.storyboard */,
@@ -455,8 +478,11 @@
 			files = (
 				EF1FD5262510AABF00972817 /* roulette_ball_v2_compress.mp4 in Resources */,
 				EF737A9D24FC272100B31D48 /* MienBacCollectionViewCell.xib in Resources */,
+				EF7CE7AC2519D2B700CDB685 /* Lobster_1.3.otf in Resources */,
+				EF7CE7AA2519D2B700CDB685 /* Phosphate.ttc in Resources */,
 				EF78F90924FE28E4003FC516 /* TotalTableViewCell.xib in Resources */,
 				EF7D17BD24FCDF0700BD11C0 /* DetailSoiCauLotoViewController.xib in Resources */,
+				EF7CE7AD2519D2B700CDB685 /* BEBAS___.ttf in Resources */,
 				EF7D17B424FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.xib in Resources */,
 				EF7D17D524FCFC7000BD11C0 /* TotalViewController.xib in Resources */,
 				EF78F90024FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib in Resources */,
@@ -464,6 +490,7 @@
 				EF7D17DA24FCFF5200BD11C0 /* TotalCollectionViewCell.xib in Resources */,
 				EF72EA6524FBEF23001615E4 /* MienTrungNamViewController.xib in Resources */,
 				EF78F91124FE320C003FC516 /* DetailTotalViewController.xib in Resources */,
+				EF7CE7AB2519D2B700CDB685 /* Chunkfive.otf in Resources */,
 				EFFCB8E124FBA61B000A880D /* LaunchScreen.storyboard in Resources */,
 				EF78F91D24FE3894003FC516 /* TraCuuViewController.xib in Resources */,
 				EFFCB8DE24FBA61B000A880D /* Assets.xcassets in Resources */,
@@ -557,6 +584,7 @@
 				EF7D17AF24FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.swift in Sources */,
 				EF78F91024FE320C003FC516 /* DetailTotalViewController.swift in Sources */,
 				EF78F8FA24FDF828003FC516 /* BaseViewController.swift in Sources */,
+				EF7CE7A32519CBC800CDB685 /* CarnivalWheelSlice.swift in Sources */,
 				EF42CEDB24FD68D90056D8D1 /* SideBarMenu.swift in Sources */,
 				EF78F91624FE3500003FC516 /* TabbarKQDai.swift in Sources */,
 				EF2DC24F2518D0FB0001D8DA /* DataServers.swift in Sources */,
