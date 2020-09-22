@@ -25,14 +25,14 @@ class SoMoDeViewController: BaseViewController {
     
     func setupTableView() {
         
-        let slices = [ CarnivalWheelSlice.init(title: "Jackport 100 $"),
-        CarnivalWheelSlice.init(title: "0 $"),
-        CarnivalWheelSlice.init(title: "2 $"),
-        CarnivalWheelSlice.init(title: "5 $"),
-        CarnivalWheelSlice.init(title: "10 $"),
-        CarnivalWheelSlice.init(title: "15 $"),
-        CarnivalWheelSlice.init(title: "25 $"),
-        CarnivalWheelSlice.init(title: "50 $")]
+        let slices = [ CarnivalWheelSlice.init(title: "Jackport 100"),
+        CarnivalWheelSlice.init(title: "0"),
+        CarnivalWheelSlice.init(title: "2"),
+        CarnivalWheelSlice.init(title: "5"),
+        CarnivalWheelSlice.init(title: "10"),
+        CarnivalWheelSlice.init(title: "15"),
+        CarnivalWheelSlice.init(title: "25"),
+        CarnivalWheelSlice.init(title: "50")]
         spinningWhell.slices = slices
         spinningWhell.equalSlices = true
         spinningWhell.frameStroke.width = 0
@@ -57,9 +57,9 @@ class SoMoDeViewController: BaseViewController {
             self.spinningWhell.startAnimating(fininshIndex: number) { (finished) in
                 
                 if number >= 2 {
-                    self.randomNumber.text = "Chúc mừng: " + "\(self.spinningWhell.slices[number - 2].title)"
+                    self.randomNumber.text = "Chúc mừng: " + "\(self.spinningWhell.slices[number - 2].title)" + " $"
                 } else {
-                    self.randomNumber.text = "Chúc mừng: " + "\(self.spinningWhell.slices[number + 6].title)"
+                    self.randomNumber.text = "Chúc mừng: " + "\(self.spinningWhell.slices[number + 6].title)" + " $"
                 }
                 
             }
