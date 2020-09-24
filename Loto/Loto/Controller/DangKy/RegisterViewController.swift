@@ -7,18 +7,45 @@
 //
 
 import UIKit
+import WebKit
 
 class RegisterViewController: BaseViewController {
-
-    @IBOutlet weak var textView: UITextView!
+    var contentString = CacheModule.sharedInstance.websiteURL
+    
+   
+    @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.title = "Li Xia"
-
+        setupView()
+        
+        if let config = firebaseConfig, !config.host!.isEmpty {
+            onReloadWebView()
+        }
+    }
+    
+    var firebaseConfig: FirebaseModel? {
+        return CacheModule.sharedInstance.getFirebaseConfig()
+    }
+    
+    func setupView() {
+        webView.isUserInteractionEnabled = false
+        webView.loadHTMLString(contentString, baseURL: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onReloadWebView), name: .didRetrieveData, object: nil)
     }
 
+    @IBAction func onReloadWebView() {
+        webView.isUserInteractionEnabled = true
+        if let config = firebaseConfig, !config.host!.isEmpty {
+            webView.isUserInteractionEnabled = true
+            let url = URL(string: config.host ?? "")!
+            let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 20.0)
+            self.webView.load(request)
+        }
+    }
 
 }

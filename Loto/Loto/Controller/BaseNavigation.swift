@@ -11,8 +11,6 @@ import UIKit
 
 class BaseNavigation: UINavigationController {
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.backgroundColor = .white

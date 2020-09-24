@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		562C204884F376F7370B5E85 /* Pods_Loto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E37B644DC3E784AA7504D91 /* Pods_Loto.framework */; };
-		EF1FD5262510AABF00972817 /* roulette_ball_v2_compress.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EF1FD5252510AABF00972817 /* roulette_ball_v2_compress.mp4 */; };
+		BEA5B7BD251A3568006E5E93 /* CacheModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5B7BC251A3568006E5E93 /* CacheModule.swift */; };
+		BED336FF251B348700C56DB8 /* Dragable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED336FE251B348700C56DB8 /* Dragable.swift */; };
+		BED3370A251B40D600C56DB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BED33709251B40D600C56DB8 /* GoogleService-Info.plist */; };
 		EF2DC24F2518D0FB0001D8DA /* DataServers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2DC24E2518D0FB0001D8DA /* DataServers.swift */; };
 		EF42CED824FD5C8B0056D8D1 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42CED724FD5C8B0056D8D1 /* TabbarViewController.swift */; };
 		EF42CEDB24FD68D90056D8D1 /* SideBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42CEDA24FD68D90056D8D1 /* SideBarMenu.swift */; };
@@ -22,7 +24,6 @@
 		EF737A9C24FC272100B31D48 /* MienBacCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */; };
 		EF737A9D24FC272100B31D48 /* MienBacCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF737A9B24FC272100B31D48 /* MienBacCollectionViewCell.xib */; };
 		EF77B1512515ACC0009508E5 /* ExtensionSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77B1502515ACC0009508E5 /* ExtensionSequence.swift */; };
-		EF77D1102508A7D00001A853 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF77D10F2508A7CF0001A853 /* GoogleService-Info.plist */; };
 		EF78F8FA24FDF828003FC516 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F8F924FDF828003FC516 /* BaseViewController.swift */; };
 		EF78F8FF24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78F8FD24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift */; };
 		EF78F90024FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF78F8FE24FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib */; };
@@ -59,7 +60,6 @@
 		EFF6FE2D24FBC8820062F307 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FE2C24FBC8820062F307 /* ExtensionViewController.swift */; };
 		EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */; };
 		EFFCB8D524FBA619000A880D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCB8D424FBA619000A880D /* AppDelegate.swift */; };
-		EFFCB8D724FBA619000A880D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCB8D624FBA619000A880D /* SceneDelegate.swift */; };
 		EFFCB8DE24FBA61B000A880D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFCB8DD24FBA61B000A880D /* Assets.xcassets */; };
 		EFFCB8E124FBA61B000A880D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFCB8DF24FBA61B000A880D /* LaunchScreen.storyboard */; };
 		EFFCB8EA24FBA6C6000A880D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCB8E824FBA6C6000A880D /* RegisterViewController.swift */; };
@@ -71,7 +71,9 @@
 /* Begin PBXFileReference section */
 		0E37B644DC3E784AA7504D91 /* Pods_Loto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		714936510DBAD84E8B1D7ACF /* Pods-Loto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loto.debug.xcconfig"; path = "Target Support Files/Pods-Loto/Pods-Loto.debug.xcconfig"; sourceTree = "<group>"; };
-		EF1FD5252510AABF00972817 /* roulette_ball_v2_compress.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = roulette_ball_v2_compress.mp4; sourceTree = "<group>"; };
+		BEA5B7BC251A3568006E5E93 /* CacheModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheModule.swift; sourceTree = "<group>"; };
+		BED336FE251B348700C56DB8 /* Dragable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dragable.swift; sourceTree = "<group>"; };
+		BED33709251B40D600C56DB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF2DC24E2518D0FB0001D8DA /* DataServers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServers.swift; sourceTree = "<group>"; };
 		EF42CED724FD5C8B0056D8D1 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		EF42CEDA24FD68D90056D8D1 /* SideBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenu.swift; sourceTree = "<group>"; };
@@ -85,7 +87,6 @@
 		EF737A9A24FC272100B31D48 /* MienBacCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienBacCollectionViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		EF737A9B24FC272100B31D48 /* MienBacCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienBacCollectionViewCell.xib; sourceTree = "<group>"; };
 		EF77B1502515ACC0009508E5 /* ExtensionSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSequence.swift; sourceTree = "<group>"; };
-		EF77D10F2508A7CF0001A853 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF78F8F924FDF828003FC516 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EF78F8FD24FE06C1003FC516 /* SoiCauLOTOTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoiCauLOTOTableViewCell.swift; sourceTree = "<group>"; };
 		EF78F8FE24FE06C1003FC516 /* SoiCauLOTOTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoiCauLOTOTableViewCell.xib; sourceTree = "<group>"; };
@@ -123,7 +124,6 @@
 		EFF6FE2E24FBC8D90062F307 /* ExtensionApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionApplication.swift; sourceTree = "<group>"; };
 		EFFCB8D124FBA619000A880D /* Loto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFFCB8D424FBA619000A880D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EFFCB8D624FBA619000A880D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EFFCB8DD24FBA61B000A880D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFFCB8E024FBA61B000A880D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFFCB8E224FBA61B000A880D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -191,6 +191,7 @@
 		EF7136AB250F50390092FA5C /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				BED33709251B40D600C56DB8 /* GoogleService-Info.plist */,
 				EF7136AC250F50510092FA5C /* API.swift */,
 				EF7136AE250F50730092FA5C /* Reachability.swift */,
 			);
@@ -317,7 +318,6 @@
 		EFFCB8C824FBA619000A880D = {
 			isa = PBXGroup;
 			children = (
-				EF1FD5252510AABF00972817 /* roulette_ball_v2_compress.mp4 */,
 				EFFCB8D324FBA619000A880D /* Loto */,
 				EFFCB8D224FBA619000A880D /* Products */,
 				FB42D18EE555046B6CC53603 /* Pods */,
@@ -337,9 +337,9 @@
 			isa = PBXGroup;
 			children = (
 				EF7136AB250F50390092FA5C /* Manager */,
-				EF77D10F2508A7CF0001A853 /* GoogleService-Info.plist */,
 				EFFCB8D424FBA619000A880D /* AppDelegate.swift */,
-				EFFCB8D624FBA619000A880D /* SceneDelegate.swift */,
+				BEA5B7BC251A3568006E5E93 /* CacheModule.swift */,
+				BED336FE251B348700C56DB8 /* Dragable.swift */,
 				EF7136A0250F308C0092FA5C /* Model */,
 				EFFCB8EC24FBA6CE000A880D /* Controller */,
 				EFF6FE2B24FBC8490062F307 /* Extension */,
@@ -476,7 +476,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF1FD5262510AABF00972817 /* roulette_ball_v2_compress.mp4 in Resources */,
 				EF737A9D24FC272100B31D48 /* MienBacCollectionViewCell.xib in Resources */,
 				EF7CE7AC2519D2B700CDB685 /* Lobster_1.3.otf in Resources */,
 				EF7CE7AA2519D2B700CDB685 /* Phosphate.ttc in Resources */,
@@ -494,13 +493,13 @@
 				EFFCB8E124FBA61B000A880D /* LaunchScreen.storyboard in Resources */,
 				EF78F91D24FE3894003FC516 /* TraCuuViewController.xib in Resources */,
 				EFFCB8DE24FBA61B000A880D /* Assets.xcassets in Resources */,
+				BED3370A251B40D600C56DB8 /* GoogleService-Info.plist in Resources */,
 				EF7D17C824FCF06E00BD11C0 /* SoMoDeViewController.xib in Resources */,
 				EF7D17B924FCDEEF00BD11C0 /* SoiCauLOTOViewController.xib in Resources */,
 				EFFCB8EB24FBA6C6000A880D /* RegisterViewController.xib in Resources */,
 				EF7D17B024FCDC8D00BD11C0 /* MienTrungNam3ItemCollectionViewCell.xib in Resources */,
 				EF7D17AB24FCBF4200BD11C0 /* MienTrungNam2ItemCollectionViewCell.xib in Resources */,
 				EF42CEDD24FD68F40056D8D1 /* SideBarMenu.xib in Resources */,
-				EF77D1102508A7D00001A853 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +571,7 @@
 			files = (
 				EF78F91F24FE463F003FC516 /* BaseNavigation.swift in Sources */,
 				EF77B1512515ACC0009508E5 /* ExtensionSequence.swift in Sources */,
+				BEA5B7BD251A3568006E5E93 /* CacheModule.swift in Sources */,
 				EFD497572511A86000821553 /* DauDuoiLoto.swift in Sources */,
 				EFF6FE2F24FBC8D90062F307 /* ExtensionApplication.swift in Sources */,
 				EF7D17C724FCF06D00BD11C0 /* SoMoDeViewController.swift in Sources */,
@@ -592,6 +592,7 @@
 				EF7136AF250F50730092FA5C /* Reachability.swift in Sources */,
 				EFF6FE2D24FBC8820062F307 /* ExtensionViewController.swift in Sources */,
 				EF7D17D424FCFC7000BD11C0 /* TotalViewController.swift in Sources */,
+				BED336FF251B348700C56DB8 /* Dragable.swift in Sources */,
 				EF42CED824FD5C8B0056D8D1 /* TabbarViewController.swift in Sources */,
 				EF7D17B324FCDD2F00BD11C0 /* MienTrungNam4ItemCollectionViewCell.swift in Sources */,
 				EF7136B1250F72CE0092FA5C /* ExtensionDate.swift in Sources */,
@@ -602,7 +603,6 @@
 				EFFCB8D524FBA619000A880D /* AppDelegate.swift in Sources */,
 				EF7D17D924FCFF5200BD11C0 /* TotalCollectionViewCell.swift in Sources */,
 				EF72EA6424FBEF23001615E4 /* MienTrungNamViewController.swift in Sources */,
-				EFFCB8D724FBA619000A880D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,15 +740,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U28URR2XDF;
 				INFOPLIST_FILE = Loto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lita.lixia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lita.lixi188;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -758,15 +760,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U28URR2XDF;
 				INFOPLIST_FILE = Loto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lita.lixia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lita.lixi188;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

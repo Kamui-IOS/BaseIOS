@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="200" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_premium" translatesAutoresizingMaskIntoConstraints="NO" id="EmC-fy-nUZ">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="EmC-fy-nUZ">
                     <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="aDA-1X-1Lq"/>
@@ -26,7 +28,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ka6-6U-IUZ">
                     <rect key="frame" x="0.0" y="150" width="200" height="50"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b3-xb-ZLW">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b3-xb-ZLW">
                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <connections>
                                 <action selector="DangKy:" destination="-1" eventType="touchUpInside" id="Lhg-wz-IdM"/>
@@ -46,7 +48,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="9b3-xb-ZLW" secondAttribute="trailing" id="J4A-r6-ZzM"/>
                         <constraint firstAttribute="height" constant="50" id="V0T-iL-YBM"/>
@@ -76,14 +78,14 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFd-h2-1PC">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFd-h2-1PC">
                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <connections>
                                 <action selector="TrucTiepXoSo:" destination="-1" eventType="touchUpInside" id="Fzh-Ub-GNO"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="1hq-9L-Wcu"/>
                         <constraint firstItem="IFd-h2-1PC" firstAttribute="top" secondItem="3RT-z7-USF" secondAttribute="top" id="93m-4J-ipx"/>
@@ -113,14 +115,14 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzU-rt-zpK">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzU-rt-zpK">
                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <connections>
                                 <action selector="KetQuaXoSo:" destination="-1" eventType="touchUpInside" id="J6x-to-cQ8"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="zzU-rt-zpK" firstAttribute="top" secondItem="ozo-xp-LSU" secondAttribute="top" id="0IA-v5-xhd"/>
                         <constraint firstItem="MyN-HK-fHD" firstAttribute="centerY" secondItem="ozo-xp-LSU" secondAttribute="centerY" id="3uP-ty-mmY"/>
@@ -134,45 +136,8 @@
                         <constraint firstItem="MyN-HK-fHD" firstAttribute="leading" secondItem="ozo-xp-LSU" secondAttribute="leading" constant="10" id="v3V-1N-X0h"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xK-T8-mdR">
-                    <rect key="frame" x="0.0" y="300" width="200" height="50"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light" translatesAutoresizingMaskIntoConstraints="NO" id="4DT-Wu-ZN3">
-                            <rect key="frame" x="10" y="8" width="34" height="34"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="4DT-Wu-ZN3" secondAttribute="height" id="20J-HG-eLr"/>
-                                <constraint firstAttribute="height" constant="34" id="InA-Ru-foy"/>
-                            </constraints>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soi cầu LiXia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHC-dY-zGQ">
-                            <rect key="frame" x="54" y="16" width="136" height="18"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbk-ht-JR0">
-                            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
-                            <connections>
-                                <action selector="SoiCauLOTO188:" destination="-1" eventType="touchUpInside" id="MVD-lP-QRt"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="hbk-ht-JR0" secondAttribute="trailing" id="6oh-k5-sq5"/>
-                        <constraint firstItem="4DT-Wu-ZN3" firstAttribute="leading" secondItem="9xK-T8-mdR" secondAttribute="leading" constant="10" id="OYm-IO-ten"/>
-                        <constraint firstItem="hbk-ht-JR0" firstAttribute="leading" secondItem="9xK-T8-mdR" secondAttribute="leading" id="Opj-d0-0sr"/>
-                        <constraint firstItem="jHC-dY-zGQ" firstAttribute="centerY" secondItem="9xK-T8-mdR" secondAttribute="centerY" id="PSH-cR-osw"/>
-                        <constraint firstItem="hbk-ht-JR0" firstAttribute="top" secondItem="9xK-T8-mdR" secondAttribute="top" id="SVr-lh-3pE"/>
-                        <constraint firstAttribute="trailing" secondItem="jHC-dY-zGQ" secondAttribute="trailing" constant="10" id="WTi-ga-6BJ"/>
-                        <constraint firstAttribute="height" constant="50" id="a2i-bD-kdV"/>
-                        <constraint firstAttribute="bottom" secondItem="hbk-ht-JR0" secondAttribute="bottom" id="bgs-TJ-507"/>
-                        <constraint firstItem="jHC-dY-zGQ" firstAttribute="leading" secondItem="4DT-Wu-ZN3" secondAttribute="trailing" constant="10" id="lh7-dB-1cR"/>
-                        <constraint firstItem="4DT-Wu-ZN3" firstAttribute="centerY" secondItem="9xK-T8-mdR" secondAttribute="centerY" id="vFX-be-oqH"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpm-rw-yHY">
-                    <rect key="frame" x="0.0" y="350" width="200" height="50"/>
+                    <rect key="frame" x="0.0" y="300" width="200" height="50"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="hvg-rt-pve">
                             <rect key="frame" x="10" y="8" width="34" height="34"/>
@@ -187,14 +152,14 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Su-ox-of5">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Su-ox-of5">
                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <connections>
                                 <action selector="SoMoDe:" destination="-1" eventType="touchUpInside" id="5cN-0U-236"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="5Su-ox-of5" firstAttribute="leading" secondItem="bpm-rw-yHY" secondAttribute="leading" id="167-FU-Lf2"/>
                         <constraint firstAttribute="trailing" secondItem="s2T-1P-jrl" secondAttribute="trailing" constant="10" id="7eT-m4-HmI"/>
@@ -209,7 +174,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIC-4l-hqZ">
-                    <rect key="frame" x="0.0" y="400" width="200" height="50"/>
+                    <rect key="frame" x="0.0" y="350" width="200" height="50"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="qS7-Lj-JSW">
                             <rect key="frame" x="10" y="8" width="34" height="34"/>
@@ -224,14 +189,14 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvr-xD-MXC">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvr-xD-MXC">
                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <connections>
                                 <action selector="TraCuuXoSo:" destination="-1" eventType="touchUpInside" id="mC2-cc-8LU"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="8Ae-Sn-Kbr"/>
                         <constraint firstAttribute="trailing" secondItem="94c-Qv-JKy" secondAttribute="trailing" constant="10" id="CL7-h0-0xF"/>
@@ -246,24 +211,22 @@
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ozo-xp-LSU" firstAttribute="top" secondItem="3RT-z7-USF" secondAttribute="bottom" id="56F-Ve-Yqj"/>
                 <constraint firstItem="bpm-rw-yHY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BPB-Dm-pbh"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9xK-T8-mdR" secondAttribute="trailing" id="BnP-Td-4xt"/>
-                <constraint firstItem="9xK-T8-mdR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HIL-gg-CDB"/>
                 <constraint firstItem="bpm-rw-yHY" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="JLP-kd-ubc"/>
                 <constraint firstItem="EmC-fy-nUZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Kf0-Bg-wfv"/>
                 <constraint firstItem="ka6-6U-IUZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="N3w-fy-DtR"/>
                 <constraint firstItem="3RT-z7-USF" firstAttribute="top" secondItem="ka6-6U-IUZ" secondAttribute="bottom" id="OCi-lv-WCa"/>
                 <constraint firstItem="3RT-z7-USF" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Op2-DW-uhQ"/>
                 <constraint firstItem="NIC-4l-hqZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SRZ-bL-Wz2"/>
-                <constraint firstItem="bpm-rw-yHY" firstAttribute="top" secondItem="9xK-T8-mdR" secondAttribute="bottom" id="TOy-kI-Hhh"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NIC-4l-hqZ" secondAttribute="trailing" id="Xgt-Hc-3tc"/>
                 <constraint firstItem="EmC-fy-nUZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZTT-gh-WdL"/>
                 <constraint firstItem="3RT-z7-USF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cS8-4z-shE"/>
-                <constraint firstItem="9xK-T8-mdR" firstAttribute="top" secondItem="ozo-xp-LSU" secondAttribute="bottom" id="daa-xu-3ca"/>
                 <constraint firstItem="EmC-fy-nUZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="f68-MN-wTF"/>
+                <constraint firstItem="bpm-rw-yHY" firstAttribute="top" secondItem="ozo-xp-LSU" secondAttribute="bottom" id="fwE-hb-rxI"/>
                 <constraint firstItem="ozo-xp-LSU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hhr-DZ-AvL"/>
                 <constraint firstItem="NIC-4l-hqZ" firstAttribute="top" secondItem="bpm-rw-yHY" secondAttribute="bottom" id="jkc-W2-vKi"/>
                 <constraint firstItem="ka6-6U-IUZ" firstAttribute="top" secondItem="EmC-fy-nUZ" secondAttribute="bottom" id="kFy-bs-UlE"/>
@@ -271,17 +234,18 @@
                 <constraint firstItem="ozo-xp-LSU" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="tvg-QC-IXv"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="60" y="111.97183098591549"/>
         </view>
     </objects>
     <resources>
         <image name="counter" width="50" height="50"/>
-        <image name="ic_premium" width="82" height="82"/>
-        <image name="light" width="50" height="50"/>
+        <image name="logo" width="192" height="192"/>
         <image name="search" width="50" height="50"/>
         <image name="testpassed" width="50" height="50"/>
         <image name="time" width="50" height="50"/>
         <image name="usermale" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

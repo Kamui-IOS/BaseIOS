@@ -45,14 +45,14 @@ class SideBarMenu: UIViewController {
     }
     
     @IBAction func SoiCauLOTO188(_ sender: Any) {
-        if SideBarMenu.isCheckSideMenu != 4 {
-            let soiCauVC = SoiCauLOTOViewController()
-            let soiCauNavi = BaseNavigation(rootViewController: soiCauVC)
-            soiCauVC.index = 100
-            soiCauNavi.modalPresentationStyle = .fullScreen
-            SideBarMenu.isCheckSideMenu = 4
-            present(soiCauNavi, animated: true, completion: nil)
-        }
+//        if SideBarMenu.isCheckSideMenu != 4 {
+//            let soiCauVC = SoiCauLOTOViewController()
+//            let soiCauNavi = BaseNavigation(rootViewController: soiCauVC)
+//            soiCauVC.index = 100
+//            soiCauNavi.modalPresentationStyle = .fullScreen
+//            SideBarMenu.isCheckSideMenu = 4
+//            present(soiCauNavi, animated: true, completion: nil)
+//        }
     }
     
     @IBAction func SoMoDe(_ sender: Any) {
