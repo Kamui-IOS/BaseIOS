@@ -93,6 +93,7 @@ class MienBacCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.quangCaoView.isHidden = true
     }
     
     func loadDataCells(date: String ,data: Jackport)

@@ -10,6 +10,9 @@ import UIKit
 
 class MienTrungNam4ItemCollectionViewCell: UICollectionViewCell {
 
+    
+    @IBOutlet weak var quangCaoView: UIView!
+    
     @IBOutlet weak var days: UILabel!
     @IBOutlet weak var city_01: UILabel!
     @IBOutlet weak var city_02: UILabel!
@@ -168,6 +171,7 @@ class MienTrungNam4ItemCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.quangCaoView.isHidden = true
     }
     
     func loadCell(date: String, data: [Jackport]) {
