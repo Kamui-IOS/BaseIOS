@@ -47,9 +47,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             guard let responseDic = snapshot.value as? [String: Any],
                 let firebaseModel = FirebaseModel(JSON: responseDic) else { return }
             CacheModule.sharedInstance.setFirebaseConfig(firebaseModel)
-            //            UIApplication.shared.keyWindow?.bringSubviewToFront(self.dragButton)
-            
-//            UIApplication.shared.keyWindow?.rootViewController?.view.addSubview(self.dragButton)
             NotificationCenter.default.post(name: .didRetrieveData, object: nil, userInfo: nil)
         }
     }

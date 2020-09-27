@@ -12,11 +12,25 @@ class SideBarMenu: UIViewController {
     
     static var isCheckSideMenu: Int = 1
     
+    @IBOutlet weak var registerLabel: UILabel!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onReloadWebView), name: .didRetrieveData, object: nil)
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    @IBAction func onReloadWebView() {
+        registerLabel.text = "Đăng ký"
+    }
+    
     @IBAction func DangKy(_ sender: UIButton) {
+        
         if SideBarMenu.isCheckSideMenu != 1 {
             let registerVC = RegisterViewController()
             let registerNavi = BaseNavigation(rootViewController: registerVC)

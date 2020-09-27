@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideBarMenu" customModule="Loto" customModuleProvider="target">
             <connections>
+                <outlet property="registerLabel" destination="EP2-0f-70o" id="muN-iF-hyX"/>
                 <outlet property="view" destination="iN0-l3-epB" id="dcf-EI-tUC"/>
             </connections>
         </placeholder>
@@ -41,7 +42,7 @@
                                 <constraint firstAttribute="height" constant="34" id="NpV-bJ-Ign"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng ký Lixia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP2-0f-70o">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giới thiệu ứng dụng" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP2-0f-70o">
                             <rect key="frame" x="54" y="16" width="136" height="18"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <nil key="textColor"/>

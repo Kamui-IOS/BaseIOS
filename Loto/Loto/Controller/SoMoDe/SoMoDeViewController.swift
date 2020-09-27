@@ -19,21 +19,20 @@ class SoMoDeViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
         self.title = "Con số may mắn"
-        self.randomNumber.text = "Hãy tìm kiếm vận may của chính mình!"
+        self.randomNumber.text = "Hãy tìm kiếm con số may mắn"
         setupTableView()
     }
     
     func setupTableView() {
+        var slices = [CarnivalWheelSlice]()
         
-        let slices = [ CarnivalWheelSlice.init(title: "Jackport 100"),
-        CarnivalWheelSlice.init(title: "0"),
-        CarnivalWheelSlice.init(title: "2"),
-        CarnivalWheelSlice.init(title: "5"),
-        CarnivalWheelSlice.init(title: "10"),
-        CarnivalWheelSlice.init(title: "15"),
-        CarnivalWheelSlice.init(title: "25"),
-        CarnivalWheelSlice.init(title: "50")]
+        for idx in 0..<99 {
+           let item =  CarnivalWheelSlice(title: "\(idx)")
+            slices.append(item)
+        }
+        
         spinningWhell.slices = slices
+
         spinningWhell.equalSlices = true
         spinningWhell.frameStroke.width = 0
         spinningWhell.titleRotation = CGFloat.pi
@@ -52,16 +51,14 @@ class SoMoDeViewController: BaseViewController {
     }
     @IBAction func rotateButton(_ sender: Any) {
         spinningWhell.startAnimating()
-        let number = Int.random(in: 0..<8)
+        let number = Int.random(in: 0..<99)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.spinningWhell.startAnimating(fininshIndex: number) { (finished) in
-                
                 if number >= 2 {
-                    self.randomNumber.text = "Chúc mừng: " + "\(self.spinningWhell.slices[number - 2].title)" + " $"
+                    self.randomNumber.text = "Số may mắn của bạn: " + "\(self.spinningWhell.slices[number].title)" + " "
                 } else {
-                    self.randomNumber.text = "Chúc mừng: " + "\(self.spinningWhell.slices[number + 6].title)" + " $"
+                    self.randomNumber.text = "Số may mắn của bạn: " + "\(self.spinningWhell.slices[number].title)"
                 }
-                
             }
         }
     }

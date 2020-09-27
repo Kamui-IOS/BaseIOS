@@ -17,13 +17,16 @@ class BaseViewController: UIViewController {
     
     override func viewWillAppear(_ animate: Bool) {
         super.viewWillAppear(animate)
-
-//        let _dragButton = DPDraggableButton(frame: .init(x: 100, y: 50, width: 50, height: 50), draggableButtonType: .round)
-//            _dragButton.setImage(UIImage(named: "zalo12"), for: .normal)
-//            _dragButton.addTarget(self, action: #selector(onTapZalo(_:)), for: .touchUpInside)
-//            self.dragButton = _dragButton
-        
-//        UIApplication.shared.keyWindow!.addSubview(self.dragButton!)
+        if let profile = CacheModule.sharedInstance.getFirebaseConfig(),
+           (profile.isShowSocial ?? 0) == 1 {
+            let _dragButton = DPDraggableButton(frame: .init(x: 100, y: 50, width: 50, height: 50), draggableButtonType: .round)
+                     _dragButton.setImage(UIImage(named: "zalo12"), for: .normal)
+                     _dragButton.addTarget(self, action: #selector(onTapZalo(_:)), for: .touchUpInside)
+                     self.dragButton = _dragButton
+                 
+                 UIApplication.shared.keyWindow!.addSubview(self.dragButton!)
+        }
+//
     }
     @IBAction func onTapZalo(_ sender: UIButton) {
         // TODO: - Open zalo
