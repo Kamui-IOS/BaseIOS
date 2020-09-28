@@ -25,7 +25,7 @@ class SoiCauLOTOViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("\(index)")
+        print("\(String(describing: index))")
     }
     
     func setupTableView() {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		562C204884F376F7370B5E85 /* Pods_Loto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E37B644DC3E784AA7504D91 /* Pods_Loto.framework */; };
+		BE8548E62522088A00A999E2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8548E52522088A00A999E2 /* WebKit.framework */; };
 		BEA5B7BD251A3568006E5E93 /* CacheModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA5B7BC251A3568006E5E93 /* CacheModule.swift */; };
 		BED336FF251B348700C56DB8 /* Dragable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED336FE251B348700C56DB8 /* Dragable.swift */; };
 		BED3370A251B40D600C56DB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BED33709251B40D600C56DB8 /* GoogleService-Info.plist */; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		0E37B644DC3E784AA7504D91 /* Pods_Loto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		714936510DBAD84E8B1D7ACF /* Pods-Loto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loto.debug.xcconfig"; path = "Target Support Files/Pods-Loto/Pods-Loto.debug.xcconfig"; sourceTree = "<group>"; };
+		BE8548E52522088A00A999E2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		BEA5B7BC251A3568006E5E93 /* CacheModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheModule.swift; sourceTree = "<group>"; };
 		BED336FE251B348700C56DB8 /* Dragable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dragable.swift; sourceTree = "<group>"; };
 		BED33709251B40D600C56DB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8548E62522088A00A999E2 /* WebKit.framework in Frameworks */,
 				562C204884F376F7370B5E85 /* Pods_Loto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +152,7 @@
 		DCA87C210B314990E1709ADF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE8548E52522088A00A999E2 /* WebKit.framework */,
 				0E37B644DC3E784AA7504D91 /* Pods_Loto.framework */,
 			);
 			name = Frameworks;
@@ -741,7 +745,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = U28URR2XDF;
 				INFOPLIST_FILE = Loto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -765,7 +769,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = U28URR2XDF;
 				INFOPLIST_FILE = Loto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
