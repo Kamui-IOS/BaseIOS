@@ -58,17 +58,6 @@ class SideBarMenu: UIViewController {
         }
     }
     
-    @IBAction func SoiCauLOTO188(_ sender: Any) {
-//        if SideBarMenu.isCheckSideMenu != 4 {
-//            let soiCauVC = SoiCauLOTOViewController()
-//            let soiCauNavi = BaseNavigation(rootViewController: soiCauVC)
-//            soiCauVC.index = 100
-//            soiCauNavi.modalPresentationStyle = .fullScreen
-//            SideBarMenu.isCheckSideMenu = 4
-//            present(soiCauNavi, animated: true, completion: nil)
-//        }
-    }
-    
     @IBAction func SoMoDe(_ sender: Any) {
         if SideBarMenu.isCheckSideMenu != 5 {
             let soMoDeVC = SoMoDeViewController()
@@ -76,26 +65,6 @@ class SideBarMenu: UIViewController {
             soMoDeNavi.modalPresentationStyle = .fullScreen
             SideBarMenu.isCheckSideMenu = 5
             present(soMoDeNavi, animated: true, completion: nil)
-        }
-    }
-    
-    @IBAction func KetQuaDai(_ sender: Any) {
-        if SideBarMenu.isCheckSideMenu != 6 {
-            let tabbar = TabbarKQDai()
-            TabbarKQDai.status = false
-            tabbar.modalPresentationStyle = .fullScreen
-            SideBarMenu.isCheckSideMenu = 6
-            present(tabbar, animated: true, completion: nil)
-        }
-    }
-    
-    @IBAction func MoThuongHomNay(_ sender: Any) {
-        if SideBarMenu.isCheckSideMenu != 7 {
-            let tabbar = TabbarKQDai()
-            TabbarKQDai.status = true
-            tabbar.modalPresentationStyle = .fullScreen
-            SideBarMenu.isCheckSideMenu = 7
-            present(tabbar, animated: true, completion: nil)
         }
     }
     
